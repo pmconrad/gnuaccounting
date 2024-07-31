@@ -118,7 +118,6 @@ public class starmoneyImporter extends Thread implements IRunnableWithProgress {
 						e.printStackTrace();
 					}
 
-					yield();
 				}
 				lineIndex++;
 			}

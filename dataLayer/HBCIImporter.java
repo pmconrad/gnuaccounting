@@ -70,7 +70,6 @@ public class HBCIImporter extends Thread implements IRunnableWithProgress {
 						new BigDecimal(umsLine.value.getLongValue())
 								.divide(new BigDecimal(100)));
 
-				yield();
 
 				i++;
 			}

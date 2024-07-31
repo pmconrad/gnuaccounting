@@ -256,7 +256,6 @@ public class openTransImporter extends Thread implements IRunnableWithProgress {
 				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd"); //$NON-NLS-1$
 				for (int subElementIndex = 0; subElementIndex < transactionSubElements
 						.getLength(); subElementIndex++) {
-					yield();
 					Node detailElement = transactionSubElements
 							.item(subElementIndex);
 					if (detailElement.getNodeName().equals("INVOICE_HEADER")) { //$NON-NLS-1$
@@ -429,7 +428,6 @@ public class openTransImporter extends Thread implements IRunnableWithProgress {
 				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd"); //$NON-NLS-1$
 				for (int subElementIndex = 0; subElementIndex < transactionSubElements
 						.getLength(); subElementIndex++) {
-					yield();
 					Node detailElement = transactionSubElements
 							.item(subElementIndex);
 					if (detailElement.getNodeName().equals("ORDER_HEADER")) { //$NON-NLS-1$

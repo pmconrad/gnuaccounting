@@ -138,7 +138,6 @@ public class moneyplexImporter extends Thread implements IRunnableWithProgress {
 										// handle every entry as split with at
 										// least one part...
 		for (int detailIndex = 0; detailIndex < bookingDetails.getLength(); detailIndex++) {
-			yield();
 
 			Node detailElement = bookingDetails.item(detailIndex);
 			if (detailElement.getNodeName() == "DATUM") { //$NON-NLS-1$
@@ -246,7 +245,6 @@ public class moneyplexImporter extends Thread implements IRunnableWithProgress {
 					e.printStackTrace();
 				}
 
-				yield();
 
 			}
 

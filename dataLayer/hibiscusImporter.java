@@ -131,7 +131,6 @@ public class hibiscusImporter extends Thread implements IRunnableWithProgress {
 										// handle every entry as split with at
 										// least one part...
 		for (int detailIndex = 0; detailIndex < bookingDetails.getLength(); detailIndex++) {
-			yield();
 			Node detailElement = bookingDetails.item(detailIndex);
 			if (detailElement.getNodeName() == "datum") { //$NON-NLS-1$
 				date = detailElement.getTextContent().substring(6, 10)
@@ -187,7 +186,6 @@ public class hibiscusImporter extends Thread implements IRunnableWithProgress {
 					e.printStackTrace();
 				}
 
-				yield();
 
 			}
 
