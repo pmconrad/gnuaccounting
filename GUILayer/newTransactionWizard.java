@@ -106,7 +106,7 @@ public class newTransactionWizard extends Wizard {
 			// we have to take non-default printers and the number of copies
 			// into account
 			HashMap<String, Object> printOptions = new HashMap<String, Object>();
-			printOptions.put("Wait", new Boolean(true)); // wait until print is //$NON-NLS-1$
+			printOptions.put("Wait", Boolean.valueOf(true)); // wait until print is //$NON-NLS-1$
 															// finished, i.e.
 															// execute
 															// synchronously

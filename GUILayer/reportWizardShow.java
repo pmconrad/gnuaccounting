@@ -256,7 +256,7 @@ public class reportWizardShow extends WizardPage {
 		 * */
 		private void drawBorder(XCell cell, int side)
 				throws IllegalArgumentException {
-			int color = new Integer(0x000000);
+			int color = Integer.valueOf(0x000000);
 			short inner = 1;
 			short outer = 0;
 			short distance = 0;

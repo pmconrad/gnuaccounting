@@ -95,7 +95,7 @@ public class accounts implements Serializable {
 								.getLength(); accountIndex++) {
 							Node accountNode = accountNodeList
 									.item(accountIndex);
-							Boolean assetsDeductable = new Boolean(false);
+							Boolean assetsDeductable = Boolean.valueOf(false);
 							boolean autoVAT = false;
 							// if there is a attribute in the tag number:value
 							NamedNodeMap accountAttributes = accountNode
@@ -130,7 +130,7 @@ public class accounts implements Serializable {
 							if (accountAttributes
 									.getNamedItem("assetsDeductable") != null) //$NON-NLS-1$
 							{
-								assetsDeductable = new Boolean(
+								assetsDeductable = Boolean.valueOf(
 										accountAttributes
 												.getNamedItem(
 														"assetsDeductable").getNodeValue()); //$NON-NLS-1$

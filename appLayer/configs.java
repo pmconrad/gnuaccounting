@@ -334,7 +334,7 @@ public class configs {
 					String usePadStringValue;
 					usePadStringValue = nmm
 							.getNamedItem("readerpinpad").getNodeValue(); //$NON-NLS-1$
-					useCardReaderPINpad = new Boolean(usePadStringValue); // if
+					useCardReaderPINpad = Boolean.valueOf(usePadStringValue); // if
 					// that
 					// String
 					// is
@@ -493,7 +493,7 @@ public class configs {
 				{
 					String useSMTPAuthString = nmm
 							.getNamedItem("auth").getNodeValue(); //$NON-NLS-1$
-					useSMTPAuth = new Boolean(useSMTPAuthString); // if that
+					useSMTPAuth = Boolean.valueOf(useSMTPAuthString); // if that
 					// String is
 					// "true",
 					// the
@@ -506,7 +506,7 @@ public class configs {
 				{
 					String useSMTPSSLString = nmm
 							.getNamedItem("ssl").getNodeValue(); //$NON-NLS-1$
-					useSMTPSSL = new Boolean(useSMTPSSLString); // if that
+					useSMTPSSL = Boolean.valueOf(useSMTPSSLString); // if that
 					// String is
 					// "true",
 					// the
@@ -519,7 +519,7 @@ public class configs {
 				{
 					String sendICALString = nmm
 							.getNamedItem("ical").getNodeValue(); //$NON-NLS-1$
-					sendICAL = new Boolean(sendICALString); // if that
+					sendICAL = Boolean.valueOf(sendICALString); // if that
 					// String is
 					// "true",
 					// the
@@ -600,7 +600,7 @@ public class configs {
 	private static void readDatabaseCredentials() throws DOMException {
 		// get list of nodes for tag number:value (per se, the tag is value, but
 		// java has a strage kind to handle namespaces...)
-		useExternalDB = new Boolean(false);
+		useExternalDB = Boolean.valueOf(false);
 		NodeList ndList = configurationDocument
 				.getElementsByTagName("database"); //$NON-NLS-1$
 		for (int i = 0; i < ndList.getLength(); i++) {
@@ -613,7 +613,7 @@ public class configs {
 
 					String useExternalDBString = nmm
 							.getNamedItem("useExternal").getNodeValue(); //$NON-NLS-1$
-					useExternalDB = new Boolean(useExternalDBString); // if that
+					useExternalDB = Boolean.valueOf(useExternalDBString); // if that
 					// String
 					// is
 					// "true",
@@ -697,7 +697,7 @@ public class configs {
 	private static void readMiscSettings() throws DOMException {
 		// get list of nodes for tag number:value (per se, the tag is value, but
 		// java has a strage kind to handle namespaces...)
-		printPoweredBy = new Boolean(true); // default
+		printPoweredBy = Boolean.valueOf(true); // default
 
 		WinstonPathName = ""; //$NON-NLS-1$
 		GPGPathName = ""; //$NON-NLS-1$
@@ -711,7 +711,7 @@ public class configs {
 				{
 					String printPoweredByString = nmm.getNamedItem(
 							"printPoweredBy").getNodeValue(); //$NON-NLS-1$
-					printPoweredBy = new Boolean(printPoweredByString); // if
+					printPoweredBy = Boolean.valueOf(printPoweredByString); // if
 					// that
 					// String
 					// is
@@ -755,7 +755,7 @@ public class configs {
 				{
 					String quickstartString = nmm
 							.getNamedItem("quickstart").getNodeValue(); //$NON-NLS-1$
-					ack_quickstart = new Boolean(quickstartString);
+					ack_quickstart = Boolean.valueOf(quickstartString);
 					/* if that String is "true", the boolean will also be true */
 				}
 				if (nmm.getNamedItem("dragndrop") != null) //$NON-NLS-1$
@@ -763,7 +763,7 @@ public class configs {
 				{
 					String dragndropString = nmm
 							.getNamedItem("dragndrop").getNodeValue(); //$NON-NLS-1$
-					ack_dragndrop = new Boolean(dragndropString);
+					ack_dragndrop = Boolean.valueOf(dragndropString);
 					/* if that String is "true", the boolean will also be true */
 				}
 

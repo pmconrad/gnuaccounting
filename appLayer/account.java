@@ -296,7 +296,7 @@ public class account implements Serializable, Cloneable {
 			throw new accountException(
 					Messages.getString("account.account") + getAsString() + Messages.getString("account.maynotrefercontacts")); //$NON-NLS-1$ //$NON-NLS-2$
 		}
-		refersTo = new Integer(contactID);
+		refersTo = Integer.valueOf(contactID);
 
 	}
 

@@ -174,7 +174,7 @@ public class entries implements IStructuredContentProvider, Serializable {
 		if (!isLoaded) {
 			getEntriesFromDatabase();
 		}
-		return (entry)journal.get(new Integer(id));
+		return (entry)journal.get(Integer.valueOf(id));
 	}
 
 	public boolean isJournalLoaded() {
