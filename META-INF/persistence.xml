@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+	<persistence-unit name="jpa" transaction-type="RESOURCE_LOCAL">
+		<class>appLayer.contact</class>
+		<class>appLayer.taxRelated.tax</class>
+		<class>appLayer.document</class>
+		<class>appLayer.product</class>
+		<class>appLayer.appUsage</class>
+		<class>appLayer.asset</class>
+		<class>appLayer.transactionRelated.transactionType</class>
+		<class>appLayer.account</class>
+		<class>appLayer.transactionFromBankAccountImport</class>
+		<class>appLayer.entry</class>
+		<class>appLayer.transactionRelated.appTransaction</class>
+		<class>appLayer.transactionRelated.invoice</class>
+		<class>appLayer.transactionRelated.creditnote</class>
+		<class>appLayer.transactionRelated.reminder</class>
+		<class>appLayer.transactionRelated.cancelation</class>
+		<class>appLayer.transactionRelated.shippingTicket</class>
+		<class>appLayer.transactionRelated.receipt</class>
+		<class>appLayer.transactionRelated.personalDrawing</class>
+		<class>appLayer.transactionRelated.offer</class>
+		<class>appLayer.transactionRelated.receiptIncoming</class>
+		<class>appLayer.transactionRelated.salarySlip</class>
+		<class>appLayer.item</class>
+		 <class>appLayer.items</class>
+		<class>appLayer.appUser</class>
+		<class>appLayer.inventoryItem</class>
+		<class>appLayer.inventory</class>
+		<class>appLayer.accountChart</class>
+		<class>appLayer.orderStatus</class>
+		
+	</persistence-unit>
+</persistence>

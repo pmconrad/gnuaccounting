@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<?taskcoach release="1.0.9" tskversion="29"?>
+<tasks>
+<task expandedContexts="('taskviewer',)" hourlyFee="50.0" id="65977072:1281879245.76" startdate="2010-08-15" status="1" subject="Präsentation">
+<task expandedContexts="('taskviewer',)" id="65943696:1281879255.86" startdate="2010-08-15" status="1" subject="Script">
+<effort id="65976560:1281879262.01" start="2010-08-15 15:34:22" status="1" stop="2010-08-15 16:17:28"/>
+<effort id="67121200:1281881872.51" start="2010-08-15 16:17:52" status="1" stop="2010-08-15 16:45:14"/>
+<effort id="65407632:1281892118.38" start="2010-08-15 19:08:38" status="1" stop="2010-08-15 20:09:33"/>
+</task>
+<task id="66013808:1281879266.02" startdate="2010-08-15" status="1" subject="Handout"/>
+<task id="65942384:1281879273.23" startdate="2010-08-15" status="1" subject="Slides"/>
+<task hourlyFee="50.0" id="67146288:1281879293.22" startdate="2010-08-15" status="1" subject="Probe">
+<effort id="64812880:1281905996.47" start="2010-08-15 22:43:56" status="1" stop="2010-08-15 23:14:34"/>
+<effort id="65366224:1281982037.45" start="2010-08-16 19:40:17" status="1"/>
+</task>
+<task id="65976592:1281879299.58" startdate="2010-08-15" status="1" subject="Halten"/>
+</task>
+<category categorizables="65943696:1281879255.86" id="67093072:1281881450.04" status="1" subject="Schreiben"/>
+<category categorizables="65943696:1281879255.86" id="67210896:1281881459.14" status="1" subject="Recherchieren"/>
+<category id="67208080:1281881469.73" status="1" subject="Durchführen"/>
+<category id="66142928:1281881463.84" status="1" subject="Proben"/>
+<syncmlconfig>
+<TaskCoach-0000012a75f4c85f79530a3e00c000a800b20016>
+<spds>
+<sources>
+<TaskCoach-0000012a75f4c85f79530a3e00c000a800b20016.Tasks/>
+<TaskCoach-0000012a75f4c85f79530a3e00c000a800b20016.Notes/>
+</sources>
+<syncml>
+<Auth/>
+<Conn/>
+</syncml>
+</spds>
+</TaskCoach-0000012a75f4c85f79530a3e00c000a800b20016>
+</syncmlconfig>
+<guid>
+0000012a75f4c85f79530a3e00c000a800b20016
+</guid>
+</tasks>

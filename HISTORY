@@ -1,0 +1,472 @@
+ * 0.9.0
+ *   * salary Slip prefix corrections (SL- instead of SL) and can now be finished without errors
+ * 0.8.9
+ Improvements/refactorings
+ *   * upgraded to Mustangproject 1.3.1
+ *   * upgraded to most recent SWT/JFace
+ *   * improved cash flow direction estimation
+ Fixes
+ *   * corrected CO and COUNTRY template placeholders replacements
+ *   * deleted accounts show again after restart
+ *   * be unable to delete "New VAT"
+ *   * totals fixed in report, e.g. in t-accounts
+ *   * setup in PostgreSQL tested (and setup in other JPA2 databases should now also work)
+ *   * pricegross and itemgross display net values https://sourceforge.net/p/gnuaccounting/bugs/169/
+ *   * Exports for Addison and DATEV now prevent double-VAT export for automatic accounts
+ New features
+ *   * Compatibility with currency rounding used in switzerland ("Rappenrundung")
+ *   * show opening balance and closing balance in report/accounts window
+ *   * New transaction contact selection is now search-as-you-type
+ *   * Contact is now selectable in bank statement import wizard
+ *   * New transaction type for salary slips
+  
+ * 0.8.8
+ Improvements/refactorings
+ *   * Upgrade to Mustangproject 1.1.1
+ *   * Asset export now also exports status attribute
+ *   * Refactored customer edit window
+ *   * Delegating driver could facilitate access to external databases besides MySQL (e.g., PostgreSQL)
+ Fixes
+ *   * Don't list 0 VAT values in VAT:list
+ *   * Sort order of accounts is now more stable
+ *	 * Fixed possible truncationexception when importing from bank account
+ New features
+ *   * Sales tax improvements: Renamed Canadian TVQ to Sales tax, added possible sales tax exemption per customer and per transaction 
+ *   * respect header/footer lines in templates 
+ 
+ * 0.8.7
+Improvements/refactorings
+ *   * Upgraded to Apache Derby 10.11.1.1 
+ *   * first JUnit tests
+ Fixes
+ *   * Window starter (batch file) now using registry to find 32 bit java
+ *   * Linux starter (shell file) now marked executable in binary archive
+ *   * Contactswindow now updates the contact select box in NewTransactionSelectTransactionDetails in real time
+ *   * allow locale decimal delimiter (e.g. , instead of .) in taxes management 
+ New features
+ *   * Support for canadian "TVQ" vat
+ *   * support for period types weekdays and workingdays
+ *   * Placeholders for item number (=index) and EAN
+ *   * Can search by EAN in article select box
+ 
+ 
+ * 0.8.6:
+ Improvements/refactorings
+ *   * Refactored windows: designerwindow, barcoder window, user management, number/formats, taxes, transaction list, asset management, account definition, new transaction wizard (1st screen), account reconciliation
+ *   * Fixed nullpointerex when putting contraccountless import entries on more stack
+ *   * dont allow proceed button when no contra account selected in detailwindow
+ *   * be able to specify/save organization address in settings
+ *   * internally switched VATList from the amount of VAT to the applicable net amount
+ *   * switched from kapott to wiluhns HBCI4Java
+ 
+ Fixes
+ *   * 155 detail booking window: VAT ignored 
+ *   * 158 Asset management window: show number column from start, add column number from start, correct(de facto add) date until used 
+ *   * 164 does not work w/ portable openoffice (this was also the reason why for a long time there was no new gnuaccounting-all-in-one) 
+ *   * Entries booked via the "more" stack were only shown in bookkeeping after restart
+ *   * resupport vat:list
+ *   * respect VAT table entries
+ 
+ 
+ New features
+ *   * added performance dates
+ *   * placeholders for own street etc
+ *   * better way to set default VAT
+ *   * placeholder arguments e.g. for SEPA payment date
+ *   * better default template 
+ *   * Bezahlcode now supports SEPA
+ *   * Switched to Mustangproject 1.1 and ZUGFeRD 1.0
+ *   * transaction list now contains column for contact (=recipient or sender)
+ *   * transaction list now supports search for contact and number
+ *   * transaction list now supports date filter
+ *   * Validate own IBAN and IBANs of customers
+ *   * sample vat removed, now 7 and 19% VAT by default installed
+ *   * Fill bankname from german IBAN in settings
+ *   * default VAT now managed in settings
+ *   * transaction window
+ *   * placeholder system
+ *   * introduced delivery/performance date incl. placeholders transaction:performedfrom transaction:performedto
+ *   * new placeholdermanager to support performancestart, performanceend, <transaction:performanceperiod>, and <transaction:date period-add="5d">, <terms>..</terms> and taxes:items, sender:vatid, sender:holder, sender:bankname
+ 
+ * 0.8.5:
+ Improvements/refactorings
+ *   * document bezahlcodeAccount to metaIBAN, bezahlcodeBankID to metaBIC, bezahlcodeHolder to metaHolder
+ Bug fixes
+ *   * bug 151: possible subcent values in transaction detail window for self-created invoices
+ *   * bug 159: Addison export does not restrict by selected date range  
+ New features
+ *   * possibility to assign expenses to "Telecommunication"
+ *   * Possibility to save own organizations VAT ID
+ *   * ZUGFeRD export and import: PDFs are now PDF/A-3u
+ *   * Tesseract OCR integration
+ *   * support of additional units hectare, kilometre, kilowatt hour, lump sum, minute, square millimetre, millimetre, 
+ 	   cubic metre, number of articles, number of pairs, percent, set, metric ton,	week
+ *   * contact attribute sepa mandate
+ *   * placeholder for bic and iban
+ 
+ * 0.8.4:
+ Improvements/refactorings
+ *   * Support official entertainment, i.e. business lunches
+ *   * DocTag support (http://www.doctag.org)
+ *   * EÜR improvements
+ *   * Integrated Barcoder tool (similar functionality to http://www.bardecode.com/en1/app/bardecodefiler/)
+ *   * upgrade to swt 4.3
+ *   * upgrade to noa-libre 0.3 (fixes bug 149, allows OpenOffice 4 integration)
+ *   * additional fixes to portable version additionally to bug 149
+ *   * support product type
+ *   * SEPA preparations (can specify customers and own IBAN/BIC, Creditor Identifier)
+ *   * Upgraded to ZXing 2.2
+ *   * switch to external MySQL database did not work in Linux
+ *   * PDFs are now PDF/A1
+ 
+ 
+ * 0.8.3:
+ Improvements/refactorings
+ *   * Upgraded to NOA-Libre 0.2.1
+ *   * Upgraded to ZXing 2.1
+ *   * refatored entryDetailWindow out, new entries are now only possible as part of transactions
+ Bug fixes
+ *   * skonti corrections in SKR03 and SKR04, i.e. accounts 3730ff,8730ff repectively 5730ff,4730ff
+ *   * A workaround is now available for LO4-Compatibility  
+ *   * Powered by gnuaccounting was missing linebreak
+ *   * corrected profit/loss statement in spreadsheet export
+ *   * entries/transactions added with dates before the first or after the last existing one at program start were only shown when restarted
+ *   * incoming transaction numbers are now consumed 
+ New features
+ *   * lexware CSV export
+ *   * new celleditor for bank statement import  
+ *   * transactionDetailWindow now scrollable 
+ *   * bezahlcode read and write support (see http://www.bezahlcode.de)
+ *   * Magento shop connector
+ *   * can now cancel past transactions in transction list window
+ 
+ 
+ * 0.8.2:
+ *   * deleted bookings vanish only from accountingEditWindow after software is restarted
+ *   * When cancelling bank statement import, items in stacks disappear until software restart
+ *   * Standard booking 1200-8400 ignored until software restart
+ *   * Don't hide OO.o toolbar in designer window
+ *   * nullPointEx in Asset Mng when migrating old data
+ *   * Compatibility to LO 3.6.1 Calc
+ *   * Customer roles are now translated
+ *   * On linux, the dialog box asking if the quick start page should be shown was drawn incorrectly 
+ *   * entries inPeriod refactorings
+ *   * date format in accountingEditWindow and import from bank statement wizard 
+ *   * transaction list improvements
+ *   * AccountBalanceWindow, better date format for details, table resizeable, possibility to sort, have extra column balance, have extra selection by day
+ *   * Bank Account Import can now import to other bank accounts (e.g. 1201 instead of 1200)
+ *   * new Gleeo timer import, Task coach import improvements, import now creates invoices again instead of credit memos
+ *   * taxesWindow font corrections
+ *   * newAccountingWizard did not save document entries for it's transactions
+ *   * close cash accounts removed
+ *   * now supports multiple scanners
+ *   * now supports viewing scanned documents
+ *   * incoming wizard now supports adding a document file, or scan
+ *   * better HBCI exception/success handling
+ *   * reference column has a new keyword: <todo/>. This way entries can be booked and their references can be added later.
+ *   * refactored transactionFromBankAccounttImport.RegexNumberMatchers to documents.getDocumentNumberMatchers
+ *   * document import now auto-recognizes document numbers from filenames
+ *   * Export to spread sheet now also lists assets 
+ *   * bugfix: assets: fraction part of value (deprecatedvalue, revenueifsold) was lost when restarting 
+ *   * documentWindow resize behaviour
+ *   * date format in spread sheet export
+ *   * assets: new asset should be on top, should not be in calc export
+ *   * export as CSV/ASCII wizard finish was disabled
+ *   * ascii export date pattern: year was wrong
+ *   * add description to placeholders in documentation
+ *   * Winston path check
+ *   * incoming assistant ignored changed number
+ *   * receiptincoming format by default no longer refers to date
+ *   * more intelligent number format recognition 
+ *   * linux version can crash on documentwindow: no jsane driver found in classpath
+ *   * account reconciliation: have a daily balance feature
+ *   * upgraded to SWT 4.2.1(?)
+  
+  * 0.8.1:
+ *   * Changed license from GPL2+ to GPL3+
+ *   * VCF contact import 
+ *   * update to swt 3.7
+ *   * comma as decimal separator ignored in entryDetailWindow
+ *   * PS: jes acct chart
+ *   * db refactorings (db conn start, remove JDBC URL and p from public static String connect, persistUtil.connect vs DB.connect)
+ *   * document table headlines in document window not localized
+ *   * after invoice completed no longer need to show in dropdown for document selection
+ *   * advanceWorkflow refactorings
+ *   + period restriction ignored in export
+ *   * direct bidi-link between transaction and document
+ *   * have paid in cash option in new transaction wizard
+ *   * GUI: export CSV, ASCII and spread sheet are different
+ *   * no ref between transaction and doc 
+ *   * document opening accounts
+ *   * document command line options(--configPath)
+ *   * document libreoffice
+ *   * document 1400 personenkonten
+ *   * document templates
+ *   * document how to use gnuaccounting with portableopenoffice
+ *   * document tax fields for 7%USt
+ *   * document software alternatives
+ *   * document product management
+ *   * document frequently used accounts
+ *   * wrong type created: offer instead of private drawing
+ *   * nullpointerexception possible when importing certain bank account entries from moneyplex XML
+ *   * refactored: standard java.sql.Date->java.util.Date
+ *   * German translation: Konfiguration now renamed "Einrichtung"
+ *   * removed verwendungszweck (payment purpose) field delimiter (@) from Moneyplex import
+ *   * fixed NumberFormatException in more recent LibreOffice installations, e.g. Kubuntu 12.04 default   
+ *   * removed redundant product nominalPrice
+ *   * import CSV bank statements for Volksbank Alzey, Germany
+ *   * switch to NOA-libre
+ *   * changes to assets, e.g. introduce numbers, locations, remarks
+ *   * renamed "Abschreibungen" to "Anlagegüter" in german
+ *   * PS: vcf import
+ *   * print: number of copies
+ *   * evaluation by account does not work
+ *   * transaction list
+ *   * document type incorrect if any type except invoice or credit memo selected in new transaction wizard
+ *   * add / on configpath if it does not end with one
+ *   * INvoice and INcoming transaction had the same prefix in english 
+ *   * SVN repository was moved by sourceforge
+ *   * new forum on http://www.gnuaccounting.org/forum/
+  
+ 
+ * 0.8.0
+ improvements/refactorings
+ * * refactor: pics directory merged with libs
+ * * refactor: hibernateUtil -> persistUtil
+ * * refactor: rename skr03.xml
+ * * refactor: skr03.xml 'revenue' account type should be 'income' 
+ * * refactor: remove tax credit/debit account redundancy, create account chart class
+ * * refactor: webshop import save in properties files, merged redundant parts in openTransImporter and Webshopimporter
+ * * refactor: "entry" class: rewrite "columns" private classes which were a bad idea in the first place
+ * * refactor: skr03.xml should indivate VAT cols
+ * * refactor: 1) opentrans, 2) tax definition redundancy 3) entry simplifications/transaction-entry straightened 4) jpa2 5) import transactions 6) webshop
+ * * refactor: merged transactionContentProvider and items
+ * * refactor: credit notes are no longer called credit memos
+ * * refactor: remove entry.referredTransactionID
+ * * refactor: have item list in appTransaction (remove items class)
+ * * refactor: incoming transactions make multi-entries redundant 
+ * * update from pre JPA-1 hibernate to post JPA-2 eclipseLink
+ * * renamed transaction-->appTransaction, user -->appUser for JPA2
+ * * Knicken 1. kontendefinition code/function/reference simplifications
+ * * derby instead of hsqldb
+ bugs
+ * * obdx file was only generated when mail was sent
+ * * keyfocus fix on linux?
+ * * application hang on invoice with more than one item 
+ * * gnuaccounting did not start in Vista
+ features
+ * * link in bookkeeping window to show size of import queue
+ * * indicate credit/debit in statements (spread sheet export)
+ * * ASCII export (addison)
+ * * add units, 
+ * * add long product description
+ * * openTrans support  
+ * * balance checkbox in transactionDetailWindow used getEnabled instead of getSelection
+ 
+ * 0.7.9
+ * done
+ * * Changing the accounting chart is only permanently saved after clicking the save button in the settings window for the second time
+ * * Istbesteuerung was not possible w/SKR04
+ * * TP: resort: debit, credit in accounting table  
+ * * TP: resort: debit, credit in accounting detail entry window
+ * * have CSV export for Datev Kanzlei-Rechnungswesen
+ * * have a icon/logo
+ * * support portablegit
+ * * remove getContactForListID (use comboviewer)
+ * * taxoffice: use comboviewer, not redundant stringlist
+ * * states: use comboviewer, not redundant stringlist
+ * * Nullpointerex when importing from Bank account and only 0% VAT configured
+ * * dont allow to delete new VAT
+ * * cancel transaction and reopen create new transacion may result in wrong transaction type (Quittung->Lieferschein, Lieferschein->Quittung, Eingangsbeleg->Lieferschein)
+ * * Receipt always produces /0 number on document
+ * * Be able to sort import queue by the columns
+ * * edit window sort does not work correctly for last two columns
+ * * hibiscus XML import
+ * * no query to close editDetails when value ist still 0
+ * * deleting transactions from edit: entries reapear when window re-opened, vanish only after restart
+ * * don't show "new account" in editDetails nor edit window
+ * * Monthly evaluation of accounts reported inverted amounts (-11000 instead of +11000)
+ * * Gnucash Business Accounting Frame
+ * * account definition showed only parts of the ID of an account if >100  
+ * * when importing entries, new account is selected, though not available in combo
+ * * Spec file for RPM/DEB creation
+ * * can't add accounts in non-SKR03 accounting charts
+ * * Spread sheet report accounts list debit/credit swap, T-Accounts debit/credit on wrong sides 
+ * * after new install: can't switch to SKR04, then gnucash business without exception
+ * * can not switch to SKR04 and istbesteuerung at the same time
+ * * change order debit credit in sheet 3 spreadsheet
+ * * Tax window: Wider select boxes
+ * * No VAT bookings in gnucash acct frame
+ * * customer:additional not replaced
+ * * default select gnucash accounting chart for non-german installs  
+ *
+ * 0.7.8
+ * done
+ * * numberformatException when using backspace in empty value field in add entry 
+ * * JS add booking: also allow , instead of .
+ * * JS traversing input fields with return not possible when adding entries
+ * * JS disable office close in spreadsheet export
+ * * JS incomplete translations, e.g. table headings
+ * * import of HBCI account data should be rounded  
+ * * Ebert 2. trying to click finish in newtransactionwizard
+ * * entry should not be removed from import list when attributes are missing (standard)
+ * * refactoring: move VAT announcement code to taxCalculator class
+ * * check VAT announcements
+ * * book with standards should apply standard VAT
+ * * when booking against e.g. Büro und Geschäftsausstattung launch asset assistant
+ * * show progress bar when initializing accounts   
+ * * JS SKR04
+ * * test standard booking to create VAT entries
+ * * reminders overwrote files of original invoice 
+ * * import of certain task coach files fail
+ * * additional address line
+ * * manually added booking entries may show extra VAT column
+ * * Manual is not included in installer package
+ * * support istversteuerung
+ * * accountingeditwindow: one acct difference when chg entries
+ * * KG: irritating that error message does not vanish after items are added 
+ * * standard booking outgoing cashflow imported entry: 3100
+ * * show entries black if Receivables in credit
+ * * migration: tax change account from 1775 to 1776
+ * * change all taxes when changing accounting chart
+ * * removed string array index for accounts
+ * * remove string array index for products
+ * * in skr04 new invoice still uses SKR03 codes
+ * * migration of data should create SKR04 accounting frame
+ * * when having cancelled a reminder new invoice does no longer work
+ *
+ *  
+ * 0.7.7
+ * done
+ * * Support import of split entries from moneyplex
+ * * usability improvement for stacks (accept button like behaviour)
+ * * test reminders
+ * * rudimentary cash closing
+ * * migration to swt/jface 3.6
+ * * english manual 
+ * * accept , as decimal point in price (custom e.g. in german locale)
+ * * possibility to cancel transaction creation
+ * * check 2734449 Widgets in contact unusable if opened via transaction wizard
+ * * zip file to contain files in subfolder gnuaccounting, not root dir
+ * * portable version can now use relative directories, specify openoffice directory and has a .bat file on its own
+ * * upgraded to NOA 2.2.3
+ * * 3015191 test with ooo 3.2
+ * * 2985339 test template designer
+ * * checkpageComplete upon article selection in selectItemsWizard
+ * * finish button should only be possible at the end of transaction creation
+ * * When selecting "new product", a valid VAT should be selected
+ *
+ * 
+ * 0.7.6:
+ * done
+ * * refactored hard coupling to configwindow
+ * * config tests are now called checks
+ * * accountsList now called accounts
+ * * customers, products and accounts now order by alphabet respectively code 
+ * * invoice amount changes due to incorrect double VAT taxaion if booked via book payment
+ * * new contact type member
+ * * rudimentary user management
+ * * rudimentary german manual
+ * * MySQL external database version was unusable, e.g. did not create "new product" entry
+ * * config windows shows useless popup upon switch to mysql 
+ * * detail bookings show 2x 0%VAT
+ * * import from time tracker labels OBDX file, should be KTimetracker file.
+ * * add new product when clicked on empty table space 
+ * * corrected rounding errors:e.g. qty 100000.938 previously became 100000.9375
+ * * when clicked on empty table space and new, unselected product is already there, select that row 
+ * 
+ * 0.7.5: 
+ * done
+ * * when booking on new entry via detailbookingwindow: VAT amount is always set although no VAT entered in row
+ * * x64 version did not work out of the box 
+ * * transactions could not be cancelled
+ * * transaction type change did not work correctly
+ * * entries in the vat table in entryDetailsWindow were ignored
+ * * rudimentary year end closing
+ * * detail book may book 0 amount
+ * * standard booking does nor remove invoice todo entry
+ * * allow empty contact in detail booking
+ * * transaction/created entries no to be transient
+ * * booking/balancing does not work if VAT is involved
+ * * check cancellation, reminder for bugs
+ * * could balance only one invoice in todowindow
+ * * todoWindow might load wrong transaction to balance
+ *      			
+ * 0.7.4:
+ * done
+ * * Nullpointerexception when changing numbers in documents window
+ * * invoice filenames don't reflect user defined number formatting
+ * * documents should be saved with their respective value
+ * * be able to view sent invoices via the documentswindow
+ * * allow column sorting in accountingEditWindow
+ * * have the possibility to view sent and balanced invoices
+ * * booking on 027 EDV was not possible
+ * * items are not saved
+ * * experimental osCommerce integration (thanks Gerd)
+ * * monthly account balances (good to check where in your numbers you deviate)
+ *
+ * 0.7.3:
+ * done
+ *   * correct non-numerical reference code lookup
+ *   * avoid booking entries with 0 value, e.g. for 0-vat
+ *   * have a standard-booking
+ *   * bugfix reference column in accounting add 
+ *   * auto-recognize references in accounting add
+ *   * auto detect invoice reference from online banking, 
+ *   * hbci accounting import fix
+ *   * update hbci4java to version 2.5.12
+ *   * auto-create and link contacts for imported payments
+ *   * bugfix on cancelled invoices
+ *   * internal recipient selection does not match user recipient selection 
+ *   * open invoices should not vanish when detail booking cancelled
+ *   * accounting entries SHOULD vanish when moved to the deleted folder
+ *   * correct contact should be selected in detail booking
+ *   * invoice shows item price 1 when created with , instead of . as decimal separator in products window 
+ *   * when deleting items from invoice, wrong item may get deleted
+ *   * correct booking of payments
+ *   * open invoices should not vanish when restarting
+ *
+ * 0.7.2:
+ * done
+ *   * have receipt transaction type
+ *   * have shipping ticket transaction type
+ *   * hibernate asset class
+ *   * hibernate transactionType class
+ *   * hibernate account class
+ *   * hibernate entryFromBankAccountImport class
+ *   * update swt to 3.5
+ *   * update hbci4java to 2.5.11
+ *   * updated NOA ro 2.2.2RC
+ *   * VAT announcement is exported as Q3 instead of Month 3 (previous)
+ *   * migrate transaction types, transactions, accounts to hibernate
+ *   * have database updated automatically
+ *   * change architecture of "entry" core to be migratable to hibernate
+ *   * migrate vom automake/autoconf to ant
+ *   * database removal as of patchlevel 655
+ *   * database driver file name browse button did not work
+ *   * external database settings ignored when displaying configwindow
+ *   * tested postgresql support (thanks Christian)
+ *   * send invoice due reminders as calendar events to system owner 
+ *   * check if winston output path exists??
+ *   * check SSL encryption for mails to be sent
+ *   * have config option to send reminders
+ *   * postgreSQL support
+ *   * finalize Hibernate migration
+ *   * incorporate language review
+ *   * cancelation does not open for sent invoice
+ *   * bookkeeping does not work after/while todo window had been open
+ *   * check if calc export work
+ *   * check if winston export exports the right numbers.
+ *
+ * 0.7.1:
+ * done
+ *   * Time tracker import: decimal handling improvements 
+ *   * product with invalid tax to default to default tax
+ *   * linux 64 bit compatibility without manual steps
+ *   * could not add entry on EDV account (no please select account)
+ *   * localization issue: german version exports quarterly VAT announcement, although monthly selected 
+ *   * refactoring: DB connect should be method of datalayer.DB, not configWindow
+ *   * hibernate persistence now possible
+ *   * refactored taxcalculator into appLayer.taxRelated
+ *   * migrated contacts, VATs, documents, products, usage stats to hibernate
+ *   * can not select first product from dropdown when creating invoices

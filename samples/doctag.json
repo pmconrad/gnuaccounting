@@ -1,0 +1,98 @@
+{
+"doctag_version": "0.9",
+    "doctype": "invoice",
+"id": "org.doctag.documentation.1234",
+"number": "RE1234",
+"date": "2012-05-22",
+"delivery_date": "2012-04-11",
+"due_date": "2012-04-25",
+"total": {
+        "net": 586.0,
+"gross": 696.62
+},
+"currency": "EUR",
+"items": [
+{
+"title": "Malerarbeiten",
+"description": "Büroräume grün gestrichen.",
+"unit": "Stunde",
+"quantity": 8.0,
+"unit_price": {
+                "net": 60.0,
+"gross": 71.4
+},
+"total": {
+                "net": 480.0,
+"gross": 571.2
+},
+"taxes": [
+{
+            "name": "MwSt",
+            "rate": 19.0,
+            "amount": 91.2
+}
+]
+},
+{
+"title": "Farbe",
+"description": "Grün, superdeckend",
+"unit": "Eimer",
+"quantity": 5.0,
+"unit_price": {
+                "net": 20.0,
+"gross": 23.8
+},
+"total": {
+                "net": 100.0,
+"gross": 119.0
+},
+"taxes": [
+{
+            "name": "MwSt",
+            "rate": 19.0,
+            "amount": 19.0
+}
+            ]
+},
+{
+"title": "Pausenverpflegung",
+"description": "Pizza!!!",
+"unit": "Stück",
+"quantity": 1.0,
+"unit_price": {
+                "net": 6.0,
+"gross": 6.42
+},
+"total": {
+                "net": 6.0,
+"gross": 6.42
+},
+"taxes": [
+{
+            "name": "MwSt",
+           "rate": 7.0,
+            "amount": 0.42
+}
+            ]
+}
+    ],
+"taxes": [
+{
+"name": "MwSt",
+"rate": 19.0,
+"amount": 110.2
+},
+{
+"name": "MwSt",
+"rate": 7.0,
+"amount": 0.42
+}
+    ],
+"discounts": [
+{
+"date": "2012-05-29",
+"rate": 2.0,
+"amount": 13.93
+}
+    ]
+}

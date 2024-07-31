@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ORDER type="standard" version="2.1"
+xmlns="http://www.opentrans.org/XMLSchema/2.1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.opentrans.org/XMLSchema/2.1
+opentrans_2_1.xsd" xmlns:bmecat="http://www.bmecat.org/bmecat/2005"
+xmlns:xmime="http://www.w3.org/2005/05/xmlmime">
+	<ORDER_HEADER>
+
+		<ORDER_INFO>
+			<ORDER_ID>I21298</ORDER_ID>
+			<ORDER_DATE>2009-05-13T09:00:00+01:00</ORDER_DATE>
+
+
+
+			<PARTIES>
+
+				<PARTY>
+					<bmecat:PARTY_ID type="supplier_specific">968314</bmecat:PARTY_ID>
+					<PARTY_ROLE>buyer</PARTY_ROLE>
+					<ADDRESS>
+						<bmecat:NAME>Supershop Store International</bmecat:NAME>
+					</ADDRESS>
+				</PARTY>
+				<PARTY>
+					<bmecat:PARTY_ID type="supplier_specific">980301</bmecat:PARTY_ID>
+					<PARTY_ROLE>delivery</PARTY_ROLE>
+					<ADDRESS>
+						<CONTACT_DETAILS>
+							<bmecat:CONTACT_ID>1</bmecat:CONTACT_ID>
+							<bmecat:CONTACT_NAME>Supershop Store Stuttgart</bmecat:CONTACT_NAME>
+							<bmecat:PHONE>0711 970 000</bmecat:PHONE>
+						</CONTACT_DETAILS>
+						<bmecat:STREET>shopppingstr.102</bmecat:STREET>
+						<bmecat:ZIP>70199</bmecat:ZIP>
+						<bmecat:CITY>Stuttgart</bmecat:CITY>
+						<bmecat:STATE>Baden Württemberg</bmecat:STATE>
+					</ADDRESS>
+				</PARTY>
+
+			</PARTIES>
+			<CUSTOMER_ORDER_REFERENCE>
+			</CUSTOMER_ORDER_REFERENCE>
+			<ORDER_PARTIES_REFERENCE>
+			<bmecat:BUYER_IDREF>968314</bmecat:BUYER_IDREF>
+			<bmecat:SUPPLIER_IDREF>980301</bmecat:SUPPLIER_IDREF>
+			</ORDER_PARTIES_REFERENCE>
+
+
+		</ORDER_INFO>
+
+	</ORDER_HEADER>
+
+	<ORDER_ITEM_LIST>
+		<ORDER_ITEM>
+			<LINE_ITEM_ID>1</LINE_ITEM_ID>
+			<PRODUCT_ID>
+				<bmecat:SUPPLIER_PID>NB-A4</bmecat:SUPPLIER_PID>
+				<bmecat:DESCRIPTION_SHORT>Notebook, Schwarz</bmecat:DESCRIPTION_SHORT>
+				<bmecat:DESCRIPTION_LONG>Notebook mit Einsteinium-Prozessor, 256 GB
+RAM und 1024 TB Festplatte</bmecat:DESCRIPTION_LONG>
+			</PRODUCT_ID>
+
+
+			<QUANTITY>4</QUANTITY>
+			<bmecat:ORDER_UNIT>PK</bmecat:ORDER_UNIT>
+			<PRODUCT_PRICE_FIX>
+				<bmecat:PRICE_AMOUNT>1200</bmecat:PRICE_AMOUNT>
+
+			</PRODUCT_PRICE_FIX>
+			<PRICE_LINE_AMOUNT>4680.00</PRICE_LINE_AMOUNT>
+
+		</ORDER_ITEM>
+	</ORDER_ITEM_LIST>
+
+	<ORDER_SUMMARY>
+		<TOTAL_ITEM_NUM>1</TOTAL_ITEM_NUM>
+		<TOTAL_AMOUNT>5569.20</TOTAL_AMOUNT>
+
+	</ORDER_SUMMARY>
+</ORDER>

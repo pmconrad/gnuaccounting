@@ -1,0 +1,3312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<accounts>
+	<!-- based on lx-office SKR03 http://wiki.lx-office.org/index.php/Lx-Office_ERP_Kontenrahmen_SKR03 -->
+	<chart id="0" name="SKR03" description="German Standardkontenrahmen 03"
+		recommended="Einzelgewerbe, Personengesellschaften (Partnerships)"
+		vatin="1776" vatout="1576" vatonhold="1766">
+		<account code="0027" type="asset" refersTo="nothing"
+			description="EDV-Software" />
+		<account code="0090" type="asset" refersTo="nothing"
+			description="Geschäftsbauten" />
+		<account code="0200" type="asset" assetsDeductable="true"
+			refersTo="nothing" description="Techn.Anlagen und Maschinen" />
+		<account code="0210" type="asset" assetsDeductable="true"
+			refersTo="nothing" description="Maschinen" />
+		<account code="0380" type="asset" assetsDeductable="true"
+			refersTo="nothing" description="Sonst.Transportmittel" />
+		<account code="0400" type="asset" assetsDeductable="true"
+			refersTo="nothing" description="Betriebsausstattung" />
+		<account code="0410" type="asset" assetsDeductable="true"
+			refersTo="nothing" description="Geschäftsausstattung" />
+		<account code="0420" type="asset" refersTo="nothing"
+			description="Büroeinrichtung" />
+		<account code="0430" type="asset" refersTo="nothing"
+			description="Ladeneinrichtung" />
+		<account code="0440" type="asset" refersTo="nothing"
+			description="Werkzeuge" />
+		<account code="0480" type="asset" refersTo="nothing"
+			description="Geringwertige Wirtschaftsg.b.410EUR" />
+		<account code="0631" type="asset" refersTo="nothing"
+			description="Vblk.geg.Kreditinst.- Restlaufzeit b.1 Jahr" />
+		<account code="0640" type="asset" refersTo="nothing"
+			description="Vblk.geg.Kreditinst.- Restlaufzeit 1 bis 5 Jahre" />
+		<account code="0650" type="asset" refersTo="nothing"
+			description="Vblk.geg.Kreditinst.- Restlaufzeit grösser als 5 Jahre" />
+		<account code="0853" type="unknown" refersTo="nothing"
+			description="Satzungsm.Rücklagen 0% Vorbelast.(st.Einlagekto.)" />
+		<account code="1000" type="cash" refersTo="nothing"
+			description="Kasse" />
+		<account code="1200" type="bank" refersTo="nothing"
+			description="Bank" />
+		<account code="1360" type="asset" refersTo="nothing"
+			description="Geldtransit" />
+		<account code="1400" type="asset" refersTo="customers"
+			description="Ford. a.Lieferungen und Leistungen" />
+		<account code="1445" type="asset" refersTo="customers"
+			description="Ford.a.LuL z.allg.USt-Satz o.eines Kleinuntern.(EÜR)" />
+		<account code="1446" type="asset" refersTo="customers"
+			description="Ford.aLuL z.erm.USt.-Satz (EÜR)" />
+		<account code="1447" type="asset" refersTo="customers"
+			description="Ford.a.steuerfr.od.nicht steuerb.LuL (EÜR)" />
+		<account code="1448" type="asset" refersTo="customers"
+			description="Ford.a.LuL n.Durchschnittss.gem.§24UStG(EÜR)" />
+		<account code="1449" type="asset" refersTo="nothing"
+			description="Gegenkto. 1445-1448 bei Aufteil.d.Ford.n.Steuers.(EÜR)" />
+		<account code="1450" type="asset" refersTo="customers"
+			description="Ford.a.LuL n.Durchschnittss.gem.§24UStG(EÜR)" />
+		<account code="1571" type="expense" refersTo="nothing"
+			description="Abziebare Vorsteuer 7%" />
+		<account code="1572" type="expense" refersTo="nothing"
+			description="Steuerpflicht. EG-Erwerb 7%" />
+		<account code="1573" type="expense" refersTo="nothing"
+			description="Steuerpflicht. EG-Erwerb 19%" />
+		<account code="1575" type="asset" refersTo="nothing"
+			description="Abziehbare Vorsteuer 16%" />
+		<account code="1576" type="asset" refersTo="nothing"
+			description="Abziehbare Vorsteuer 19%" />
+		<account code="1577" type="asset" refersTo="nothing"
+			description="Abzieb.Vorst.n.allg.Durchschnittss.UStVA Kz.63" />
+		<account code="1578" type="expense" refersTo="nothing"
+			description="Abzieb.Vorst.n.§13b" />
+		<account code="1580" type="asset" refersTo="nothing"
+			description="Gegenkonto Vorsteuer §4/3 EStG" />
+		<account code="1581" type="asset" refersTo="nothing"
+			description="Auflösung Vorst.a.Vorjahr §4/3 EStG" />
+		<account code="1582" type="expense" refersTo="nothing"
+			description="Vorst.aus Investitionen §4/3 EStG" />
+		<account code="1584" type="expense" refersTo="nothing"
+			description="abziehb.VorSt IG Erwerb Neufzg.b.Lief. o. USt.Ident.Nr" />
+		<account code="1588" type="expense" refersTo="nothing"
+			description="Bezahlte Einfuhrumsatzsteuer" />
+		<account code="1590" type="asset" refersTo="nothing"
+			description="Durchlaufende Posten" />
+		<account code="1592" type="asset" refersTo="nothing"
+			description="Fremdgeld" />
+		<account code="1600" type="liability" refersTo="suppliers"
+	description="Verbindlichkeiten aus Lief.u.Leist." />
+		<account code="1605" type="liability" refersTo="suppliers"
+			description="Vblk.a.LuL z.allg.Umsatzsteuersatz (EÜR)" />
+		<account code="1606" type="liability" refersTo="suppliers"
+			description="Vblk.a.LuL zum erm.Umsatzsteuersatz (EÜR)" />
+		<account code="1607" type="liability" refersTo="suppliers"
+			description="Vblk.a.LuL ohne Vorsteuer (EÜR)" />
+		<account code="1609" type="liability" refersTo="nothing"
+			description="Gegenkonto 1605-1607 b.Aufteilung d.Vblk.n.Steuers.(EÜR)" />
+		<account code="1766" type="unknown" refersTo="nothing"
+			description="Umsatzsteuer nicht fällig 19 %" />
+		<account code="1767" type="unknown" refersTo="nothing"
+			description="Im anderen EG-Staat steuerpfl. Lieferung" />
+		<account code="1771" type="income" refersTo="nothing"
+			description="Umsatzsteuer 7%" />
+		<account code="1772" type="income" refersTo="nothing"
+			description="Steuerpflicht. EG-Lieferungen 7%" />
+		<account code="1773" type="income" refersTo="nothing"
+			description="Steuerpflicht. EG-Lieferungen 19%" />
+		<account code="1775" type="liability" refersTo="nothing"
+			description="Umsatzsteuer 16%" />
+		<account code="1776" type="liability" refersTo="nothing"
+			description="Umsatzsteuer 19%" />
+		<account code="1780" type="expense" refersTo="nothing"
+			description="Umsatzsteuer-Vorauszahlungen" />
+		<account code="1785" type="income" refersTo="nothing"
+			description="Umsatzsteuer n.§13b UStG" />
+		<account code="1790" type="expense" refersTo="nothing"
+			description="Umsatzsteuer Vorjahr" />
+		<account code="1791" type="expense" refersTo="nothing"
+			description="Umsatzsteuer frühere Jahre" />
+		<account code="1800" type="unknown" refersTo="partners"
+			description="Privatentnahme allgemein" />
+		<account code="1810" type="unknown" refersTo="partners"
+			description="Privatsteuern" />
+		<account code="1820" type="unknown" refersTo="nothing"
+			description="Sonderausgaben beschränkt abzugsfähig" />
+		<account code="1830" type="unknown" refersTo="nothing"
+			description="Sonderausgaben unbeschr.anzugsfähig" />
+		<account code="1840" type="unknown" refersTo="nothing"
+			description="Zuwendungen, Spenden" />
+		<account code="1890" type="unknown" refersTo="nothing"
+			description="Privateinlagen" />
+		<account code="2000" type="expense" refersTo="nothing"
+			description="Außerordentliche Aufwendung" />
+		<account code="2010" type="expense" refersTo="nothing"
+			description="Betriebsfremde Aufwendungen soweit n.außerord." />
+		<account code="2020" type="expense" refersTo="nothing"
+			description="Periodenfremde Aufwend.(soweit n.außerordentlich" />
+		<account code="2100" type="expense" refersTo="nothing"
+			description="Zinsen und ähnl.Aufwendungen" />
+		<account code="2107" type="expense" refersTo="nothing"
+			description="Zinsaufwendung-betriebliche Steuern §223aAO" />
+		<account code="2110" type="expense" refersTo="nothing"
+			description="Zinsaufwendung f.kurzf.Verbindlichk" />
+		<account code="2120" type="expense" refersTo="nothing"
+			description="Zinsaufwendung f.langf.Verbindlichk" />
+		<account code="2125" type="expense" refersTo="nothing"
+			description="Zinsaufwend.f.Gebäude,die z.Betriebsvermögen gehören" />
+		<account code="2130" type="expense" refersTo="nothing"
+			description="Diskontaufwendung" />
+		<account code="2140" type="expense" refersTo="nothing"
+			description="Zinsähnliche Aufwendungen" />
+		<account code="2150" type="expense" refersTo="nothing"
+			description="Aufwendungen aus Kursdifferenzen" />
+		<account code="2170" type="expense" refersTo="nothing"
+			description="Nicht abziehbare Vorsteuer" />
+		<account code="2171" type="expense" refersTo="nothing"
+			description="Nicht abziehbare Vorsteuer 7%" />
+		<account code="2175" type="expense" refersTo="nothing"
+			description="Nicht abziehbare Vorsteuer 19%" />
+		<account code="2200" type="expense" refersTo="nothing"
+			description="Körperschaftssteuer" />
+		<account code="2208" type="expense" refersTo="nothing"
+			description="Solidaritätszuschlag" />
+		<account code="2209" type="expense" refersTo="nothing"
+			description="Solidaritätszuschlag für Vorjahr" />
+		<account code="2212" type="expense" refersTo="nothing"
+			description="Kapitalertragssteuer 20%" />
+		<account code="2214" type="expense" refersTo="nothing"
+			description="Anrechenb.Soli auf Kapitalertragssteuer 20%" />
+		<account code="2215" type="expense" refersTo="nothing"
+			description="Zinsabschlagsteuer" />
+		<account code="2218" type="expense" refersTo="nothing"
+			description="Anrechb.Solidari.zuschlag a.Zinsabschlagst." />
+		<account code="2280" type="expense" refersTo="nothing"
+			description="Stnachzahl.Vorj.v.Einkomm u.Ertrag" />
+		<account code="2282" type="income" refersTo="nothing"
+			description="Sterstat.Vorj.Steuer v.Eink.u.Ertrag" />
+		<account code="2284" type="income" refersTo="nothing"
+			description="Ertr.a.d.Aufl.v.Rücks.f.St.v.Ein.Er" />
+		<account code="2285" type="expense" refersTo="nothing"
+			description="Steuernachzahlung Vorj.f.sons.Steue" />
+		<account code="2287" type="income" refersTo="nothing"
+			description="Steuererstattung Vorj.f.sons.Steuer" />
+		<account code="2289" type="expense" refersTo="nothing"
+			description="Erträge a.d.Aufl.v. Rück.f.sons.Ste" />
+		<account code="2310" type="expense" refersTo="nothing"
+			description="Anlagenabgänge Sachanlagen Restbuchw.b.Buchverlust" />
+		<account code="2315" type="income" refersTo="nothing"
+			description="Anlagenabgänge Sachanlagen Restbuchw.b.Buchgewinn" />
+		<account code="2320" type="expense" refersTo="nothing"
+			description="Verluste Abgang Gegenst.d.Anlagever" />
+		<account code="2341" type="expense" refersTo="nothing"
+			description="Einstellungen in SoPo m.Rücklageanteil (Ansparabschreibung" />
+		<account code="2342" type="expense" refersTo="nothing"
+			description="Einst.in SoPo m.Rücklageanteil (Existenzgründungsrücklage)" />
+		<account code="2350" type="expense" refersTo="nothing"
+			description="Grundstücksaufwendungen" />
+		<account code="2351" type="expense" refersTo="nothing"
+			description="Gründstücksaufwend.f.Gebäude,die nicht z.Betriebsverm.gehören" />
+		<account code="2375" type="expense" refersTo="nothing"
+			description="Grundsteuer" />
+		<account code="2376" type="expense" refersTo="nothing"
+			description="Grundsteuer f.Gebäude,die nicht z.Betriebsvermögen geh." />
+		<account code="2380" type="expense" refersTo="nothing"
+			description="Zuwend.,Spenden,steuerlich n.abziehbar" />
+		<account code="2400" type="expense" refersTo="nothing"
+			description="Forderungsverlust-übliche Höhe" />
+		<account code="2401" type="expense" refersTo="nothing" automatic="vat"
+			description="Forderungsverluste 7% USt.(übliche Höhe" />
+		<account code="2405" type="expense" refersTo="nothing"  automatic="vat"
+			description="Forderungsverluste 19% USt.(übliche Höhe" />
+		<account code="2450" type="expense" refersTo="nothing"
+			description="Einstell.i.d.Pauschalwertbe.z.Forde" />
+		<account code="2500" type="income" refersTo="nothing"
+			description="Außerordentliche Erträge" />
+		<account code="2501" type="income" refersTo="nothing"
+	description="Ausserordentliche Erträge finanzwirksam" />
+		<account code="2505" type="income" refersTo="nothing"
+			description="Ausserordentliche Erträge nicht finanzwirksam" />
+		<account code="2510" type="income" refersTo="nothing"
+			description="Betriebsfremde Erträge nichtaußerorden" />
+		<account code="2520" type="income" refersTo="nothing"
+			description="Periodenfremde Erträge nicht außero" />
+		<account code="2600" type="income" refersTo="nothing"
+			description="Erträge aus Beteiligungen" />
+		<account code="2650" type="income" refersTo="nothing"
+			description="Sonstige Zinsen und änliche Erträge" />
+		<account code="2657" type="income" refersTo="nothing"
+			description="Zinserträge-betriebliche Steuern" />
+		<account code="2660" type="income" refersTo="nothing"
+			description="Erträge aus Kursdifferenzen" />
+		<account code="2670" type="income" refersTo="nothing"
+			description="Diskonterträge" />
+		<account code="2680" type="income" refersTo="nothing"
+			description="Zinsähnliche Erträge" />
+		<account code="2700" type="income" refersTo="nothing"
+			description="Sonstige Erträge" />
+		<account code="2710" type="income" refersTo="nothing"
+			description="Ertrag a.d.Zuschreib.d.Anlagevermög" />
+		<account code="2715" type="income" refersTo="nothing"
+			description="Ertr.a.Zuschreib.d.Umlaufvermögens" />
+		<account code="2720" type="income" refersTo="nothing"
+			description="Ertr.a.d.Abgang v.Gegens.d.Anlageve" />
+		<account code="2725" type="income" refersTo="nothing"
+			description="Ertr.a.d.Abg.v.Gegenst.d.Umlaufverm" />
+		<account code="2730" type="income" refersTo="nothing"
+			description="Ertr.a.Herabsetzung d.PWB zu Forderungen" />
+		<account code="2732" type="income" refersTo="nothing"
+			description="Ertr. aus abgeschriebenen Forderung" />
+		<account code="2733" type="income" refersTo="nothing"
+			description="Erträge a.d.Auflösung v.SoPo m.Rücklageant.(Exitenzgründungszusch.)" />
+		<account code="2735" type="income" refersTo="nothing"
+			description="Ertr.a.d.Auflösung v.Rückstellungen" />
+		<account code="2739" type="income" refersTo="nothing"
+			description="Erträge Aufl. Sopo m.R.(Ansparafa)" />
+		<account code="2742" type="income" refersTo="nothing"
+			description="Versicherungsentschädigungen" />
+		<account code="2743" type="income" refersTo="nothing"
+			description="Investitionszuschüsse-steuerpflicht" />
+		<account code="2744" type="income" refersTo="nothing"
+			description="Investitionszulage-steuerfrei" />
+		<account code="2746" type="income" refersTo="nothing"
+			description="Steuerfr.Erträge a.d.Auflös.v.SoPo m.Rücklageanteil" />
+		<account code="2747" type="income" refersTo="nothing"
+			description="Sonst.steuerfreie Betriebseinnahmen" />
+		<account code="2750" type="income" refersTo="nothing"
+			description="Grundstückserträge" />
+		<account code="2797" type="expense" refersTo="nothing"
+			description="Entnahmen a.satzungsmäßigen Rücklagen" />
+		<account code="3000" type="expense" refersTo="nothing"
+			description="Roh,-Hilfs,-und Betriebsstoffe" />
+		<account code="3090" type="expense" refersTo="nothing"
+			description="Energiestoffe (Fert.)." />
+		<account code="3100" type="expense" refersTo="nothing"
+			description="Fremdleistungen" />
+		<account code="3110" type="expense" refersTo="nothing" automatic="input"
+			description="Leist.v.ausländ.Untern. 7% VSt.u.7%USt." />
+		<account code="3120" type="expense" refersTo="nothing" automatic="input"
+			description="Leist.v.ausländ.Untern. 19% VSt.u.19%USt." />
+		<account code="3150" type="expense" refersTo="nothing"
+			description="Leist.v.ausländ.Untern. 19% VSt.u.19%USt." />
+		<account code="3300" type="expense" refersTo="nothing" automatic="input"
+			description="Wareneingang 7% Vorsteuer" />
+		<account code="3400" type="expense" refersTo="nothing" automatic="input"
+			description="Wareneingang 19% Vorsteuer" />
+		<account code="3410" type="expense" refersTo="nothing"
+			description="Wareneingang 16% Vorsteuer" />
+		<account code="3420" type="expense" refersTo="nothing" automatic="input"
+			description="Innergemein.Erwerb 7% VorSt u. Ust" />
+		<account code="3425" type="expense" refersTo="nothing" automatic="input"
+			description="Innergem.Erwerb 19% VorSt u. Ust" />
+		<account code="3440" type="expense" refersTo="nothing" automatic="input"
+			description="Innergem.Erwerb v.Neufahrz.v.Lief.o.USt.Identnr.19%VSt.u.19%USt." />
+		<account code="3550" type="expense" refersTo="nothing" automatic="input"
+			description="Steuerfreier innergem.Erwerb" />
+		<account code="3559" type="expense" refersTo="nothing"
+			description="Steuerfreie Einfuhren" />
+		<account code="3580" type="expense" refersTo="nothing"
+			description="Wareneinkauf z.allg.Umsatzsteuersatz (EÜR)" />
+		<account code="3581" type="expense" refersTo="nothing"
+			description="Wareneinkauf z.erm.Umsatzsteuersatz(EÜR)" />
+		<account code="3582" type="expense" refersTo="nothing"
+			description="Wareneinkauf ohne Vorsteuerabzug(EÜR)" />
+		<account code="3589" type="expense" refersTo="nothing"
+			description="Gegenkto.3580-3582 b.Aufteilung d.WE n.Steuersätzen(EüR)" />
+		<account code="3600" type="expense" refersTo="nothing"
+			description="Nicht abziehbare Vorsteuer" />
+		<account code="3610" type="expense" refersTo="nothing"
+			description="Nicht abziehb.Vorsteuer 7%" />
+		<account code="3650" type="expense" refersTo="nothing"
+			description="Nicht abziehb.Vorsteuer 19%" />
+		<account code="3730" type="income" refersTo="nothing"
+			description="Erhaltene Skonti" />
+		<account code="3731" type="income" refersTo="nothing" automatic="input"
+			description="Erhaltene Skonti 7% Vorsteuer" />
+		<account code="3733" type="income" refersTo="nothing"
+			description="Erhaltene Skonti aus Einkauf Roh-, Hilfs- und Betriebsstoffe" />
+		<account code="3734" type="income" refersTo="nothing" automatic="input"
+			description="Erhaltene Skonti aus Einkauf Roh-, Hilfs- und Betriebsstoffe 7 % Vorsteuer" />
+		<account code="3736" type="income" refersTo="nothing" automatic="input"
+			description="Erhaltene Skonti 19% Vorsteuer" />
+		<account code="3750" type="income" refersTo="nothing" automatic="input"
+			description="Erhaltene Boni 7% Vorsteuer" />
+		<account code="3760" type="income" refersTo="nothing" automatic="input"
+			description="Erhaltene Boni 19% Vorsteuer" />
+		<account code="3780" type="income" refersTo="nothing" automatic="input"
+			description="Erhaltene Rabatte 7% Vorsteuer" />
+		<account code="3790" type="income" refersTo="nothing" automatic="input"
+			description="Erhaltene Rabatte 19% Vorsteuer" />
+		<account code="3800" type="expense" refersTo="nothing"
+			description="Bezugsnebenkosten" />
+		<account code="3830" type="expense" refersTo="nothing"
+			description="Leergut" />
+		<account code="3850" type="expense" refersTo="nothing"
+			description="Zölle und Einfuhrabgaben" />
+		<account code="3960" type="expense" refersTo="nothing"
+			description="Bestandsver.Roh-,Hilfs-.Betriebs.sow.bez.Waren" />
+		<account code="3970" type="asset" refersTo="nothing"
+			description="Bestand Roh-,Hilfs-,u.Betriebsstoff" />
+		<account code="3980" type="asset" refersTo="nothing"
+			description="Bestand Waren" />
+		<account code="3990" type="expense" refersTo="nothing"
+			description="Verrechnete Stoffkosten" />
+		<account code="4000" type="expense" refersTo="nothing"
+			description="Material-und Stoffverbrauch" />
+		<account code="4110" type="expense" refersTo="nothing"
+			description="Löhne" />
+		<account code="4120" type="expense" refersTo="nothing"
+			description="Gehälter" />
+		<account code="4125" type="expense" refersTo="nothing"
+			description="Ehegattengehalt" />
+		<account code="4126" type="expense" refersTo="nothing"
+			description="Tantiemen" />
+		<account code="4127" type="expense" refersTo="nothing"
+			description="Geschäftsführergehälter" />
+		<account code="4130" type="expense" refersTo="nothing"
+			description="Gesetzlich soziale Aufwendungen" />
+		<account code="4138" type="expense" refersTo="nothing"
+			description="Beiträge zur Berufsgenossenschaft" />
+		<account code="4139" type="expense" refersTo="nothing"
+			description="Ausgleichsabgabe i.S.d.Schwerbehinterdengesetzes" />
+		<account code="4140" type="expense" refersTo="nothing"
+			description="Freiwillig soziale Aufwendungen lohnsteuerfrei" />
+		<account code="4145" type="expense" refersTo="nothing"
+			description="Freiwillige sozi.Aufw.lohnsteuerpflichtig." />
+		<account code="4149" type="expense" refersTo="nothing"
+			description="Pauschale Lohnsteuera.sons.Bezüge (z.B.Fahrtkostenzu)" />
+		<account code="4150" type="expense" refersTo="nothing"
+			description="Krankengeldzuschüsse" />
+		<account code="4167" type="expense" refersTo="nothing"
+			description="Pauschale Lohnsteuer auf sonst.Bezüge(z.B.Direktversicherung" />
+		<account code="4170" type="expense" refersTo="nothing"
+			description="Vermögenswirksame Leistungen" />
+		<account code="4175" type="expense" refersTo="nothing"
+			description="Fahrtkostenerst.Wohnung/Arbeitsstät" />
+		<account code="4180" type="expense" refersTo="nothing"
+			description="Bedienungsgelder" />
+		<account code="4190" type="expense" refersTo="nothing"
+			description="Aushilfslöhne" />
+		<account code="4199" type="expense" refersTo="nothing"
+			description="Lohnsteuer für Aushilfe" />
+		<account code="4200" type="expense" refersTo="nothing"
+			description="Raumkosten" />
+		<account code="4210" type="expense" refersTo="nothing"
+			description="Miete" />
+		<account code="4220" type="expense" refersTo="nothing"
+			description="Pacht" />
+		<account code="4230" type="expense" refersTo="nothing"
+			description="Heizung" />
+		<account code="4240" type="expense" refersTo="nothing"
+			description="Gas,Strom,Wasser" />
+		<account code="4250" type="expense" refersTo="nothing"
+			description="Reinigung" />
+		<account code="4260" type="expense" refersTo="nothing"
+			description="Instandhaltung betrieb.Räume" />
+		<account code="4261" type="expense" refersTo="nothing"
+			description="Instandhlt.betriebl.Räume in Geb.die nicht z.BV gehören" />
+		<account code="4271" type="expense" refersTo="nothing"
+			description="Abgaben f.betriebl.genutzten Grundbesitz,d.nicht z.BV gehört" />
+		<account code="4280" type="expense" refersTo="nothing"
+			description="Sonstige Raumkosten" />
+		<account code="4288" type="expense" refersTo="nothing"
+			description="Aufwend.f.ein häusliches Arbeitszimmer(abziehb.Anteil)" />
+		<account code="4289" type="expense" refersTo="nothing"
+			description="Aufwend.f.ein häusliches Arbeitszimmer(nicht abziehb.Anteil)" />
+		<account code="4301" type="expense" refersTo="nothing"
+			description="Nicht abziehbare Vorsteuer 7%" />
+		<account code="4305" type="expense" refersTo="nothing"
+			description="Nicht abziehbare Vorsteuer 19%" />
+		<account code="4320" type="expense" refersTo="nothing"
+			description="Gewerbesteuer" />
+		<account code="4340" type="expense" refersTo="nothing"
+			description="Sonstige Betriebssteuern" />
+		<account code="4350" type="expense" refersTo="nothing"
+			description="Verbrauchssteuer" />
+		<account code="4355" type="expense" refersTo="nothing"
+			description="Ökosteuer" />
+		<account code="4360" type="expense" refersTo="nothing"
+			description="Versicherungen" />
+		<account code="4361" type="expense" refersTo="nothing"
+			description="Versicherungen f.Gebäude,die zum BV gehören" />
+		<account code="4380" type="expense" refersTo="nothing"
+			description="Beiträge" />
+		<account code="4390" type="expense" refersTo="nothing"
+			description="Sonstige Abgaben" />
+		<account code="4396" type="expense" refersTo="nothing"
+			description="Steuerl.abzugs.Verspätungszuschl.u.Zwangsgelder" />
+		<account code="4397" type="expense" refersTo="nothing"
+			description="Steuerl.n.abzugsf.Verspätungszuschläge u.Zwangsgelder" />
+		<account code="4500" type="expense" refersTo="nothing"
+			description="Fahrzugkosten" />
+		<account code="4505" type="expense" refersTo="nothing"
+			description="Fahrzeugkosten f.Kfz,die nicht zum BV gehören" />
+		<account code="4510" type="expense" refersTo="nothing"
+			description="Kfz-Steuer" />
+		<account code="4515" type="expense" refersTo="nothing"
+			description="Kfz-Steuer f.Kfz,die nicht zum BV gehören" />
+		<account code="4520" type="expense" refersTo="nothing"
+			description="Kfz-Versicherungen" />
+		<account code="4525" type="expense" refersTo="nothing"
+			description="Kfz-Versicherung f.Kfz,die nicht zum BV gehören" />
+		<account code="4530" type="expense" refersTo="nothing"
+			description="Laufende Kfz-Betriebskosten" />
+		<account code="4535" type="expense" refersTo="nothing"
+			description="Lfd.Kfz-Betriebskosten f.Kfz,die nicht zum BV gehören" />
+		<account code="4540" type="expense" refersTo="nothing"
+			description="Kfz-Reparaturen" />
+		<account code="4545" type="expense" refersTo="nothing"
+			description="Kfz-Rep.für Kfz,die nicht zum BV gehören" />
+		<account code="4550" type="expense" refersTo="nothing"
+			description="Garagenmiete" />
+		<account code="4555" type="expense" refersTo="nothing"
+			description="Garagenmiete f.Kfz,die nicht zum BV gehören" />
+		<account code="4560" type="expense" refersTo="nothing"
+			description="Mautgebühren" />
+		<account code="4565" type="expense" refersTo="nothing"
+			description="Mautgebühren f. Kfz,die nicht zum BV gehören" />
+		<account code="4570" type="expense" refersTo="nothing"
+			description="Leasingfahrzeugkosten" />
+		<account code="4580" type="expense" refersTo="nothing"
+			description="Sonstige Kfz-Kosten" />
+		<account code="4595" type="expense" refersTo="nothing"
+			description="Fremdfahrzeuge" />
+		<account code="4600" type="expense" refersTo="nothing"
+			description="Werbe-und Reisekosten" />
+		<account code="4610" type="expense" refersTo="nothing"
+			description="Werbekosten" />
+		<account code="4630" type="expense" refersTo="nothing"
+			description="Geschenke bis 35 EUR abzugsfähig" />
+		<account code="4635" type="expense" refersTo="nothing"
+			description="Geschenke über 35EUR nicht abzugsf." />
+		<account code="4638" type="expense" refersTo="nothing"
+			description="Geschenke ausschließl.betrieb.genut" />
+		<account code="4640" type="expense" refersTo="nothing"
+			description="Repräsentationskosten" />
+		<account code="4650" type="expense" refersTo="nothing"
+			description="Bewirtungskosten" />
+		<account code="4651" type="expense" refersTo="nothing"
+			description="Sonst.eingeschr.abziehb.Betriebsausgaben (abziehb.Anteil)" />
+		<account code="4652" type="expense" refersTo="nothing"
+			description="Sonst.eingeschr.abziehb.Betriebsausgaben(nicht abziehb.Teil)" />
+		<account code="4653" type="expense" refersTo="nothing"
+			description="Aufmerksamkeiten" />
+		<account code="4654" type="expense" refersTo="nothing"
+			description="Nicht abzugsfähige Bewirtungskosten" />
+		<account code="4655" type="expense" refersTo="nothing"
+			description="Nicht abzugsf.Betriebsausg.a.Werbe-Repräsentatisonk.etc." />
+		<account code="4660" type="expense" refersTo="nothing"
+			description="Reisekosten Arbeitnehmer" />
+		<account code="4663" type="expense" refersTo="nothing"
+			description="Reisekosten Arbeitn.m.Vorsteuerabzu f.öffentl.Verkehrsm." />
+		<account code="4664" type="expense" refersTo="nothing"
+			description="Reisekosten Arbeitn.Verpflegungmehr" />
+		<account code="4666" type="expense" refersTo="nothing"
+			description="Reisekosten Arbeitn.Übernachtungsaufwand" />
+		<account code="4668" type="expense" refersTo="nothing"
+			description="Kilometerentgelderstattung Arbeitnehmer" />
+		<account code="4670" type="expense" refersTo="nothing"
+			description="Reisekosten Unternehmer" />
+		<account code="4673" type="expense" refersTo="nothing"
+			description="Reisek.Untern.m.Vorsteuerabzug (öffentl.Verkehrsm." />
+		<account code="4674" type="expense" refersTo="nothing"
+			description="Reisekosten Untern.Verpflegungsmehr" />
+		<account code="4676" type="expense" refersTo="nothing"
+			description="Reisekosten Untern.Übernachtungsauf" />
+		<account code="4678" type="expense" refersTo="nothing"
+			description="Kilometergelderstatt.(Wohn.-Arbeitsst.abziehb.Teil)" />
+		<account code="4679" type="expense" refersTo="nothing"
+			description="Fahrten zw.Wohn.und Arbeitsstätte (nicht abziehb.Teil)" />
+		<account code="4680" type="expense" refersTo="nothing"
+			description="Fahrten zw.Wohn.-und Arbeitsstätte (Haben)" />
+		<account code="4700" type="expense" refersTo="nothing"
+			description="Kosten der Warenabgabe" />
+		<account code="4710" type="expense" refersTo="nothing"
+			description="Verpackungsmaterial" />
+		<account code="4730" type="expense" refersTo="nothing"
+			description="Ausgangsfracht" />
+		<account code="4750" type="expense" refersTo="nothing"
+			description="Transportversicherung" />
+		<account code="4760" type="expense" refersTo="nothing"
+			description="Verkaufsprovision" />
+		<account code="4780" type="expense" refersTo="nothing"
+			description="Fremdarbeiten" />
+		<account code="4790" type="expense" refersTo="nothing"
+			description="Aufwand für Gewährleistungen" />
+		<account code="4800" type="expense" refersTo="nothing"
+			description="Rep.u.Instandhaltungen v.techn.Anlagen u.Maschinen" />
+		<account code="4805" type="expense" refersTo="nothing"
+			description="Rep.u.Instandhalt.v.and.Anlagen u.Betriebs-u.Geschäftsausst." />
+		<account code="4806" type="expense" refersTo="nothing"
+			description="Wartungskosten für Hard-u.Software" />
+		<account code="4809" type="expense" refersTo="nothing"
+			description="Sonstige Reparaturen u.Instandhalt." />
+		<account code="4810" type="expense" refersTo="nothing"
+			description="Mietleasing" />
+		<account code="4815" type="expense" refersTo="nothing"
+			description="Kaufleasing" />
+		<account code="4822" type="expense" refersTo="nothing"
+			description="Abschreibungen a.immat.Vermögensgeg" />
+		<account code="4824" type="expense" refersTo="nothing"
+			description="Abschreibung a.d.Geschäft-o.Firmenw" />
+		<account code="4826" type="expense" refersTo="nothing"
+			description="Außerplan.AfA a.immat.Vermögensgeg." />
+		<account code="4830" type="expense" refersTo="nothing"
+			description="Abschreibungen auf Sachanlagen (o.Kfz u.Geb.)" />
+		<account code="4831" type="expense" refersTo="nothing"
+			description="Abschreibung auf Gebäude" />
+		<account code="4832" type="expense" refersTo="nothing"
+			description="Abschreibungen auf Kfz" />
+		<account code="4840" type="expense" refersTo="nothing"
+			description="Außerplanmäßig Abschr.a.Sachanlagen" />
+		<account code="4841" type="expense" refersTo="nothing"
+			description="Absetzung f.außergew.techn.u.wirtschaftl.AfA bei Gebäuden" />
+		<account code="4842" type="expense" refersTo="nothing"
+			description="Absetzung f.außergew.techn.u.wirtschaftl.AfA des Kfz" />
+		<account code="4843" type="expense" refersTo="nothing"
+			description="Absetzung f.außergew.techn.u.wirtschaftl.AfA sonst.WG" />
+		<account code="4850" type="expense" refersTo="nothing"
+			description="Abschr.a.Sachanl.aufgr.steuerl.Sondervorschriften" />
+		<account code="4851" type="expense" refersTo="nothing"
+			description="Sonderabschreibung nach §7g(1)u.(2)EStG (ohne Kfz)" />
+		<account code="4852" type="expense" refersTo="nothing"
+			description="Sonderabschreibung n.§7g(1)u.(2)EStG (für Kfz)" />
+		<account code="4855" type="expense" refersTo="nothing"
+			description="Sofortabschreibung GWG" />
+		<account code="4860" type="expense" refersTo="nothing"
+			description="Abschreibungen auf aktivierte GWG" />
+		<account code="4870" type="expense" refersTo="nothing"
+			description="Abschreibungen auf Finanzanlagen" />
+		<account code="4875" type="expense" refersTo="nothing"
+			description="Abschr.a.Wertp.d.Umlaufvermögens" />
+		<account code="4880" type="expense" refersTo="nothing"
+			description="Abschreibungen auf Umlaufverm. o.Wertpapiere (soweit unübl.Höhe" />
+		<account code="4900" type="expense" refersTo="nothing"
+			description="Sonstige betriebliche Aufwendungen" />
+		<account code="4905" type="expense" refersTo="nothing"
+			description="Sons.Aufw.betriebl. und regelmäßig" />
+		<account code="4909" type="expense" refersTo="nothing"
+			description="Fremdleistungen" />
+		<account code="4910" type="expense" refersTo="nothing"
+			description="Porto" />
+		<account code="4920" type="expense" refersTo="nothing"
+			description="Telefon" />
+		<account code="4925" type="expense" refersTo="nothing"
+			description="Telefax" />
+		<account code="4930" type="expense" refersTo="nothing"
+			description="Bürobedarf" />
+		<account code="4940" type="expense" refersTo="nothing"
+			description="Zeitschriften, Bücher" />
+		<account code="4945" type="expense" refersTo="nothing"
+			description="Fortbildungskosten" />
+		<account code="4946" type="expense" refersTo="nothing"
+			description="Freiwillige Sozialleistungen" />
+		<account code="4950" type="expense" refersTo="nothing"
+			description="Rechts- und Beratungskosten" />
+		<account code="4955" type="expense" refersTo="nothing"
+			description="Buchführungskosten" />
+		<account code="4957" type="expense" refersTo="nothing"
+			description="Abschluß- und Prüfungskosten" />
+		<account code="4960" type="expense" refersTo="nothing"
+			description="Mieten für Einrichtungen" />
+		<account code="4965" type="expense" refersTo="nothing"
+			description="Mietleasing" />
+		<account code="4966" type="expense" refersTo="nothing"
+			description="Gewerbest.zu berücksicht.Mietleasing §8 GewStG" />
+		<account code="4969" type="expense" refersTo="nothing"
+			description="Aufwend.f.Abraum-u.Abfallbeseitigung" />
+		<account code="4970" type="expense" refersTo="nothing"
+			description="Nebenkosten des Geldverkehrs" />
+		<account code="4980" type="expense" refersTo="nothing"
+			description="Betriebsbedarf" />
+		<account code="4985" type="expense" refersTo="nothing"
+			description="Werkzeuge und Kleingeräte" />
+		<account code="4990" type="expense" refersTo="nothing"
+			description="Kalkulatorischer Unternehmerlohn" />
+		<account code="4992" type="expense" refersTo="nothing"
+			description="Kalkulatorische Zinsen" />
+		<account code="4993" type="expense" refersTo="nothing"
+			description="Kalkulatorische Aschreibungen" />
+		<account code="4994" type="expense" refersTo="nothing"
+			description="Kalkulatorische Wagnisse" />
+		<account code="4995" type="expense" refersTo="nothing"
+			description="Kalkulatorischer Lohn f.unentgeltl.Mitarbeiter" />
+		<account code="8100" type="income" refersTo="nothing"  automatic="vat"
+			description="Steuerfreie Umsätze §4Nr.8ff UstG" />
+		<account code="8110" type="income" refersTo="nothing"  automatic="vat"
+			description="Sonstige steuerfreie Umsätze Inland" />
+		<account code="8120" type="income" refersTo="nothing"  automatic="vat"
+			description="Steuerfreie Umsätze §4Nr.1a UstG" />
+		<account code="8125" type="income" refersTo="nothing"  automatic="vat"
+			description="Steuerfrei innergem. Lieferungen §41bUStG" />
+		<account code="8130" type="income" refersTo="nothing"  automatic="vat"
+			description="Liefe.d.1.Abnehm.bei innergem.Dreiecksg §25b2UStG" />
+		<account code="8135" type="income" refersTo="nothing"  automatic="vat"
+			description="Steuerfr.innergem.Lief.v.Neufahrz.an Abn.o.USt-Ident-Nr." />
+		<account code="8150" type="income" refersTo="nothing"  automatic="vat"
+			description="Sonstige steuerfreie Umsätze §42-7UStG" />
+		<account code="8190" type="income" refersTo="nothing"
+			description="Erlöse,die mit den Durchschnittssätzen d.§24UStG vers.werd." />
+		<account code="8195" type="income" refersTo="nothing"
+			description="Erlöse als Kleinunternehmer i.S.d.§19(1)UStG" />
+		<account code="8200" type="income" refersTo="nothing"
+			description="Erlöse" />
+		<account code="8300" type="income" refersTo="nothing"  automatic="vat"
+			description="Erlöse 7%USt" />
+		<account code="8310" type="income" refersTo="nothing" automatic="vat"
+			description="Erlöse Inland stpfl. EG-Lieferung7%" />
+		<account code="8315" type="income" refersTo="nothing"  automatic="vat"
+			description="Erlös Inland stpfl.EG-Lieferung 16%" />
+		<account code="8320" type="income" refersTo="nothing"
+			description="Erlöse aus im and.EG-Land steuerpfl.Lieferungen" />
+		<account code="8400" type="income" refersTo="contacts"  automatic="vat"
+			description="Erlöse 19% USt." />
+		<account code="8500" type="income" refersTo="nothing"
+			description="Provisionserlöse" />
+		<account code="8506" type="income" refersTo="nothing"
+			description="Provisionserlöse 7% USt." />
+		<account code="8508" type="income" refersTo="nothing"
+			description="Provisionserlöse 16% USt." />
+		<account code="8520" type="income" refersTo="nothing"
+			description="Erlöse Abfallverwertung" />
+		<account code="8540" type="income" refersTo="nothing"
+			description="Erlös Leergut" />
+		<account code="8580" type="income" refersTo="nothing"
+			description="Erlöse zum allg.Umsatzsteuersatz (EÜR)" />
+		<account code="8581" type="income" refersTo="nothing"
+			description="Erlöse zum ermä.Umsatzsteuersatz (EÜR)" />
+		<account code="8582" type="income" refersTo="nothing"
+			description="Erlöse steuerfrei u.nicht steuerbar (EÜR)" />
+		<account code="8589" type="unknown" refersTo="nothing"
+			description="Gegenkonto 8580-8582 b.Aufteilung d.Erlöse n.Steuersätzen(EÜR)" />
+		<account code="8590" type="income" refersTo="nothing"
+			description="Verrechnete sons. Sachbezüge keine Waren" />
+		<account code="8591" type="income" refersTo="nothing"  automatic="vat"
+			description="Sachbezüge 7% Ust (Waren)" />
+		<account code="8595" type="income" refersTo="nothing"  automatic="vat"
+			description="Sachbezüge 16% Ust (Waren)" />
+		<account code="8600" type="income" refersTo="nothing"
+			description="Sonstige Erlöse betriebl.u.regelmäß" />
+		<account code="8650" type="income" refersTo="nothing"
+			description="Erlöse Zinsen und Diskotspesen" />
+		<account code="8700" type="income" refersTo="nothing"
+			description="Erlösschmälerungen" />
+		<account code="8710" type="income" refersTo="nothing"  automatic="vat"
+			description="Erlösschmälerung 7% USt." />
+		<account code="8720" type="income" refersTo="nothing"  automatic="vat"
+			description="Erlösschmälerung 16% USt." />
+		<account code="8725" type="income" refersTo="nothing"  automatic="vat"
+			description="Erlösschmä.Inl.stpfl.EG-Lief. 7%USt" />
+		<account code="8726" type="income" refersTo="nothing"  automatic="vat"
+			description="Erlösschmä.Inl.stpfl.EG-Lief.16%USt" />
+		<account code="8727" type="income" refersTo="nothing"
+			description="Erlösschmä.and.EG Land stpfl.Liefer" />
+		<account code="8730" type="expense" refersTo="nothing"
+			description="Gewährte Skonti" />
+		<account code="8731" type="expense" refersTo="nothing"  automatic="vat"
+			description="Gewährte Skonti 7% USt" />
+		<account code="8736" type="expense" refersTo="nothing"  automatic="vat"
+			description="Gewährte Skonti 19% USt." />
+		<account code="8750" type="expense" refersTo="nothing" automatic="vat"
+			description="Gewährte Boni 7% USt." />
+		<account code="8760" type="expense" refersTo="nothing" automatic="vat"
+			description="Gewährte Boni 16% USt." />
+		<account code="8780" type="expense" refersTo="nothing" automatic="vat"
+			description="Gewährte Rabatte 7% USt." />
+		<account code="8790" type="expense" refersTo="nothing" automatic="vat"
+			description="Gewährte Rabatte 16% Ust." />
+		<account code="8800" type="income" refersTo="nothing"
+			description="Erlöse aus Anlagenverkäufen" />
+		<account code="8801" type="expense" refersTo="nothing"  automatic="vat"
+			description="Erlöse aus Anlagenverkäufen Sachanl.verm.b.Buchverl.16%USt." />
+		<account code="8807" type="expense" refersTo="nothing"  automatic="vat"
+			description="Erlöse a.Verk.Sachanlagen steuerfrei§4Nr.1aUStG(b.Buchverlust)" />
+		<account code="8808" type="expense" refersTo="nothing"  automatic="vat"
+			description="Erlöse a.Verk.Sachanlagen steuerfrei§4Nr.1bUStG(b.Buchverlust)" />
+		<account code="8809" type="expense" refersTo="nothing"
+			description="Erlöse aus Verk.Sachanlagevermögen16% USt (bei Buchverlust)" />
+		<account code="8820" type="income" refersTo="nothing"  automatic="vat"
+			description="Erlöse aus Anlageverkäufen Sachanl.verm.b.Buchgewinn16%Ust" />
+		<account code="8827" type="income" refersTo="nothing"  automatic="vat"
+			description="Erlöse a.Verk.Sachanlagen steuerfr.§4Nr.1aUStG(bei Buchgewinn)" />
+		<account code="8828" type="income" refersTo="nothing"  automatic="vat"
+			description="Erlöse a.Verk.Sachanlagen steuerfr.§4Nr.1bUStG(b.Buchgewinn)" />
+		<account code="8829" type="income" refersTo="nothing"
+			description="Erl.a.Anlagenverk.bei Buchgewinn" />
+		<account code="8900" type="income" refersTo="nothing"
+			description="Unentgeldliche Wertabgaben" />
+		<account code="8905" type="income" refersTo="nothing"
+			description="Entnahme v. Gegenst.o.USt." />
+		<account code="8910" type="income" refersTo="nothing"  automatic="vat"
+			description="Entnahme des Untern.f.Zwecke ausserh.d.Untern 16%(Waren)" />
+		<account code="8915" type="income" refersTo="nothing" automatic="vat"
+			description="Entnah.d.Untern.f.Zwecke ausserh.d.Untern.7%USt" />
+		<account code="8919" type="income" refersTo="nothing"
+			description="Entnahme durch den Untern.f.Zwecke außerhalb d.Untern.(Waren)o.USt" />
+		<account code="8920" type="income" refersTo="nothing" automatic="vat"
+			description="Verw.v.Gegens.f.Zwecke ausserh.d.Untern.16%USt." />
+		<account code="8921" type="income" refersTo="nothing" automatic="vat"
+			description="Verwend.v.Gegenst.f.Zwecke außerh.d.Untern.16%USt(Kfz-Nutzung)" />
+		<account code="8922" type="income" refersTo="nothing" automatic="vat"
+			description="Verwend.f.Gegenst.f.Zwecke außerh.d.Untern.16%USt(Telefonnutzung)" />
+		<account code="8924" type="income" refersTo="nothing"
+			description="Verwendung v.Gegenständen f.Zwecke außerhalb d.Untern.o.USt." />
+		<account code="8925" type="income" refersTo="nothing" automatic="vat"
+			description="Unentgeldl.Erbring.sons.Leis.16%USt" />
+		<account code="8930" type="income" refersTo="nothing"  automatic="vat"
+			description="Verwendung v.Gegenst.f.Zwecke außerhalb d.Unternehmens 7% USt." />
+		<account code="8935" type="income" refersTo="nothing"  automatic="vat"
+			description="Unentgeltl.Zuwend.v.Gegens. 16% Ust" />
+		<account code="8939" type="income" refersTo="nothing"
+			description="Unentgeldl.Zuw.v.Gegens.ohne Ust" />
+		<account code="8940" type="income" refersTo="nothing"  automatic="vat"
+			description="Unentgeltl.Zuw.v Waren 16% Ust" />
+		<account code="8945" type="income" refersTo="nothing" automatic="vat"
+			description="Unentgeltl.Zuw.von Waren 7% Ust" />
+		<account code="8949" type="income" refersTo="nothing"
+			description="Unentgeltl.Zuwendung v.Waren o.USt." />
+		<account code="8950" type="income" refersTo="nothing"
+			description="Nicht steuerbare Umsätze" />
+		<account code="8955" type="income" refersTo="nothing"
+			description="Umsatzsteuervergütungen" />
+		<account code="8960" type="expense" refersTo="nothing"
+			description="Bestandsveränderung unf.Erz." />
+		<account code="8970" type="expense" refersTo="nothing"
+			description="Bestandsveränd.unf.Leist." />
+		<account code="8980" type="expense" refersTo="nothing"
+			description="Bestandsveränd.fert..Leist." />
+		<account code="8990" type="expense" refersTo="nothing"
+			description="And.aktiv.Eigenleistungen" />
+		<account code="9000" type="asset" refersTo="nothing"
+			description="Saldenvorträge,Sachkonten" />
+		<account code="9008" type="asset" refersTo="nothing"
+			description="Saldenvorträge,Debitoren" />
+		<account code="9009" type="liability" refersTo="nothing"
+			description="Saldenvorträge,Kreditoren" />
+		<account code="9090" type="asset" refersTo="nothing"
+			description="Summenvortragskonto" />
+	</chart>
+	<chart id="1" name="SKR04" description="German Standartkontenrahmen 04"
+		vatin="3806" vatout="1406" vatonhold="3810">
+		<account
+			description="22. Konten zur statistischen Auswertung und internen Verrechnung"
+			type="placeholder" />
+		<account description="Aktiva" type="placeholder" />
+		<account description="A. Anlagevermögen" type="placeholder" />
+		<account description="I. Ausstehende Einlagen" type="placeholder" />
+		<account description="a) Kapitalgesellschaft" type="placeholder" />
+		<account
+			description="Ausstehende Einlagen auf das gezeichnete Kapital, nicht eingefordert (Aktivausweis)"
+			type="asset" code="0001" />
+		<account
+			description="Ausstehende Einlagen auf das gezeichnete Kapital, eingefordert (Aktivausweis)"
+			type="asset" code="0040" />
+		<account description="b) Kommanditgesellschaft" type="placeholder" />
+		<account
+			description="Ausstehende Einlagen auf das Komplementär-Kapital, nicht eingefordert"
+			type="asset" code="0050" />
+		<account
+			description="Ausstehende Einlagen auf das Komplementär-Kapital, eingefordert"
+			type="asset" code="0060" />
+		<account
+			description="Ausstehende Einlagen auf das Kommandit-Kapital, nicht eingefordert"
+			type="asset" code="0070" />
+		<account
+			description="Ausstehende Einlagen auf das Kommandit-Kapital, eingefordert"
+			type="asset" code="0080" />
+		<account description="II. Ingangsetzung und Erweiterung des Geschäftsbetriebes"
+			type="placeholder" />
+		<account description="Ingangsetzungs- und Erweiterungsaufwand"
+			type="asset" code="0095" />
+		<account description="Aufwendungen Währungsumstellung Euro"
+			type="asset" code="0096" />
+		<account description="III. Immaterielle Vermögensgegenstände"
+			type="placeholder" />
+		<account
+			description="01. Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten"
+			type="placeholder" />
+		<account description="Konzessionen und gewerbl.Schutzrechte"
+			type="asset" code="0100" />
+		<account description="Konzessionen" type="asset" code="0110" />
+		<account description="Gewerbliche Schutzrechte" type="asset"
+			code="0120" />
+		<account description="Ähnliche Rechte und Werte" type="asset"
+			code="0130" />
+		<account description="EDV-Software" type="asset" code="0135" />
+		<account
+			description="Lizenzen an gewerblichen Schutzrechten und ähnlichen Rechten und Werten"
+			type="asset" code="0140" />
+		<account description="02. Geschäfts- oder Firmenwert" type="placeholder" />
+		<account description="Geschäfts- oder Firmenwert" type="asset"
+			code="0150" />
+		<account description="Verschmelzungsmehrwert" type="asset"
+			code="0160" />
+		<account description="03. Geleistete Anzahlungen" type="placeholder" />
+		<account description="Anzahlungen auf immaterielle Vermögensgegenstände"
+			type="asset" code="0170" />
+		<account description="Anzahlungen auf Geschäfts-, Firmenwert"
+			type="asset" code="0179" />
+		<account description="IV. Sachanlagen" type="placeholder" />
+		<account
+			description="01. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken"
+			type="asset" code="0200" />
+		<account description="Grundstücke und grundstücksgleiche Rechte ohne Bauten"
+			type="asset" code="0210" />
+		<account description="Unbebaute Grundstücke" type="asset"
+			code="0215" />
+		<account description="Grundstücksgleiche Rechte" type="asset"
+			code="0220" />
+		<account description="Grundstücke mit Substanzverzehr" type="asset"
+			code="0225" />
+		<account description="Bauten auf eigenen Grundstücken" type="asset"
+			code="0230" />
+		<account description="Grundstückswert bebauter Grundstücke"
+			type="asset" code="0235" />
+		<account description="Geschäftsbauten" type="asset" code="0240" />
+		<account description="Fabrikbauten" type="asset" code="0250" />
+		<account description="Andere Bauten" type="asset" code="0260" />
+		<account description="Garagen" type="asset" code="0270" />
+		<account description="Außenanlagen für Geschäfts-, Fabrik- und andere Bauten"
+			type="asset" code="0280" />
+		<account description="Hof- und Wegebefestigungen" type="asset"
+			code="0285" />
+		<account description="Einrichtungen für Geschäfts-, Fabrik- und andere Bauten"
+			type="asset" code="0290" />
+		<account description="Wohnbauten" type="asset" code="0300" />
+		<account description="Garagen" type="asset" code="0305" />
+		<account description="Außenanlagen" type="asset" code="0310" />
+		<account description="Hof- und Wegebefestigungen" type="asset"
+			code="0315" />
+		<account description="Einrichtungen für Wohnbauten" type="asset"
+			code="0320" />
+		<account description="Bauten auf fremden Grundstücken" type="asset"
+			code="0330" />
+		<account description="Geschäftsbauten" type="asset" code="0340" />
+		<account description="Fabrikbauten" type="asset" code="0350" />
+		<account description="Wohnbauten" type="asset" code="0360" />
+		<account description="Andere Bauten" type="asset" code="0370" />
+		<account description="Garagen" type="asset" code="0380" />
+		<account description="Außenanlagen" type="asset" code="0390" />
+		<account description="Hof- und Wegebefestigungen" type="asset"
+			code="0395" />
+		<account
+			description="Einrichtungen für Geschäfts-, Fabrik-, Wohn- und andere Bauten"
+			type="asset" code="0398" />
+		<account description="02. Technische Anlagen und Maschinen"
+			type="asset" code="0400" />
+		<account description="Technische Anlagen" type="asset" code="0420" />
+		<account description="Maschinen" type="asset" code="0440" />
+		<account description="Maschinengebundene Werkzeuge" type="asset"
+			code="0460" />
+		<account description="Betriebsvorrichtungen" type="asset"
+			code="0470" />
+		<account description="03. Andere Anlagen, Betriebs- und Geschäftsausstattung"
+			type="asset" code="0500" />
+		<account description="Andere Anlagen" type="asset" code="0510" />
+		<account description="PKW" type="asset" code="0520" />
+		<account description="LKW" type="asset" code="0540" />
+		<account description="Sonstige Transportmittel" type="asset"
+			code="0560" />
+		<account description="Computer" type="asset" code="0610" />
+		<account description="Werkzeuge" type="asset" code="0620" />
+		<account description="Ladeneinrichtung" type="asset" code="0640" />
+		<account description="Büroeinrichtung" type="asset" code="0650" />
+		<account description="Gerüst- und Schalungsmaterial" type="asset"
+			code="0660" />
+		<account description="Geringwertige Wirtschaftsgüter bis 410€"
+			type="asset" code="0670" />
+		<account description="Einbauten in fremde Grundstücke" type="asset"
+			code="0680" />
+		<account description="Sonstige Betriebs- und Geschäftsausstattung"
+			type="asset" code="0690" />
+		<account description="04. Geleistete Anzahlungen und Anlagen im Bau"
+			type="asset" code="0700" />
+		<account
+			description="Anzahlungen auf Grundstücke und grundstücksgleiche Rechte ohne Bauten"
+			type="asset" code="0705" />
+		<account
+			description="Geschäfts-, Fabrik- und andere Bauten im Bau auf eigenen Grundstücken"
+			type="asset" code="0710" />
+		<account
+			description="Anzahlungen auf Geschäfts-, Fabrik- und andere Bauten auf eigenen Grundstücken und grundstücksgleichen Rechten"
+			type="asset" code="0720" />
+		<account description="Wohnbauten im Bau auf eigenen Grundstücken"
+			type="asset" code="0725" />
+		<account
+			description="Anzahlungen auf Wohnbauten auf eigenen Grundstücken und grundstücksgleichen Rechten"
+			type="asset" code="0735" />
+		<account
+			description="Geschäfts-, Fabrik- und andere Bauten im Bau auf fremden Grundstücken"
+			type="asset" code="0740" />
+		<account
+			description="Anzahlungen auf Geschäfts-, Fabrik- und andere Bauten auf fremden Grundstücken"
+			type="asset" code="0750" />
+		<account description="Wohnbauten im Bau auf fremden Grundstücken"
+			type="asset" code="0755" />
+		<account description="Anzahlungen auf Wohnbauten auf fremden Grundstücken"
+			type="asset" code="0765" />
+		<account description="Technische Anlagen und Maschinen im Bau"
+			type="asset" code="0770" />
+		<account description="Anzahlungen auf technische Anlagen"
+			type="asset" code="0780" />
+		<account description="Andere Anlagen, Betriebs- und Geschäftsausstattung im Bau"
+			type="asset" code="0785" />
+		<account
+			description="Anzahlungen auf andere Anlagen, Betriebs- und Geschäftsausstattung"
+			type="asset" code="0795" />
+		<account description="V. Finanzanlagen" type="placeholder" />
+		<account description="01. Anteile an verbundenen Unternehmen"
+			type="asset" code="0800" />
+		<account
+			description="Anteile an herrschender oder mit Mehrheit beteiligter Gesellschaft"
+			type="asset" code="0809" />
+		<account description="02. Ausleihungen an verbundene Unternehmen"
+			type="asset" code="0810" />
+		<account description="03. Beteiligungen" type="asset" code="0820" />
+		<account
+			description="Beteiligung einer GmbH &amp; Co.KG an einer Komplementär GmbH"
+			type="asset" code="0829" />
+		<account description="Typisch stille Beteiligungen" type="asset"
+			code="0830" />
+		<account description="Atypische stille Beteiligungen" type="asset"
+			code="0840" />
+		<account description="Andere Beteiligungen an Kapitalgesellschaften"
+			type="asset" code="0850" />
+		<account description="Andere Beteiligungen an Personengesellschaften"
+			type="asset" code="0860" />
+		<account
+			description="04. Ausleihungen an Unternehmen, mit denen ein Beteiligungsverhältnis besteht "
+			type="asset" code="0880" />
+		<account description="05. Wertpapiere des Anlagevermögens"
+			type="asset" code="0900" />
+		<account description="Wertpapiere mit Gewinnbeiligungsansprüchen"
+			type="asset" code="0910" />
+		<account description="Festverzinsliche Wertpapiere" type="asset"
+			code="0920" />
+		<account description="06. Sonstige Ausleihungen" type="asset"
+			code="0930" />
+		<account description="Darlehen" type="asset" code="0940" />
+		<account description="Ausleihungen an Gesellschafter" type="asset"
+			code="0960" />
+		<account description="Ausleihungen an nahe stehende Personen"
+			type="asset" code="0970" />
+		<account description="07. Genossenschaftsanteile zum langfristigen Verbleib"
+			type="asset" code="0980" />
+		<account
+			description="08. Rückdeckungsansprüche aus Lebensversicherungen zum langfristigen Verbleib"
+			type="asset" code="0990" />
+		<account description="B. Umlaufvermögen" type="placeholder" />
+		<account description="I. Vorräte" type="placeholder" />
+		<account description="01. Roh-, Hilfs- und Betriebsstoffe (Bestand)"
+			type="asset" code="1000" />
+		<account description="02. Unfertige Erzeugnisse, unfertige Leistungen (Bestand)"
+			type="asset" code="1040" />
+		<account description="Unfertige Erzeugnisse" type="asset"
+			code="1050" />
+		<account description="Unfertige Leistungen" type="asset" code="1080" />
+		<account description="In Ausführung befindl. Bauaufträge"
+			type="asset" code="1090" />
+		<account description="In Arbeit befindliche Aufträge" type="asset"
+			code="1095" />
+		<account description="03. Fertige Erzeugnisse und Waren (Bestand)"
+			type="asset" code="1100" />
+		<account description="Fertige Erzeugnisse (Bestand)" type="asset"
+			code="1110" />
+		<account description="Waren (Bestand)" type="asset" code="1140" />
+		<account description="Marmor" type="placeholder" />
+		<account description="Stein" type="placeholder" />
+		<account description="Eisen" type="placeholder" />
+		<account description="04. Geleistete Anzahlungen auf Vorräte"
+			type="asset" code="1180" />
+		<account description="Geleistete Anzahlungen 7% Vorsteuer"
+			type="asset" code="1181" />
+		<account description="Geleistete Anzahlungen 16% Vorsteuer"
+			type="asset" code="1184" />
+		<account description="05. Erhaltene Anzahlungen auf Bestellungen"
+			type="asset" code="1190" />
+		<account description="Erhaltene Anzahlungen 7% MWSt" type="asset"
+			code="1191" />
+		<account description="Erhaltene Anzahlungen 16% MWSt" type="asset"
+			code="1194" />
+		<account description="II. Forderungen und sonstige Vermögensgegenstände"
+			type="placeholder" />
+		<account description="01. Forderungen aus Lieferungen und Leistungen"
+			refersTo="customers" type="asset" code="1200" />
+		<account
+			description="Forderungen aus Lieferungen und Leistungen ohne Kontokorrent"
+			type="asset" code="1210" />
+		<account
+			description="Forderungen aus L+L allgem. Steuersatz oder eines Kleinunternehmers"
+			type="asset" code="1215" />
+		<account description="Forderungen aus L+L ermäßigt. Steuersatz"
+			type="asset" code="1216" />
+		<account
+			description="Forderg. aus steuerfreien oder nicht steuerbaren steuerbaren L+L"
+			type="asset" code="1217" />
+		<account description="Forderungen aus L+L gemäß § 24 UStG"
+			type="asset" code="1218" />
+		<account
+			description="Gegenkonto 1215 - 1218 bei Aufteilung der Forderungen nach Steuersätzen (EÜR)"
+			type="asset" code="1219" />
+		<account description="Forderungen nach § 11 Abs. 1 Satz 2 EStG für § 4/3"
+			type="asset" code="1220" />
+		<account description="Forderg.a. Lieferungen/Leistungen &lt; 1 J"
+			type="asset" code="1221" />
+		<account description="Forderg.a. Lieferungen/Leistungen &gt; 1 J"
+			type="asset" code="1225" />
+		<account description="Wechsel aus Lieferung und Leistung"
+			type="asset" code="1230" />
+		<account description="Wechsel a. Lieferungen/Leistungen &lt; 1 J"
+			type="asset" code="1231" />
+		<account description="Wechsel a. Lieferungen/Leistungen &gt; 1 J"
+			type="asset" code="1232" />
+		<account description="Wechsel a. Lieferungen/Leistungen, bundesbankfähig"
+			type="asset" code="1235" />
+		<account description="Zweifelhafte Forderungen" type="asset"
+			code="1240" />
+		<account description="Zweifelhafte Forderungen (bis 1 Jahr)"
+			type="asset" code="1241" />
+		<account description="Zweifelhafte Forderungen (&gt; 1 Jahr)"
+			type="asset" code="1245" />
+		<account description="Einzelwertberichtigung Forderung (&lt; 1J)"
+			type="asset" code="1246" />
+		<account description="Einzelwertberichtigung Forderung (&gt; 1J)"
+			type="asset" code="1247" />
+		<account description="Pauschalwertberichtigung Forderg. &lt; 1J"
+			type="asset" code="1248" />
+		<account description="Pauschalwertberichtigung Forderg. &gt; 1J"
+			type="asset" code="1249" />
+		<account description="Forderungen aus L+L gg. Gesellschafter"
+			type="asset" code="1250" />
+		<account description="Forderg. aus L+L gg.Gesellschafter &lt; 1 J"
+			type="asset" code="1251" />
+		<account description="Forderg. aus L+L gg.Gesellschafter &gt; 1 J"
+			type="asset" code="1255" />
+		<account
+			description="Gegenkonto zu sonstigen Vermögensgegenständen bei Buchungen über Debitorenkonto"
+			type="asset" code="1258" />
+		<account
+			description="Gegenkonto 1221-1229, 1250-1257, 1270-1279, 1290-1297 bei Aufteilung Debitorenkonto"
+			type="asset" code="1259" />
+		<account description="02. Forderungen gegen verbundene Unternehmen"
+			type="asset" code="1260" />
+		<account description="Forderungen gg. verbundene UN &lt; 1 J"
+			type="asset" code="1261" />
+		<account description="Forderungen gg. verbundene UN &gt; 1 J"
+			type="asset" code="1265" />
+		<account description="Besitzwechsel gegen verbund. Unternehmen"
+			type="asset" code="1266" />
+		<account description="Besitzwechsel gegen verbundene UN &lt; 1J"
+			type="asset" code="1267" />
+		<account description="Besitzwechsel gegen verbundene UN &gt; 1J"
+			type="asset" code="1268" />
+		<account description="Besitzwechs.gg.verb.UN, bundesbankfähig"
+			type="asset" code="1269" />
+		<account description="Forderungen aus L+L gg. verbundene UN"
+			type="asset" code="1270" />
+		<account description="Forderungen aus L+L gg. verbund. UN &lt; 1J"
+			type="asset" code="1271" />
+		<account description="Forderungen aus L+L gg. verbund. UN &gt; 1J"
+			type="asset" code="1275" />
+		<account description="WB Forderungen gg. verbundene UN &lt; 1 J"
+			type="asset" code="1276" />
+		<account description="WB Forderungen gg. verbundene UN &gt; 1J"
+			type="asset" code="1277" />
+		<account
+			description="03. Forderungen gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht"
+			type="asset" code="1280" />
+		<account description="Forderg. gg. UN mit Beteiligg.verh. &lt; 1 J."
+			type="asset" code="1281" />
+		<account description="Forderg. gg. UN mit Beteiligg.verh. &gt; 1 J"
+			type="asset" code="1285" />
+		<account description="Besitzwechsel gg.UN m. Beteiligungsverh."
+			type="asset" code="1286" />
+		<account description="Besitzwechsel gg.UN m.Beteiligg.verh. &lt; 1 J"
+			type="asset" code="1287" />
+		<account description="Besitzwechsel gg.UN m.Beteiligg.verh. &gt; 1 J"
+			type="asset" code="1288" />
+		<account description="Besitzwechsel gg.UN m.Beteiligg.verh.bbf"
+			type="asset" code="1289" />
+		<account description="Forderg. L+L gg.UN m. Beteiligungsverh."
+			type="asset" code="1290" />
+		<account description="Forderg. L+L gg.UN m.Beteiligg.verh. &lt; 1 J"
+			type="asset" code="1291" />
+		<account description="Forderg. L+L gg.UN m.Beteiligg.verh. &gt; 1 J"
+			type="asset" code="1295" />
+		<account description="WB Forderg.gg.UN m.Beteiligg.verh. b.1J"
+			type="asset" code="1296" />
+		<account description="WB Forderg.gg.UN m.Beteiligg.verh. g.1J"
+			type="asset" code="1297" />
+		<account
+			description="Ausstehende Einlagen auf das gezeichnete Kapital, eingefordert"
+			type="asset" code="1298" />
+		<account description="Eingeforderte Nachschüsse" type="asset"
+			code="1299" />
+		<account description="04. Sonstige Vermögensgegenstände" type="asset"
+			code="1300" />
+		<account description="Sonstige Vermögensgegenstände" type="placeholder" />
+		<account description="Sonstige Vermögensgegenstände (b.1 J)"
+			type="asset" code="1301" />
+		<account description="Sonstige Vermögensgegenstände (g.1 J)"
+			type="asset" code="1305" />
+		<account description="Forderungen gegen Vorstandsmitglieder und Geschäftsführer"
+			type="asset" code="1310" />
+		<account description="Forderungen gg. Geschäftsf.(b.1J)" type="asset"
+			code="1311" />
+		<account description="Forderungen gg. Geschäftsf.(g.1J)" type="asset"
+			code="1315" />
+		<account description="Forderungen gegen Aufsichtsrats- und Beirats-Mitglieder"
+			type="asset" code="1320" />
+		<account description="Forderungen gg. Aufsichtsratsm. (b.1 J)"
+			type="asset" code="1321" />
+		<account description="Forderungen gg. Aufsichtsratsm. (g.1 J)"
+			type="asset" code="1325" />
+		<account description="Forderungen gegen Gesellschafter" type="asset"
+			code="1330" />
+		<account description="Forderungen gg. Gesellschafter (b.1J)"
+			type="asset" code="1331" />
+		<account description="Forderungen gg. Gesellschafter (g.1J)"
+			type="asset" code="1335" />
+		<account description="Forderungen gegen Personal aus Lohn- und Gehaltsabrechnung"
+			type="asset" code="1340" />
+		<account description="Forderungen gegen Personal (bis 1Jahr)"
+			type="asset" code="1341" />
+		<account description="Forderungen gegen Personal (g. 1Jahr)"
+			type="asset" code="1345" />
+		<account description="Kautionen" type="asset" code="1350" />
+		<account description="Kautionen (bis 1 J)" type="asset" code="1351" />
+		<account description="Kautionen (g. 1 J)" type="asset" code="1355" />
+		<account description="Darlehen" type="asset" code="1360" />
+		<account description="Darlehen bis 1 Jahr" type="asset" code="1361" />
+		<account description="Darlehen g. 1 Jahr" type="asset" code="1365" />
+		<account description="Durchlaufende Posten" type="asset" code="1370" />
+		<account description="Fremdgeld" type="asset" code="1374" />
+		<account description="Agenturwarenabrechnung" type="asset"
+			code="1375" />
+		<account description="Ansprüche aus Rückdeckungsversicherungen"
+			type="asset" code="1378" />
+		<account description="GmbH-Anteile zum kurzfristigen Verbleib"
+			type="asset" code="1390" />
+		<account description="Genossenschaftsanteile zum kurzfristigen Verbleib"
+			type="asset" code="1395" />
+		<account
+			description="Nachträglich abziehbare Vorsteuer, § 15a UStG, bewegliche Wirtschaftsgüter"
+			type="asset" code="1396" />
+		<account
+			description="Zurückzuzahlende Vorsteuer, § 15a UStG, bewegliche Wirtschaftsgüter"
+			type="asset" code="1397" />
+		<account
+			description="Nachträglich abziehbare Vorsteuer, § 15a UStG, unbewegliche Wirtschaftsgüter"
+			type="asset" code="1398" />
+		<account
+			description="Zurückzuzahlende Vorsteuer, § 15a UStG, unbewegliche Wirtschaftsgüter"
+			type="asset" code="1399" />
+		<account description="Abziehbare Vorsteuer" type="asset" code="1400" />
+		<account description="Abziehbare Vorsteuern Inland" type="placeholder" />
+		<account description="Abziehbare Vorsteuer 7%" type="asset"
+			code="1401" />
+		<account description="Abziehbare Vorsteuer 16%" type="asset"
+			code="1405" />
+		<account description="Abziehbare Vorsteuer 19%" type="asset"
+			code="1406" />
+		<account description="Abziehbare Vorsteuer aus innergemeinschaftlichem Erwerb"
+			type="asset" code="1402" />
+		<account
+			description="Abziehbare Vorsteuer aus innergemeinschaftlichem Erwerb 15%/16%"
+			type="asset" code="1403" />
+		<account description="Vorsteuer nach allgemeinen Durchschnittsätzen"
+			type="asset" code="1407" />
+		<account description="Abziehbare Vorsteuer nach § 13b UStG"
+			type="asset" code="1408" />
+		<account description="Abziehbare Vorsteuer nach § 13b UStG 16%"
+			type="asset" code="1409" />
+		<account description="Aufzuteilende Vorsteuer" type="asset"
+			code="1410" />
+		<account description="Aufzuteilende Vorsteuer 7%" type="asset"
+			code="1411" />
+		<account description="Aufzuteilende Vorsteuer aus innergemeinschaftlichem Erwerb"
+			type="asset" code="1412" />
+		<account description="Aufzuteilende Vorsteuer 16%" type="asset"
+			code="1415" />
+		<account description="Aufzuteilende Vorsteuer 15%" type="asset"
+			code="1416" />
+		<account description="Aufzuteilende Vorsteuer nach §§ 13a/13b UStG"
+			type="asset" code="1417" />
+		<account description="Aufzuteilende Vorsteuer nach §§ 13a/13b UStG 16 %"
+			type="asset" code="1418" />
+		<account
+			description="Vorsteuer aus der Auslagerung von Gegenständen aus einem Umsatzsteuerlager"
+			type="asset" code="1431" />
+		<account
+			description="Abziehbare Vorsteuer aus innergemeinschaftlichem Erwerb von Neufahrzeugen von Lieferanten ohne UStId-Nr"
+			type="asset" code="1432" />
+		<account description="Bezahlte Einfuhrumsatzsteuer" type="asset"
+			code="1433" />
+		<account description="Umsatzsteuerforderungen" type="asset"
+			code="1420" />
+		<account description="USt-Forderungen laufendes Jahr" type="asset"
+			code="1421" />
+		<account description="USt-Forderungen Vorjahr" type="asset"
+			code="1422" />
+		<account description="USt-Forderungen frühere Jahre" type="asset"
+			code="1425" />
+		<account description="Forderungen aus entrichteten Verbrauchsteuern"
+			type="asset" code="1427" />
+		<account description="Vorsteuer im Folgejahr abziehbar" type="asset"
+			code="1434" />
+		<account description="Steuerüberzahlungen" type="asset" code="1435" />
+		<account description="Steuererstattungsanspruch gegenüber anderen EG-Ländern"
+			type="asset" code="1440" />
+		<account description="Körperschaftsteuerrückforderungen" type="asset"
+			code="1450" />
+		<account
+			description="Forderungen an das Finanzamt aus abgeführtem Bauabzugsbetrag"
+			type="asset" code="1456" />
+		<account description="Geldtransit" type="asset" code="1460" />
+		<account description="Gegenkonto Vorsteuer § 4/3 EStG" type="asset"
+			code="1480" />
+		<account description="Auflösung Vorsteuer aus Vorjahr § 4/3 EStG"
+			type="asset" code="1481" />
+		<account description="Vorsteuer aus Investitionen § 4/3 EStG"
+			type="asset" code="1482" />
+		<account
+			description="Gegenkonto für Vorsteuer nach Durchschnittssätzen für § 4 Abs. 3 EStG"
+			type="asset" code="1483" />
+		<account
+			description="Verrechnungskonto Gewinnermittlung § 4/3 EStG, ergebniswirksam"
+			type="asset" code="1485" />
+		<account
+			description="Verrechnungskonto Gewinnermittlung §4/3 EStG, nicht ergebniswirksam"
+			type="asset" code="1486" />
+		<account description="Verrechnungskonto Ist-Versteuerung"
+			type="asset" code="1490" />
+		<account
+			description="Verrechnungskonto erhaltene Anzahlungen bei Buchung über Debitoren-Konto"
+			type="asset" code="1495" />
+		<account description="Überleitung Kostenstellen" type="asset"
+			code="1498" />
+		<account description="III. Wertpapiere" type="placeholder" />
+		<account description="01. Anteile an verbundenen Unternehmen (Umlaufvermögen)"
+			type="asset" code="1500" />
+		<account
+			description="Anteile an herrschender oder mit Mehrheit beteiligter Gesellschaft"
+			type="asset" code="1504" />
+		<account description="02. Eigene Anteile" type="asset" code="1505" />
+		<account description="03. sonstige Wertpapiere" type="asset"
+			code="1510" />
+		<account description="Finanzwechsel" type="asset" code="1520" />
+		<account
+			description="Andere Wertpapiere mit unwesentlichen Wertschwankungen im Sinne Textziffer 18 DRS 2"
+			type="asset" code="1525" />
+		<account
+			description="Wertpapieranlagen im Rahmen der kurzfristigen Finanzdisposition"
+			type="asset" code="1530" />
+		<account description="Schecks" type="asset" code="1550" />
+		<account
+			description="IV. Kassenbestand, Bundesbankguthaben, Guthaben bei Kreditinstituten und Schecks"
+			type="placeholder" />
+		<account description="Schecks" type="asset" code="1550" />
+		<account description="Traveler Cheque USD" type="currency"
+			code="1551" />
+		<account description="Traveler Cheque EUR" type="currency"
+			code="1552" />
+		<account description="Kassenbestand" type="cash" code="1600" />
+		<account description="Kasse" type="cash" code="1600" />
+		<account description="Postbank" type="bank" code="1700" />
+		<account description="Postbank Dortmund" type="bank" code="1710" />
+		<account description="LZB-Guthaben" type="bank" code="1780" />
+		<account description="Bundesbankguthaben" type="bank" code="1790" />
+		<account description="Bank" type="bank" code="1800" />
+		<account
+			description="Finanzmittelanlagen im Rahmen der kurzfristigen Finanzdisposition"
+			type="bank" code="1890" />
+		<account description="C. Rechnungsabgrenzungsposten Umlaufvermögen"
+			type="placeholder" />
+		<account description="Aktive Rechnungsabgrenzung" type="asset"
+			code="1900" />
+		<account
+			description="Als Aufwand berücksichtigte Zölle und Verbrauchsteuern auf Vorräte"
+			type="asset" code="1920" />
+		<account description="Als Aufwand berücksichtigte Umsatzsteuer auf Anzahlungen"
+			type="asset" code="1930" />
+		<account description="Damnum/Disagio" type="asset" code="1940" />
+		<account description="Abgrenzung aktive latente Steuern" type="asset"
+			code="1950" />
+		<account description="Passiva" type="placeholder" />
+		<account description="A. Eigenkapital" type="placeholder" />
+		<account description="a) Personengesellschaft" type="placeholder" />
+		<account description="I. Kapital / Vollhafter / Einzelunternehmer"
+			type="placeholder" />
+		<account description="Festkapital" type="liability" code="2000" />
+		<account description="Variables Kapital" type="liability"
+			code="2010" />
+		<account description="Gesellschafter-Darlehen" type="liability"
+			code="2020" />
+		<account description="(zur freien Verfügung)" type="liability"
+			code="2030" />
+		<account description="II. Kapital / Teilhafter" type="placeholder" />
+		<account description="Kommandit-Kapital" type="liability"
+			code="2050" />
+		<account description="Verlustausgleichskonto" type="liability"
+			code="2060" />
+		<account description="Gesellschafter-Darlehen" type="liability"
+			code="2070" />
+		<account description="(zur freien Verfügung)" type="liability"
+			code="2080" />
+		<account description="III. Privat Vollhafter/Einzelunternehmer"
+			type="placeholder" />
+		<account description="Privatentnahmen allgemein" refersTo="partners"
+			type="liability" code="2100" />
+		<account description="Unentgeltliche Wertabgaben" type="liability"
+			code="2130" />
+		<account description="Privatsteuern" type="liability" code="2150" />
+		<account description="Privateinlagen" type="liability" code="2180" />
+		<account description="Sonderausgaben beschränkt abzugsfähig"
+			type="liability" code="2200" />
+		<account description="Sonderausgaben unbeschränkt abzugsfähig"
+			type="liability" code="2230" />
+		<account description="Zuwendungen, Spenden -79" type="liability"
+			code="2250" />
+		<account description="Außergewöhnliche Belastungen" type="liability"
+			code="2280" />
+		<account description="Grundstücksaufwand" type="liability"
+			code="2300" />
+		<account description="Grundstücksaufwand (Umsatzsteuerschlüssel möglich)"
+			type="liability" code="2349" />
+		<account description="Grundstücksertrag" type="liability"
+			code="2350" />
+		<account description="Grundstücksertrag (Umsatzsteuerschlüssel möglich)"
+			type="liability" code="2399" />
+		<account description="IV. Privat Teilhafter" type="placeholder" />
+		<account description="Privatentnahmen allgemein" type="liability"
+			code="2500" />
+		<account description="Unentgeltliche Wertabgaben" type="liability"
+			code="2530" />
+		<account description="Privatsteuern" type="liability" code="2550" />
+		<account description="Privateinlagen" type="liability" code="2580" />
+		<account description="Sonderausgaben beschränkt abzugsfähig"
+			type="liability" code="2600" />
+		<account description="Sonderausgaben unbeschränkt abzugsfähig"
+			type="liability" code="2630" />
+		<account description="Zuwendungen, Spenden -79" type="liability"
+			code="2650" />
+		<account description="Außergewöhnliche Belastungen" type="liability"
+			code="2680" />
+		<account description="Grundstücksaufwand" type="liability"
+			code="2700" />
+		<account description="Grundstücksertrag" type="liability"
+			code="2750" />
+		<account description="b) Kapitalgesellschaft" type="placeholder" />
+		<account description="I. Gezeichnetes Kapital" type="placeholder" />
+		<account description="Gezeichnetes Kapital" type="liability"
+			code="2900" />
+		<account
+			description="Ausstehende Einlagen auf das gezeichnete Kapital, nicht eingefordert"
+			type="liability" code="2910" />
+		<account description="II. Kapitalrücklage" type="placeholder" />
+		<account description="Kapitalrücklage" type="liability" code="2920" />
+		<account description="Kapitalrücklage durch Ausgabe von Anteilen über Nennbetrag"
+			type="liability" code="2925" />
+		<account
+			description="Kapitalrücklage durch Ausgabe von Schuldverschreibungen für Wandlungsrechte und Optionsrechte zum Erwerb von Anteilen"
+			type="liability" code="2926" />
+		<account
+			description="Kapitalrücklage durch Zuzahlungen gegen Gewährung eines Vorzugs für Anteile"
+			type="liability" code="2927" />
+		<account description="Andere Zuzahlungen in das Eigenkapital"
+			type="liability" code="2928" />
+		<account description="Eingefordertes Nachschusskapital" type="liability"
+			code="2929" />
+		<account description="c) alle" type="placeholder" />
+		<account description="I. Gewinnrücklagen" type="placeholder" />
+		<account description="01. Gesetzliche Rücklage" type="liability"
+			code="2930" />
+		<account description="Gesetzliche Rücklage 40% Vorbelastung"
+			type="liability" code="2931" />
+		<account
+			description="Gesetzliche Rücklage 0% Vorbelastung (steuerliches Einlagekonto)"
+			type="liability" code="2932" />
+		<account description="Gesetzliche Rücklage 0% Vorbelastung (EK02)"
+			type="liability" code="2933" />
+		<account description="02. Rücklage für eigene Anteile" type="liability"
+			code="2940" />
+		<account description="03. Satzungsmäßige Rücklagen" type="liability"
+			code="2950" />
+		<account description="Satzungsmäßige Rücklagen 40% Vorbelastung"
+			type="liability" code="2951" />
+		<account
+			description="Satzungsmäßige Rücklagen 0% Vorbelastung (steuerliches Einlagekonto)"
+			type="liability" code="2952" />
+		<account description="Satzungsmäßige Rücklagen 0% Vorbelastung (EK02)"
+			type="liability" code="2953" />
+		<account description="04. Andere Gewinnrücklagen" type="liability"
+			code="2960" />
+		<account description="Eigenkapitalanteil von Wertaufholungen"
+			type="liability" code="2962" />
+		<account description="Andere Gewinnrücklagen 40% Vorbelastung"
+			type="liability" code="2965" />
+		<account
+			description="Andere Gewinnrücklagen 0% Vorbelastung (steuerliches Einlagekonto)"
+			type="liability" code="2966" />
+		<account description="Andere Gewinnrücklagen 0% Vorbelastung (EK02)"
+			type="liability" code="2967" />
+		<account description="II. Gewinnvortrag/Verlustvortrag vor Verwendung"
+			type="placeholder" />
+		<account description="Gewinnvortrag vor Verwendung" type="liability"
+			code="2970" />
+		<account description="Gewinnvortrag 40% Vorbelastung" type="liability"
+			code="2972" />
+		<account description="Gewinnvortrag 0% Vorbelastung (steuerliches Einlagekonto)"
+			type="liability" code="2974" />
+		<account description="Gewinnvortrag 0% Vorbelastung (EK02)"
+			type="liability" code="2976" />
+		<account description="Verlustvortrag vor Verwendung" type="liability"
+			code="2978" />
+		<account description="Vortrag auf neue Rechnung (Bilanz)"
+			type="liability" code="2979" />
+		<account description="III. Sonderposten mit Rücklageanteil"
+			type="placeholder" />
+		<account description="Sonderposten mit Rücklageanteil, steuerfreie Rücklagen"
+			type="liability" code="2980" />
+		<account description="Sonderposten mit Rücklagenanteil nach § 6b EStG"
+			type="liability" code="2981" />
+		<account description="Sonderposten mit Rücklagenanteil nach Abschnitt 35 EStR"
+			type="liability" code="2982" />
+		<account description="Sonderposten mit Rücklagenanteil nach § 6d EStG"
+			type="liability" code="2983" />
+		<account description="Sonderposten mit Rücklagenanteil nach § 1 EntwLStG"
+			type="liability" code="2984" />
+		<account description="Sonderposten aus der Währungsumstellung auf den Euro"
+			type="liability" code="2985" />
+		<account description="Sonderposten mit Rücklageanteil nach § 7d EStG"
+			type="liability" code="2986" />
+		<account description="Sonderposten mit Rücklageanteil nach § 79 EStDV"
+			type="liability" code="2987" />
+		<account description="Sonderposten mit Rücklageanteil nach § 80 EStDV"
+			type="liability" code="2988" />
+		<account description="Sonderposten mit Rücklageanteil nach § 81 EStDV"
+			type="liability" code="2989" />
+		<account description="Sonderposten mit Rücklageanteil, Sonderabschreibungen"
+			type="liability" code="2990" />
+		<account description="Sonderposten mit Rücklageanteil nach § 82a EStDV"
+			type="liability" code="2991" />
+		<account description="Sonderposten mit Rücklageanteil nach § 82d EStDV"
+			type="liability" code="2992" />
+		<account description="Sonderposten mit Rücklageanteil nach § 82e EStDV"
+			type="liability" code="2993" />
+		<account description="Sonderposten mit Rücklageanteil nach § 14 BerlinFG"
+			type="liability" code="2994" />
+		<account
+			description="Sonderposten mit Rücklageanteil für Förderung nach § 3 ZonenRFG/§ 4-6 FördergebietsG"
+			type="liability" code="2995" />
+		<account description="Sonderposten mit Rücklageanteil nach § 4d EStG"
+			type="liability" code="2996" />
+		<account description="Sonderposten mit Rücklageanteil nach § 7g Abs. 1 EStG"
+			type="liability" code="2997" />
+		<account description="Sonderposten mit Rücklageanteil nach § 7g Abs. 3, 7 EStG"
+			type="liability" code="2998" />
+		<account description="Sonderposten für Zuschüsse und Zulagen"
+			type="liability" code="2999" />
+		<account description="IV. Jahresüberschuß/Jahresfehlbetrag"
+			type="placeholder" />
+		<account description="B. Rückstellungen" type="placeholder" />
+		<account
+			description="01. Rückstellungen für Pensionen und ähnliche Verpflichtungen"
+			type="liability" code="3000" />
+		<account description="Pensionsrückstellungen" type="liability"
+			code="3010" />
+		<account description="Rückstellungen für pensionsähnliche Verpflichtungen"
+			type="liability" code="3015" />
+		<account description="02. Steuerrückstellungen" type="liability"
+			code="3020" />
+		<account description="Gewerbesteuerrückstellung" type="liability"
+			code="3030" />
+		<account description="Körperschaftsteuerrückstellung" type="liability"
+			code="3040" />
+		<account description="Vermögensteuerrückstellung" type="liability"
+			code="3050" />
+		<account description="Rückstellungen für latente Steuern"
+			type="liability" code="3060" />
+		<account description="03. Sonstige Rückstellungen" type="liability"
+			code="3070" />
+		<account
+			description="Rückstellungen für unterlassene Aufwendungen für Instandhaltung, Nachholung in den ersten drei Monaten"
+			type="liability" code="3075" />
+		<account
+			description="Rückstellungen für unterlassene Aufwendungen für Instandhaltung, Nachholung innerhalb des 4. bis 12. Monats"
+			type="liability" code="3080" />
+		<account description="Rückstellungen für Abraum- und Abfallbeseitigung"
+			type="liability" code="3085" />
+		<account description="Rückstellungen für Gewährleistung" type="liability"
+			code="3090" />
+		<account
+			description="Rückstellungen für drohende Verluste aus schwebenden Geschäften"
+			type="liability" code="3092" />
+		<account description="Rückstellungen für Abschluß- und Prüfungskosten"
+			type="liability" code="3095" />
+		<account description="Aufwandsrückstellungen gemäß § 249 Abs. 2 HGB"
+			type="liability" code="3098" />
+		<account description="Rückstellungen für Umweltschutz" type="liability"
+			code="3099" />
+		<account description="C. Verbindlichkeiten" type="placeholder" />
+		<account description="Verbindlichkeiten" type="payable" code="3000" />
+		<account description="01. Anleihen" type="placeholder" />
+		<account description="a) Anleihen, nicht konvertibel" type="payable"
+			code="3100" />
+		<account description="Anleihen, nicht konvertibel (b. 1 Jahr)"
+			type="payable" code="3101" />
+		<account description="Anleihen, nicht konvertibel (1-5 Jahre)"
+			type="payable" code="3105" />
+		<account description="Anleihen, nicht konvertibel (g.5 Jahre)"
+			type="payable" code="3110" />
+		<account description="b) Anleihen konvertibel" type="payable"
+			code="3120" />
+		<account description="Anleihen konvertibel(bis 1 Jahr)" type="payable"
+			code="3121" />
+		<account description="Anleihen konvertibel(1-5 Jahre)" type="payable"
+			code="3125" />
+		<account description="Anleihen konvertibel(größer 5 Jahre)"
+			type="payable" code="3130" />
+		<account description="02. Verbindlichkeiten gegenüber Kreditinstituten"
+			type="placeholder" />
+		<account description="Verbindlichkeiten gegenüber Kreditinstituten"
+			type="payable" code="3150" />
+		<account description="Verbindlichkeiten Kreditinstitut (b.1J)"
+			type="payable" code="3151" />
+		<account description="Verbindlichkeiten Kreditinstitut (1-5J)"
+			type="payable" code="3160" />
+		<account description="Verbindlichkeiten Kreditinstitut (g.5J)"
+			type="payable" code="3170" />
+		<account description="TZ-Verbindlichkeit. gg. Kreditinstituten"
+			type="payable" code="3180" />
+		<account description="TZ-Verbindlichkeit. Kreditinstitut(b.1J)"
+			type="payable" code="3181" />
+		<account description="TZ-Verbindlichkeit. Kreditinstitut(1-5J)"
+			type="payable" code="3190" />
+		<account description="TZ-Verbindlichkeit. Kreditinstitut(g.5J)"
+			type="payable" code="3200" />
+		<account description="Gegenkonto bei Aufteilung Kto 3210-48"
+			type="liability" code="3249" />
+		<account description="03. erhaltene Anzahlungen auf Bestellungen"
+			type="placeholder" />
+		<account description="Erhaltene Anzahlungen" type="payable"
+			code="3250" />
+		<account description="Erhaltene Anzahlungen 7% USt" type="payable"
+			code="3260" />
+		<account description="Erhaltene Anzahlungen 16% USt" type="payable"
+			code="3270" />
+		<account description="Erhaltene Anzahlungen (bis 1 Jahr)"
+			type="payable" code="3280" />
+		<account description="Erhaltene Anzahlungen (1-5 Jahre)" type="payable"
+			code="3284" />
+		<account description="Erhaltene Anzahlungen (g. 5 Jahre)"
+			type="payable" code="3285" />
+		<account description="04. Verbindlichkeiten aus Lieferungen und Leistungen"
+			type="placeholder" />
+		<account
+			description="Verbindlichkeiten aus Lieferungen und Leistungen (Kreditoren)"
+			refersTo="suppliers" type="payable" code="3300" />
+		<account
+			description="Verbindlichkeiten aus Lieferungen und Leistungen zum allgemeinen Umsatzsteuersatz"
+			type="payable" code="3305" />
+		<account
+			description="Verbindlichkeiten aus Lieferungen und Leistungen zum ermäßigten Umsatzsteuersatz"
+			type="payable" code="3306" />
+		<account
+			description="Verbindlichkeiten aus Lieferungen und Leistungen ohne Vorsteuer"
+			type="payable" code="3307" />
+		<account
+			description="Gegenkonto 3305 - 3307 bei Aufteilung der Verbindlichkeiten nach Steuersätzen"
+			type="liability" code="3309" />
+		<account
+			description="Verbindlichkeiten aus Lieferungen und Leistungen ohne Kontokorrent"
+			type="payable" code="3310" />
+		<account
+			description="Verbindlichkeiten aus Lieferungen und Leistungen ohne Kontokorrent - Restlaufzeit &lt;= 1 Jahr"
+			type="payable" code="3335" />
+		<account
+			description="Verbindlichkeiten aus Lieferungen und Leistungen ohne Kontokorrent - Restlaufzeit 1-5 Jahre"
+			type="payable" code="3337" />
+		<account
+			description="Verbindlichkeiten aus Lieferungen und Leistungen ohne Kontokorrent - Restlaufzeit &gt; 5 Jahre"
+			type="payable" code="3338" />
+		<account
+			description="Verbindlichkeiten aus Lieferungen und Leistungen für Investitionen für § 4/3 EStG"
+			type="payable" code="3334" />
+		<account
+			description="Verbindlichkeiten aus Lieferungen und Leistungen gegenüber Gesellschaftern"
+			type="payable" code="3340" />
+		<account description="Verbindl. aus L+L gg. Gesellsch. b. 1J"
+			type="payable" code="3341" />
+		<account description="Verbindl. aus L+L gg. Gesellsch. 1-5 J"
+			type="payable" code="3345" />
+		<account description="Verbindl. aus L+L gg. Gesellsch. g. 5J"
+			type="payable" code="3348" />
+		<account description="Gegenkonto 3470-3499 bei Aufteilung Kreditoren-Konto"
+			type="liability" code="3349" />
+		<account
+			description="05. Verbindlichkeiten aus der Annahme gezogener Wechsel und der Ausstellung eigener Wechsel"
+			type="placeholder" />
+		<account description="Wechselverbindlichkeiten" type="payable"
+			code="3350" />
+		<account description="Wechselverbindlichkeiten (bis 1 Jahr)"
+			type="payable" code="3351" />
+		<account description="Wechselverbindlichkeiten (1-5 Jahre)"
+			type="payable" code="3380" />
+		<account description="Wechselverbindlichkeiten (g. 5 Jahre)"
+			type="payable" code="3390" />
+		<account description="06. Verbindlichkeiten gegenüber verbundenen Untenehmen"
+			type="placeholder" />
+		<account description="Verbindlichk.gegenüber verbundenen Unternehmen"
+			type="payable" code="3400" />
+		<account description="Verbindlichkeit. gg. verbundene UN (b.1 J)"
+			type="payable" code="3401" />
+		<account description="Verbindlichkeit. gg. verbundene UN (1-5 J)"
+			type="payable" code="3405" />
+		<account description="Verbindlichkeit. gg. verbundene UN (g.5 J)"
+			type="payable" code="3410" />
+		<account
+			description="Verbindlichkeiten aus Lieferungen und Leistungen gegenüber Gesellschaftern"
+			type="payable" code="3420" />
+		<account description="Verbindl.aus L+L gg. verbundenen UN b. 1J"
+			type="payable" code="3421" />
+		<account description="Verbindl.aus L+L gg. verbundenen UN 1-5 J"
+			type="payable" code="3425" />
+		<account description="Verbindl.aus L+L gg. verbundenen UN g. 5 J"
+			type="payable" code="3430" />
+		<account
+			description="07. Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht"
+			type="placeholder" />
+		<account description="Verbindl. gg.UN mit Beteiligungsverh."
+			type="payable" code="3450" />
+		<account description="Verbindl. gg. UN mit Beteiligg.verh. b. 1 J"
+			type="payable" code="3451" />
+		<account description="Verbindl. gg. UN mit Beteiligg.verh. 1-5 J"
+			type="payable" code="3455" />
+		<account description="Verbindl. gg. UN mit Beteiligg.verh. g. 5 J"
+			type="payable" code="3460" />
+		<account
+			description="Verbindlichkeiten aus Lieferungen und Leistungen gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht"
+			type="payable" code="3470" />
+		<account description="Verbindl.aus L+L gg. UN m. Bet.verh. b. 1 J"
+			type="payable" code="3471" />
+		<account description="Verbindl.aus L+L gg. UN m. Bet.verh. 1-5 J"
+			type="payable" code="3475" />
+		<account description="Verbindl.aus L+L gg. UN m. Bet.verh. g. 5 J"
+			type="payable" code="3480" />
+		<account description="08. sonstige Verbindlichkeiten" type="placeholder" />
+		<account description="Sonstige Verbindlichkeiten" type="payable"
+			code="3500" />
+		<account description="Sonstige Verbindlichkeiten (bis 1 J)"
+			type="payable" code="3501" />
+		<account description="Sonstige Verbindlichkeiten (1-5 J)"
+			type="payable" code="3504" />
+		<account description="Sonstige Verbindlichkeiten (g. 5 J)"
+			type="payable" code="3507" />
+		<account
+			description="Sonstige Verbindlichkeiten z.B. nach § 11 Abs. 2 Satz 2 EStG für § 4/3 EStG"
+			type="payable" code="3509" />
+		<account description="Verbindlichkeiten gegenüber Gesellschaftern"
+			type="payable" code="3510" />
+		<account description="Verbindlichkeit.gg. Gesellschaftern b. 1 J"
+			type="payable" code="3511" />
+		<account description="Verbindlichkeit.gg. Gesellschaftern 1-5 J"
+			type="payable" code="3514" />
+		<account description="Verbindlichkeit.gg. Gesellschaftern g. 5 J"
+			type="payable" code="3517" />
+		<account
+			description="Verbindlichkeiten gegenüber Gesellschaftern für offene Ausschüttungen"
+			type="payable" code="3519" />
+		<account description="Darlehen typisch stiller Gesellschafter"
+			type="payable" code="3520" />
+		<account description="Darlehen typ. stiller Gesellsch. (b. 1 J)"
+			type="payable" code="3521" />
+		<account description="Darlehen typ. stiller Gesellsch. (1-5 J )"
+			type="payable" code="3524" />
+		<account description="Darlehen typ. stiller Gesellsch. (g. 5 J)"
+			type="payable" code="3527" />
+		<account description="Darlehen atypisch stiller Gesellschafter"
+			type="payable" code="3530" />
+		<account description="Darlehen atyp. stiller Gesellsch. (b. 1 J)"
+			type="payable" code="3531" />
+		<account description="Darlehen atyp. stiller Gesellsch. (1-5 J)"
+			type="payable" code="3534" />
+		<account description="Darlehen atyp. stiller Gesellsch. (g. 5 J)"
+			type="payable" code="3537" />
+		<account description="Partiarische Darlehen" type="payable"
+			code="3540" />
+		<account description="Partiarische Darlehen (bis 1 Jahr)"
+			type="payable" code="3541" />
+		<account description="Partiarische Darlehen (1-5 Jahre)" type="payable"
+			code="3544" />
+		<account description="Partiarische Darlehen (g. 5 Jahre)"
+			type="payable" code="3547" />
+		<account description="Erhalten Kautionen" type="payable" code="3550" />
+		<account description="Erhaltene Kautionen (bis 1 Jahr)" type="payable"
+			code="3551" />
+		<account description="Erhaltene Kautionen (1-5 Jahre)" type="payable"
+			code="3554" />
+		<account description="Erhaltene Kautionen (größer 5 Jahre)"
+			type="payable" code="3557" />
+		<account description="Darlehen" type="payable" code="3560" />
+		<account description="Darlehen bis 1 Jahr" type="payable"
+			code="3561" />
+		<account description="Darlehen 1-5 Jahre" type="payable" code="3564" />
+		<account description="Darlehen g. 5 Jahre" type="payable"
+			code="3567" />
+		<account description="Gegenkonto Aufteilung der Darlehen"
+			type="payable" code="3599" />
+		<account description="(frei, in Bilanz kein Restlaufzeitvermerk)"
+			type="payable" code="3570" />
+		<account description="Gegenkonto 3500-3569 bei Aufteilung der Konten 3570-3598"
+			type="payable" code="3599" />
+		<account description="Agenturwarenabrechnung" type="payable"
+			code="3600" />
+		<account description="Kreditkartenabrechnung" type="payable"
+			code="3610" />
+		<account description="Gewinnverfügungskonto stille Gesellschafter"
+			type="payable" code="3620" />
+		<account description="Sonstige Verrechnungskonten" type="payable"
+			code="3630" />
+		<account description="Verrechnung geleistete Anzahlungen"
+			type="payable" code="3695" />
+		<account description="Verbindlichkeiten aus Betriebssteuern und -abgaben"
+			type="payable" code="3700" />
+		<account description="Verbindl. Betriebsst. und -abgaben (b. 1 J)"
+			type="payable" code="3701" />
+		<account description="Verbindl. Betriebsst. und -abgaben (1-5 J)"
+			type="payable" code="3710" />
+		<account description="Verbindl. Betriebsst. und -abgaben (g. 5 J)"
+			type="payable" code="3715" />
+		<account description="Verbindlichkeiten aus Lohn und Gehalt"
+			type="payable" code="3720" />
+		<account description="Verbindlichkeiten für Einbehaltungen von Arbeitnehmern"
+			type="payable" code="3725" />
+		<account
+			description="Verbindlichkeiten aus an das Finanzamt abzuführendem Bauabzugsbetrag"
+			type="payable" code="3726" />
+		<account description="Verbindlichkeiten aus Lohn- und Kirchensteuer"
+			type="payable" code="3730" />
+		<account description="Verbindlichkeiten im Rahmen der sozialen Sicherheit"
+			type="payable" code="3740" />
+		<account description="Verbindlichk. soziale Sicherheit (b. 1 J)"
+			type="payable" code="3741" />
+		<account description="Verbindlichk. soziale Sicherheit (1-5 J)"
+			type="payable" code="3750" />
+		<account description="Verbindlichk. soziale Sicherheit (g. 5 J)"
+			type="payable" code="3755" />
+		<account description="Verbindlichkeiten aus Einbehaltungen"
+			type="payable" code="3760" />
+		<account description="Verbindlichkeiten für Verbrauchsteuern"
+			type="payable" code="3761" />
+		<account description="Verbindlichkeiten aus Vermögensbildung"
+			type="payable" code="3770" />
+		<account description="Verbindlichk. Vermögensbildung (b. 1 J)"
+			type="payable" code="3771" />
+		<account description="Verbindlichk. Vermögensbildung (1-5 J)"
+			type="payable" code="3780" />
+		<account description="Verbindlichk. Vermögensbildung (g. 5 J)"
+			type="payable" code="3785" />
+		<account description="09. Lohn- und Gehaltsverrechnungskonto"
+			type="payable" code="3790" />
+		<account description="Verbindlichkeiten im Rahmen der sozialen Sicherheit"
+			type="payable" code="3796" />
+		<account description="10. Umsatzsteuer" type="payable" code="3800" />
+		<account description="Mehrwertsteuer 7%" type="payable" code="3801" />
+		<account description="Umsatzsteuer aus innergemeinschaftlichem Erwerb"
+			type="payable" code="3802" />
+		<account description="Umsatzsteuer aus innergemeinschaftlichem Erwerb 15%/16%"
+			type="payable" code="3803" />
+		<account description="Mehrwertsteuer 16%" type="payable" code="3805" />
+		<account description="Mehrwertsteuer 19%" type="payable" code="3806" />
+		<account description="Umsatzsteuer aus im Inland steuerpflichtigen EG-Lieferungen"
+			type="payable" code="3807" />
+		<account description="Umsatzsteuer EG-Lieferungen 15%/16%"
+			type="payable" code="3808" />
+		<account
+			description="Umsatzsteuer aus innergemeinschaftlichem Erwerb ohne Vorsteuerabzug"
+			type="payable" code="3809" />
+		<account description="Umsatzsteuer nicht fällig" type="payable"
+			code="3810" />
+		<account description="Umsatzsteuer nicht fällig 7%" type="payable"
+			code="3811" />
+		<account
+			description="Umsatzsteuer nicht fällig aus im Inland steuerpflichtigen EG-Lieferungen"
+			type="payable" code="3812" />
+		<account
+			description="Umsatzsteuer nicht fällig aus im Inland steuerpflichtigen EG-Lieferungen 16%"
+			type="payable" code="3813" />
+		<account description="Umsatzsteuer nicht fällig 16%" type="payable"
+			code="3815" />
+		<account description="Umsatzsteuer nicht fällig 15%" type="payable"
+			code="3816" />
+		<account
+			description="Umsatzsteuer aus im anderen EG-Land steuerpflichtigen Lieferungen"
+			type="payable" code="3817" />
+		<account
+			description="Umsatzsteuer aus im anderen EG-Land steuerpflichtigen sonstigen Leistungen/Werklieferungen"
+			type="payable" code="3818" />
+		<account description="Umsatzsteuervorauszahlungen" type="payable"
+			code="3820" />
+		<account description="Umsatzsteuervorauszahlungen 1/11" type="payable"
+			code="3830" />
+		<account description="Nachsteuer" type="payable" code="3832" />
+		<account description="Umsatzsteuer nach § 13b UStG 16%" type="payable"
+			code="3833" />
+		<account description="USt EG-Erwerb Neufahrzeuge ohne UStID"
+			type="payable" code="3834" />
+		<account description="Umsatzsteuer nach § 13b UStG" type="payable"
+			code="3835" />
+		<account description="Umsatzsteuer nach § 13b UStG 16%" type="payable"
+			code="3836" />
+		<account description="Umsatzsteuer nach § 13a UStG" type="payable"
+			code="3839" />
+		<account description="Umsatzsteuer laufendes Jahr" type="payable"
+			code="3840" />
+		<account description="Umsatzsteuer Vorjahr" type="payable"
+			code="3841" />
+		<account description="Umsatzsteuer frühere Jahre" type="payable"
+			code="3845" />
+		<account description="Aufgeschobene Einfuhr-Umsatzsteuer"
+			type="payable" code="3850" />
+		<account
+			description="In Rechnung unberechtigt ausgewiesene und geschuldete Steuerbeträge"
+			type="payable" code="3851" />
+		<account description="Steuerzahlungen an andere EG-Länder"
+			type="payable" code="3854" />
+		<account description="D. Rechnungsabgrenzungsposten Fremdkapital"
+			type="placeholder" />
+		<account description="Passive Rechnungsabgrenzung" type="liability"
+			code="3900" />
+		<account description="Abgrenzungen zur unterjährigen Kostenverrechnung für BWA"
+			type="liability" code="3950" />
+		<account description="01. Betriebliche Erträge" type="placeholder" />
+		<account description="a) Umsatzerlöse" type="placeholder" />
+		<account description="Steuerfreie Umsätze" type="placeholder" />
+		<account description="Steuerfreie Umsätze §4 Nr. 8 ff UStG"
+			type="income" code="4100" />
+		<account description="Sonstige steuerfr. Umsätze Inland" type="income"
+			code="4110" />
+		<account description="Steuerfreie Umsätze § 4 Nr. 1a UStG"
+			type="income" code="4120" />
+		<account description="Steuerfreie EG-Lieferungen, §4,1b UStG"
+			type="income" code="4125" />
+		<account description="Innergemeinschaftl. Dreiecksgeschäft"
+			type="income" code="4130" />
+		<account description="Steuerfr. EG-Lief.v.Neufahrzg.ohne UStID"
+			type="income" code="4135" />
+		<account description="Steuerfreie Umsätze Offshore usw." type="income"
+			code="4140" />
+		<account description="Steuerfreie Umsätze § 4 Nr. 2-7 UStG"
+			type="income" code="4150" />
+		<account description="Umsatzerlöse" type="income" code="4000" />
+		<account
+			description="Erlöse die mit den Durchschnittssätzen des § 24 UStG versteuert werden"
+			type="income" code="4180" />
+		<account description="Erlöse Kleinunternehmer § 19 UStG" type="income"
+			code="4185" />
+		<account description="Erlöse Geldspielautomaten 16% USt" type="income"
+			code="4186" />
+		<account description="Erlöse" type="income" code="4200" />
+		<account description="Umsatzerlöse 7% USt" type="income" code="4300" />
+		<account
+			description="Erlöse aus im Inland steuerpflichtigen EG Lieferungen 7% USt"
+			type="income" code="4310" />
+		<account
+			description="Erlöse aus im Inland steuerpflichtigen EG Lieferungen 16% USt"
+			type="income" code="4315" />
+		<account description="Erlöse aus im anderen EG-Land steuerpflichtigen Lieferungen"
+			type="income" code="4320" />
+		<account
+			description="Erlöse aus Leistungen, für die der Leistungsempfänger die Steuer nach § 13b UStG schuldet."
+			type="income" code="4337" />
+		<account
+			description="Erlöse aus im Drittland steuerbaren Leistungen, im Inland nicht steuerbare Umsätze"
+			type="income" code="4338" />
+		<account
+			description="Erlöse aus im anderen EG-Land steuerbaren Leistungen, im Inland nicht steuerbare Umsätze"
+			type="income" code="4339" />
+		<account description="Umsatzerlöse 16% USt" refersTo="contacts"
+			type="income" code="4400" />
+		<account description="Provisionserlöse" type="income" code="4500" />
+		<account description="Provisionserlöse, steuerfrei §4 Nr.8ff"
+			type="income" code="4504" />
+		<account description="Provisionserlöse, steuerfrei § 4 Nr.5"
+			type="income" code="4505" />
+		<account description="Provisionserlöse 7% USt" type="income"
+			code="4506" />
+		<account description="Provisionserlöse 16% USt" type="income"
+			code="4508" />
+		<account description="Erlöse Abfallverwertung" type="income"
+			code="4510" />
+		<account description="Erlöse Leergut" type="income" code="4520" />
+		<account description="b) Statistische Konten EÜR Umsatzerlöse"
+			type="placeholder" />
+		<account
+			description="Statistisches Konto Erlöse zum allgemeinen Umsatzsteuersatz (EÜR)"
+			type="income" code="4580" />
+		<account
+			description="Statistisches Konto Erlöse zum ermäßigten Umsatzsteuersatz (EÜR)"
+			type="income" code="4581" />
+		<account
+			description="Statistisches Konto Erlöse steuerfrei und nicht steuerbar (EÜR)"
+			type="income" code="4582" />
+		<account
+			description="Gegenkonto 4580 - 4582 bei Aufteilung der Erlöse nach Steuersätzen (EÜR)"
+			type="income" code="4589" />
+		<account description="Unentgeltliche Wertabgaben" type="income"
+			code="4600" />
+		<account description="Entnahme von Gegenständen ohne USt"
+			type="income" code="4605" />
+		<account description="Entnahme Unternehmer (Waren) 7% USt"
+			type="income" code="4610" />
+		<account description="Entnahme Unternehmer (Waren) ohne USt"
+			type="income" code="4619" />
+		<account description="Entnahme Unternehmer (Waren) 16% USt"
+			type="income" code="4620" />
+		<account description="Verwendung von Gegenständen 7% USt"
+			type="income" code="4630" />
+		<account description="Verwendung von Gegenst.(Kfz) ohne USt"
+			type="income" code="4639" />
+		<account description="Verwendung von Gegenständen 16% USt"
+			type="income" code="4640" />
+		<account description="Verwendung von Gegenst. (Kfz) 16% USt"
+			type="income" code="4645" />
+		<account description="Verwendung von Gegenst. (Tel) 16% USt"
+			type="income" code="4646" />
+		<account description="Unentgeltl. Erbringung Leist. 7% USt"
+			type="income" code="4650" />
+		<account description="Unentgeltl. Erbringung Leist. ohne USt"
+			type="income" code="4659" />
+		<account description="Unentgeltl. Erbringung Leist. 16% USt"
+			type="income" code="4660" />
+		<account description="Unentgeltl. Zuwend. von Waren 7% USt"
+			type="income" code="4670" />
+		<account description="Unentgeltl. Zuwend. von Waren ohne USt"
+			type="income" code="4679" />
+		<account description="Unentgeltl. Zuwend. von Waren 16% USt"
+			type="income" code="4680" />
+		<account description="Unentgeltl. Zuwend. Gegenstände 16% USt"
+			type="income" code="4686" />
+		<account description="Unentgeltl. Zuwend. Gegenstände ohne USt"
+			type="income" code="4689" />
+		<account description="Nicht steuerbare Umsätze" type="income"
+			code="4690" />
+		<account description="Umsatzsteuer-Vergütungen" type="income"
+			code="4695" />
+		<account description="Erlösschmälerungen" type="income" code="4700" />
+		<account description="Erlösschmälerungen steuerfrei §4 Nr. 1a"
+			type="income" code="4705" />
+		<account description="Erlösschmälerungen 7% USt" type="income"
+			code="4710" />
+		<account description="Erlösschmälerungen 16% USt" type="income"
+			code="4720" />
+		<account description="Erlösschmälerungen steuerfr. EG-Lief."
+			type="income" code="4724" />
+		<account description="Erlösschmälerung EG-Lieferung 7% USt"
+			type="income" code="4725" />
+		<account description="Erlösschmälerung EG-Lieferung 16% USt"
+			type="income" code="4726" />
+		<account description="Erlösschmäl.i.and.EG-Ld.stpfl.Liefer."
+			type="income" code="4727" />
+		<account description="Erlösschmälerung EG-Lieferung 15% USt"
+			type="income" code="4729" />
+		<account description="Gewährte Skonti" type="income" code="4730" />
+		<account description="Gewährte Skonti 7% USt" type="income"
+			code="4731" />
+		<account description="Gewährte Skonti 19% USt" type="income"
+			code="4736" />
+		<account description="Gewährte Boni" type="income" code="4740" />
+		<account description="Gewährte Boni 7% USt" type="income"
+			code="4750" />
+		<account description="Gewährte Boni 16% USt" type="income"
+			code="4760" />
+		<account description="Gewährte Rabatte" type="income" code="4770" />
+		<account description="Gewährte Rabatte 7% USt" type="income"
+			code="4780" />
+		<account description="Gewährte Rabatte 16% USt" type="income"
+			code="4790" />
+		<account
+			description="02. Erhöhung oder Verminderung des Bestandes an fertigen und unfertigen Erzeugnissen"
+			type="placeholder" />
+		<account description="Bestandsveränderungen fertige Erzeugnisse"
+			type="income" code="4800" />
+		<account description="Bestandsveränd.unfertige Erzeugnisse"
+			type="income" code="4810" />
+		<account description="Bestandsveränderung unfertige Leistung"
+			type="income" code="4815" />
+		<account description="Bestandsveränderung Bauaufträge" type="income"
+			code="4816" />
+		<account description="Bestandsveränderung Aufträge in Arbeit"
+			type="income" code="4818" />
+		<account description="03. Andere aktivierte Eigenleistungen"
+			type="placeholder" />
+		<account description="Andere aktivierte Eigenleistungen" type="income"
+			code="4820" />
+		<account description="04. Sonstige betriebliche Erträge" type="placeholder" />
+		<account description="Sonstige betriebliche Erträge" type="income"
+			code="4830" />
+		<account description="Sonstige betriebl. regelm. Erträge"
+			type="income" code="4835" />
+		<account description="Sonstige Erträge betriebl., regelm. 16%"
+			type="income" code="4836" />
+		<account description="Sonstige betriebsfr.regelm. Erträge"
+			type="income" code="4837" />
+		<account description="Sonstige Erträge unregelmäßig" type="income"
+			code="4839" />
+		<account description="Erträge aus Kursdifferenzen" type="income"
+			code="4840" />
+		<account description="Erträge Bewertung Finanzmittelfonds"
+			type="income" code="4843" />
+		<account description="Erlöse Sachanlageverkäufe steuerfrei § 4 Nr. 1a"
+			type="income" code="4844" />
+		<account description="Erlöse aus Verkäufen des Anlagevermögens 16% USt"
+			type="income" code="4845" />
+		<account description="Erlöse Sachanlageverkäufe steuerfrei § 4 Nr. 1b"
+			type="income" code="4848" />
+		<account description="Erlöse Sachanlageverkäufe" type="income"
+			code="4849" />
+		<account description="Erlöse Verkäufe immat.Vermögensgegenst"
+			type="income" code="4850" />
+		<account description="Erlöse a. Verkäufen Finanzanlagen" type="income"
+			code="4851" />
+		<account description="Erlöse aus Verkäufen Finanzanlagen 100 %/50 % steuerfrei"
+			type="income" code="4852" />
+		<account description="Anlagenabgänge Sachanlagen" type="income"
+			code="4855" />
+		<account description="Anlagenabgänge immaterielle Vermögensgegenstände"
+			type="income" code="4856" />
+		<account description="Abgänge Finanzanlagen" type="income"
+			code="4857" />
+		<account description="Anlagenabgänge Finanzanlagen 100 %/50 % steuerfrei"
+			type="income" code="4858" />
+		<account description="Grundstückserträge" type="income" code="4860" />
+		<account description="Erträge aus Abgang von Gegenständen des Anlagevermögens"
+			type="income" code="4900" />
+		<account
+			description="Erträge aus der Veräußerung von Anteilen an Kapitalgesellschaften 100 %/50 % steuerfrei"
+			type="income" code="4901" />
+		<account
+			description="Erträge aus dem Abgang von Gegenständen des Umlaufvermögens außer Vorräten"
+			type="income" code="4905" />
+		<account
+			description="Erträge aus dem Abgang von Gegenständen des Umlaufvermögens (außer Vorräten) 100%/50% steuerfrei"
+			type="income" code="4906" />
+		<account description="Erträge aus Zuschreibungen des Sachanlagevermögen"
+			type="income" code="4910" />
+		<account description="Erträge aus Zuschreibungen des immateriellen Anlagevermög."
+			type="income" code="4911" />
+		<account description="Erträge aus Zuschreibungen des Finanzanlagevermögens"
+			type="income" code="4912" />
+		<account
+			description="Erträge aus Zuschreibungen des Finanzanlagevermögens 100 %/50 % steuerfrei"
+			type="income" code="4913" />
+		<account
+			description="Erträge aus Zuschreibungen des anderen Anlagevermögens 100 %/50 % steuerfrei"
+			type="income" code="4914" />
+		<account
+			description="Erträge aus Zuschreibungen des Umlaufvermögens außer Vorräten"
+			type="income" code="4915" />
+		<account
+			description="Erträge aus Zuschreibungen des Umlaufvermögens 100 % /50 % steuerfrei"
+			type="income" code="4916" />
+		<account
+			description="Erträge aus der Herabsetzung der Pauschalwertberichtigung zu Forderungen"
+			type="income" code="4920" />
+		<account
+			description="Erträge aus der Herabsetzung der Einzelwertberichtigung zu Forderungen"
+			type="income" code="4923" />
+		<account description="Erträge aus abgeschriebenen Forderungen"
+			type="income" code="4925" />
+		<account description="Erträge aus der Auflösung von Rückstellungen"
+			type="income" code="4930" />
+		<account
+			description="Erträge aus der steuerlich niedrigeren Bewertung von Rückstellungen"
+			type="income" code="4932" />
+		<account
+			description="Erträge aus der steuerlich niedrigeren Bewertung von Verbindlichkeiten"
+			type="income" code="4933" />
+		<account
+			description="Erträge aus der Auflösung von Sonderposten mit Rücklageanteil (Existenzgründerrücklage)"
+			type="income" code="4934" />
+		<account
+			description="Erträge aus der Auflösung von Sonderposten mit Rücklageanteil (steuerfreie Rücklagen)"
+			type="income" code="4935" />
+		<account
+			description="Erträge aus der Auflösung von Sonderposten mit Rücklageanteil (Ansparabschreibungen)"
+			type="income" code="4936" />
+		<account
+			description="Erträge aus der Auflösung von Sonderposten mit Rücklageanteil (Sonderabschreibungen)"
+			type="income" code="4937" />
+		<account
+			description="Erträge aus der Auflösung von Sonderposten mit Rücklageanteil (aus der Währungsumstellung auf den Euro)"
+			type="income" code="4938" />
+		<account
+			description="Erträge aus der Auflösung von Sonderposten mit Rücklageanteil nach  52 Abs. 16 EStG"
+			type="income" code="4939" />
+		<account description="Verrechnete sonstige Sachbezüge (keine Waren)"
+			type="income" code="4940" />
+		<account description="Sachbezüge 7% USt" type="income" code="4941" />
+		<account description="Sachbezüge 16% USt" type="income" code="4945" />
+		<account description="Verrechnete sonstige Sachbezüge" type="income"
+			code="4946" />
+		<account description="Verrechnete sonstige Sachbezüge 16% USt"
+			type="income" code="4947" />
+		<account description="Verrechnete sonstige Sachbezüge ohne Umsatzsteuer"
+			type="income" code="4949" />
+		<account description="Periodenfremde Erträge" type="income"
+			code="4960" />
+		<account description="Versicherungsentschädigungen" type="income"
+			code="4970" />
+		<account description="Investitionszuschüsse" type="income"
+			code="4975" />
+		<account description="Investitionszulagen" type="income" code="4980" />
+		<account
+			description="Steuerfreie Erträge aus der Auflösung von Sonderposten mit Rücklageanteil"
+			type="income" code="4981" />
+		<account description="Sonstige steuerfreie Betriebseinnahmen"
+			type="income" code="4982" />
+		<account description="09. Erträge aus Beteiligungen" type="placeholder" />
+		<account description="- davon aus verbundenen Unternehmen"
+			type="placeholder" />
+		<account
+			description="Laufende Erträge aus Anteilen an Kapitalgesellschaften (verbundene Unternehmen) 100 % / 50 % steuerfrei"
+			type="income" code="7006" />
+		<account description="Erträge aus Beteiligungen an Finanzverbundenen Unternehmen"
+			type="income" code="7009" />
+		<account description="Erträge aus Beteiligungen" type="income"
+			code="7000" />
+		<account
+			description="Laufende Erträge aus Anteilen an Kapitalgesellschaften (Beteiligung) 100 %/50 % steuerfrei"
+			type="income" code="7005" />
+		<account
+			description="Gewinne aus Anteilen an nicht steuerbefreiten inländischen Kapitalgesellschaften § 9 Nr. 2a GewStG"
+			type="income" code="7007" />
+		<account description="Gewinnanteile aus Mitunternehmerschaften § 9 GewStG"
+			type="income" code="7008" />
+		<account
+			description="10. Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens"
+			type="placeholder" />
+		<account description="- davon aus verbundenen Unternehmen"
+			type="placeholder" />
+		<account
+			description="Laufende Erträge aus Anteilen Wertpapiean Kapitalgesellschaften (verbundene Unternehmen) 100 %/50 % steuerfrei"
+			type="income" code="7015" />
+		<account
+			description="Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens aus Finanzverbundenen Unternehmen"
+			type="income" code="7019" />
+		<account
+			description="Laufende Erträge aus Anteilen Wertpapiere an Kapitalgesellschaften (verbundene Unternehmen) 100 %/50 % steuerfrei"
+			type="placeholder" />
+		<account
+			description="Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens"
+			type="income" code="7010" />
+		<account
+			description="Laufende Erträge aus Anteilen an Kapitalgesellschaften (Finanzanlagevermögen) 100 %/50 % steuerfrei"
+			type="income" code="7014" />
+		<account description="11. sonstige Zinsen und ähnliche Erträge"
+			type="placeholder" />
+		<account description="- davon aus verbundenen Unternehmen"
+			type="placeholder" />
+		<account
+			description="Laufende Erträge aus Anteilen an Kapitalgesellschaften (verbundene Unternehmen) 100 % / 50% steuerfrei"
+			type="income" code="7104" />
+		<account
+			description="Sonstige Zinsen und ähnliche Erträge aus verbundenen Unternehmen"
+			type="income" code="7109" />
+		<account description="Sonstige Zinserträge aus verbundenen Unternehmen"
+			type="income" code="7119" />
+		<account description="Zinsähnliche Erträge aus verbundenen Unternehmen"
+			type="income" code="7129" />
+		<account description="Diskonterträge aus verbundenen Unternehmen"
+			type="income" code="7139" />
+		<account
+			description="Erträge aus Verlustübernahme und aufgrund einer Gewinngemeinschaft, eines Gewinn- oder Teilgewinnabführungsvertrags erhaltene Gewinne"
+			type="placeholder" />
+		<account description="Erträge aus Verlustübernahme" type="income"
+			code="7190" />
+		<account description="Erhaltene Gewinne aufgrund einer Gewinngemeinschaft"
+			type="income" code="7192" />
+		<account
+			description="Erhaltene Gewinne aufgrund eines Gewinn- oder Teilgewinnabführungsvertrags"
+			type="income" code="7194" />
+		<account description="Sonstige Zinsen und ähnliche Erträge"
+			type="income" code="7100" />
+		<account
+			description="Laufende Erträge aus Anteilen an Kapitalgesellschaften (Umlaufvermögen) 100 %/50 % steuerfrei"
+			type="income" code="7103" />
+		<account description="Zinserträge § 233a AO" type="income"
+			code="7105" />
+		<account description="Zinserträge § 233a AO Sonderfall Anlage A KSt"
+			type="income" code="7106" />
+		<account description="Sonstige Zinserträge" type="income"
+			code="7110" />
+		<account description="Zinsähnliche Erträge" type="income"
+			code="7120" />
+		<account description="Diskonterträge" type="income" code="7130" />
+		<account description="14. Ergebnis der gewöhnlichen Geschäftstätigkeit"
+			type="placeholder" />
+		<account description="15. außerordentliche Erträge" type="placeholder" />
+		<account description="Außerordentliche Erträge" type="income"
+			code="7400" />
+		<account description="Außerordentliche Erträge finanzwirksam"
+			type="income" code="7401" />
+		<account description="Außerordentliche Erträge nicht finanzwirksam"
+			type="income" code="7450" />
+		<account description="17. außerordentliches Ergebnis" type="placeholder" />
+		<account description="05. Materialaufwand" type="placeholder" />
+		<account
+			description="a) Aufwendungen für Roh-, Hilfs- und Betriebsstoffe und für bezogene Waren"
+			type="placeholder" />
+		<account
+			description="01. Aufwendungen für Roh-, Hilfs- und Betriebsstoffe und für bezogene Waren"
+			type="placeholder" />
+		<account
+			description="Aufwendungen für Roh-, Hilfs- und Betriebsstoffe und für bezogene Waren"
+			type="expense" code="5000" />
+		<account description="Einkauf von Roh-,Hilfs- und Betriebsstoffen"
+			type="expense" code="5100" />
+		<account description="Energiestoffe" type="expense" code="5190" />
+		<account description="02. Wareneingang" type="placeholder" />
+		<account description="Wareneingang" type="expense" code="5200" />
+		<account description="Wareneingang 7% Vorsteuer" type="expense"
+			code="5300" />
+		<account description="Wareneingang 16% Vorsteuer" type="expense"
+			code="5400" />
+		<account
+			description="lnnergemeinschaftlicher Erwerb 7% Vorsteuer und 7% Umsatzsteuer"
+			type="expense" code="5420" />
+		<account
+			description="Innergemeinschaftlicher Erwerb 16% Vorsteuer und 16% Umsatzsteuer"
+			type="expense" code="5425" />
+		<account
+			description="lnnergemeinschaftlicher Erwerb ohne Vorsteuerabzug und 7% Umsatzsteuer"
+			type="expense" code="5430" />
+		<account
+			description="lnnergemeinschaftlicher Erwerb ohne Vorsteuerabzug und 16% Umsatzsteuer"
+			type="expense" code="5435" />
+		<account
+			description="Innergemeinschaftlicher Erwerb von Neufahrzeugen von Lieferanten ohne UStID 16% Vorsteuer und 16% Umsatzsteuer"
+			type="expense" code="5440" />
+		<account description="Wareneingang 5% Vorsteuer" type="expense"
+			code="5500" />
+		<account description="Wareneingang 9% Vorsteuer" type="expense"
+			code="5530" />
+		<account description="Steuerfreier innergemeinschaftlicher Erwerb"
+			type="expense" code="5550" />
+		<account description="Steuerfreie Einfuhren" type="expense"
+			code="5559" />
+		<account
+			description="Waren aus einem Umsatzsteuerlager,  13a UStG 7% Vorsteuer und 7% Umsatzsteuer"
+			type="expense" code="5560" />
+		<account
+			description="Waren aus einem Umsatzsteuerlager,  13a UStG 16% Vorsteuer und 16% Umsatzsteuer"
+			type="expense" code="5565" />
+		<account description="03. Statistische Konten EÜR" type="placeholder" />
+		<account
+			description="Statistisches Konto Wareneinkauf zum allgemeinen Umsatzsteuersatz (EÜR)"
+			type="expense" code="5580" />
+		<account
+			description="Statistisches Konto Wareneinkauf zum ermäßigten Umsatzsteuersatz (EÜR)"
+			type="expense" code="5581" />
+		<account description="Statistisches Konto Wareneinkauf ohne Vorsteuerabzug (EÜR)"
+			type="expense" code="5582" />
+		<account
+			description="Gegenkonto 5580-5582 bei Aufteilung des Wareneinkaufs nach Steuersätzen (EÜR)"
+			type="expense" code="5589" />
+		<account description="Nicht abziehbare Vorsteuer" type="expense"
+			code="5600" />
+		<account description="Nicht abziehbare Vorsteuer 7%" type="expense"
+			code="5610" />
+		<account description="Nicht abziehbare Vorsteuer 16%" type="expense"
+			code="5650" />
+		<account description="Nachlässe" type="expense" code="5700" />
+		<account description="Nachlässe 7% Vorsteuer" type="expense"
+			code="5710" />
+		<account description="Nachlässe 16% Vorsteuer" type="expense"
+			code="5720" />
+		<account
+			description="Nachlässe aus innergemeinschaftlichem Erwerb 7% Vorsteuer/USt"
+			type="expense" code="5724" />
+		<account
+			description="Nachlässe aus innergemeinschaftlichem Erwerb 16% Vorsteuer/USt"
+			type="expense" code="5725" />
+		<account
+			description="Nachlsse aus innergemeinschaftlichem Erwerb 15% Vorsteuer/USt"
+			type="expense" code="5727" />
+		<account description="Erhaltene Skonti" type="expense" code="5730" />
+		<account description="Erhaltene Skonti 7% Vorsteuer" type="expense"
+			code="5731" />
+		<account description="Erhaltene Skonti aus Einkauf Roh-, Hilfs- und Betriebsstoffe" type="expense"
+			code="5733" />
+		<account description="Erhaltene Skonti aus Einkauf Roh-, Hilfs- und Betriebsstoffe 7 % Vorsteuer" type="expense"
+			code="5734" />
+		<account description="Erhaltene Skonti 19% Vorsteuer" type="expense"
+			code="5736" />
+		<account description="Erhaltene Skonti aus Einkauf Roh-, Hilfs- und Betriebsstoffe 19 % Vorsteuer" type="expense"
+			code="5738" />
+		<account description="Erhaltene Boni" type="expense" code="5740" />
+		<account description="Erhaltene Boni 7% Vorsteuer" type="expense"
+			code="5750" />
+		<account description="Erhaltene Boni 16% Vorsteuer" type="expense"
+			code="5760" />
+		<account description="Erhaltene Rabatte" type="expense" code="5770" />
+		<account description="Erhaltene Rabatte 7% Vorsteuer" type="expense"
+			code="5780" />
+		<account description="Erhaltene Rabatte 16% Vorsteuer" type="expense"
+			code="5790" />
+		<account description="Bezugsnebenkosten" type="expense" code="5800" />
+		<account description="Leergut" type="expense" code="5820" />
+		<account description="Zölle und Einfuhrabgaben" type="expense"
+			code="5840" />
+		<account description="Verrechnete Stoffkosten" type="expense"
+			code="5860" />
+		<account description="Bestandsveränderungen" type="expense"
+			code="5880" />
+		<account description="b) Aufwendungen für bezogene Leistungen"
+			type="placeholder" />
+		<account description="01. Fremdleistungen" type="placeholder" />
+		<account description="Fremdleistungen" type="expense" code="5900" />
+		<account
+			description="02. Umstäze, für die als Leistungsempfänger die Steuer nach  13b Abs. 2 UStG geschuldet wird"
+			type="placeholder" />
+		<account
+			description="Bauleistungen eines im Inland ansässigen Unternehmers 7% Vorsteuer und 7% Umsatzsteuer"
+			type="expense" code="5910" />
+		<account
+			description="Leistungen eines im Ausland ansässigen Unternehmers 7% Vorsteuer und 7% Umsatzsteuer"
+			type="expense" code="5915" />
+		<account
+			description="Bauleistungen eines im Inland ansässigen Unternehmers 16% Vorsteuer und 16% Umsatzsteuer"
+			type="expense" code="5920" />
+		<account
+			description="Leistungen eines im Ausland ansässigen Unternehmers 16% Vorsteuer und 16% Umsatzsteuer"
+			type="expense" code="5925" />
+		<account
+			description="Bauleistungen eines im Inland ansässigen Unternehmers ohne Vorsteuer und 7% Umsatzsteuer"
+			type="expense" code="5930" />
+		<account
+			description="Leistungen eines im Ausland ansässigen Unternehmers ohne Vorsteuer und 7% Umsatzsteuer"
+			type="expense" code="5935" />
+		<account
+			description="Bauleistungen eines im Inland ansässigen Unternehmers ohne Vorsteuer und 16% Umsatzsteuer"
+			type="expense" code="5940" />
+		<account description="Leistungen von ausländischen Unternehmern"
+			type="expense" code="5941" />
+		<account
+			description="Leistungen eines im Ausland ansässigen Unternehmers ohne Vorsteuer und 16% Umsatzsteuer"
+			type="expense" code="5945" />
+		<account description="06. Personalaufwand" type="placeholder" />
+		<account description="a) Löhne und Gehälter" type="expense"
+			code="6000" />
+		<account description="Löhne" type="expense" code="6010" />
+		<account description="Gehälter" type="expense" code="6020" />
+		<account description="Geschäftsführergehälter der GmbH-Gesellschafter"
+			type="expense" code="6024" />
+		<account description="Tantiemen" type="expense" code="6026" />
+		<account description="Geschäftsführergehälter" type="expense"
+			code="6027" />
+		<account description="Vergütung an angestellte Mitunternehmer  15 EStG"
+			type="expense" code="6028" />
+		<account description="Aushilfslöhne" type="expense" code="6030" />
+		<account description="Pauschale Steuer für Aushilfen" type="expense"
+			code="6040" />
+		<account description="Bedienungsgelder" type="expense" code="6045" />
+		<account description="Ehegattengehalt" type="expense" code="6050" />
+		<account description="Freiwillige soziale Aufwendungen, lohnsteuerpflichtig"
+			type="expense" code="6060" />
+		<account description="Pauschale Steuer auf sonstige Bezüge"
+			type="expense" code="6069" />
+		<account description="Krankengeldzuschüsse" type="expense"
+			code="6070" />
+		<account description="Zuschüsse der Agenturen für Arbeit"
+			type="expense" code="6075" />
+		<account description="Vermögenswirksame Leistungen" type="expense"
+			code="6080" />
+		<account description="Fahrtkostenerstattung Wohnung / Arbeitsstätte"
+			type="expense" code="6090" />
+		<account
+			description="b) soziale Abgaben und Aufwendungen für Altersversorgung und Unterstützung"
+			type="expense" code="6100" />
+		<account description="- davon für Altersversorgung" type="placeholder" />
+		<account description="Aufwendungen für Altersversorgung" type="expense"
+			code="6140" />
+		<account description="Pauschale Steuer für Versicherungen"
+			type="expense" code="6147" />
+		<account
+			description="Aufwendungen für Altersversorgung für Mitunternehmer  15 EStG"
+			type="expense" code="6148" />
+		<account description="Gesetzlich soziale Aufwendungen" type="expense"
+			code="6110" />
+		<account
+			description="Gesetzliche soziale Aufwendungen für Mitunternehmer  15 EStG"
+			type="expense" code="6119" />
+		<account description="Beiträge zur Berufsgenossenschaft" type="expense"
+			code="6120" />
+		<account description="Freiwillige soziale Aufwendungen lohnsteuerfrei"
+			type="expense" code="6130" />
+		<account description="Pauschale Steuer auf sonstige Bezüge"
+			type="expense" code="6147" />
+		<account description="Versorgungskassen" type="expense" code="6150" />
+		<account description="Aufwendungen für Unterstützung" type="expense"
+			code="6160" />
+		<account description="Sonstige soziale Abgaben" type="expense"
+			code="6170" />
+		<account description="07. Abschreibungen" type="placeholder" />
+		<account
+			description="a) auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen"
+			type="placeholder" />
+		<account description="Abschreibungen auf immaterielle Vermögensgegenstände"
+			type="expense" code="6200" />
+		<account description="Abschreibungen auf den Geschäfts- oder Firmenwert"
+			type="expense" code="6205" />
+		<account
+			description="Außerplanmäßige Abschreibungen auf immaterielle Vermögensgegenstände"
+			type="expense" code="6210" />
+		<account description="Abschreibungen auf das Anlagevermögen"
+			type="expense" code="6220" />
+		<account description="Abschreibungen auf Gebäude" type="expense"
+			code="6221" />
+		<account description="Abschreibungen auf Kfz" type="expense"
+			code="6222" />
+		<account description="Außerplanmäßige Abschreibungen auf Sachanlagen"
+			type="expense" code="6230" />
+		<account
+			description="Absetzung für außergewöhnliche technische und wirtschaftliche Abnutzung der Gebäude"
+			type="expense" code="6231" />
+		<account
+			description="Absetzung für außergewöhnliche technische und wirtschaftliche Abnutzung der Kfz"
+			type="expense" code="6232" />
+		<account
+			description="Absetzung für außergewöhnliche technische und wirtschaftliche Abnutzung sonstiger Wirtschaftsgüter"
+			type="expense" code="6233" />
+		<account
+			description="Abschreibungen auf Sachanlagen aufgrund steuerlicher Sondervorschriften"
+			type="expense" code="6240" />
+		<account description="Sonderabschreibungen nach  7g Abs. 1 und 2 EStG (ohne Kfz)"
+			type="expense" code="6241" />
+		<account description="Sonderabschreibungen nach  7g Abs. 1 und 2 EStG (fr Kfz)"
+			type="expense" code="6242" />
+		<account description="Kaufleasing" type="expense" code="6250" />
+		<account description="Sofortabschreibungen geringwertiger Wirtschaftsgüter"
+			type="expense" code="6260" />
+		<account
+			description="Abschreibungen auf aktivierte geringwertige Wirtschaftsgüter"
+			type="expense" code="6262" />
+		<account
+			description="Außerplanmäßige Abschreibungen auf aktivierte geringwertige Wirtschaftsgüter"
+			type="expense" code="6266" />
+		<account
+			description="Abschreibungen auf Aufwendungen für die Ingangsetzung und Erweiterung des Geschäftsbetriebs"
+			type="expense" code="6268" />
+		<account
+			description="Abschreibungen auf Aufwendungen für die Währungsumstellung auf den Euro"
+			type="expense" code="6269" />
+		<account description="b) auf Vermögensgegenstände des Umlaufvermögens"
+			type="placeholder" />
+		<account description="Abschreibung auf Vermögensgegenstände des Umlaufvermögens"
+			type="expense" code="6270" />
+		<account description="Abschreibungen auf Umlaufvermögen, steuerrechtlich bedingt"
+			type="expense" code="6272" />
+		<account description="Vorwegnahme künftiger Wertschwankungen im Umlaufvermögen"
+			type="expense" code="6275" />
+		<account description="Forderungsverluste" type="expense" code="6280" />
+		<account description="Forderungsverluste 7% USt" type="expense"
+			code="6281" />
+		<account description="Forderungsverluste 16% USt" type="expense"
+			code="6285" />
+		<account description="08. sonstige betriebliche Aufwendungen"
+			type="placeholder" />
+		<account description="a) ordentliche betriebliche Aufwendungen"
+			type="placeholder" />
+		<account description="1) Raumkosten" type="placeholder" />
+		<account description="Raumkosten" type="expense" code="6305" />
+		<account description="Miete" type="expense" code="6310" />
+		<account description="Gewerbesteuerlich zu berücksichtigende Miete § 8 GewStG "
+			type="expense" code="6313" />
+		<account
+			description="Vergütungen an Mitunternehmer für die mietweise Überlassung ihrer Wirtschaftsgüter § 16 EStG"
+			type="expense" code="6314" />
+		<account description="Pacht" type="expense" code="6315" />
+		<account description="GewStl. zu berücksichtigende Pacht §8 GewStG"
+			type="expense" code="6318" />
+		<account
+			description="Vergütungen an Mitunternehmer für die pachtweise Überlassung ihrer Wirtschaftsgüter § 15 EStG"
+			type="expense" code="6319" />
+		<account description="Heizung" type="expense" code="6320" />
+		<account description="Heizung für Gebäude, die nicht zum Betriebsvermögen gehren"
+			type="expense" code="6323" />
+		<account description="Gas, Strom, Wasser" type="expense" code="6325" />
+		<account
+			description="Gas, Strom, Wasser für Gebäude, die nicht zum Betriebsvermögen gehören"
+			type="expense" code="6328" />
+		<account description="Reinigung" type="expense" code="6330" />
+		<account description="Reinigung für Gebäude nicht im BV" type="expense"
+			code="6333" />
+		<account description="Instandhaltung betrieblicher Räume"
+			type="expense" code="6335" />
+		<account
+			description="Instandhaltung betrieblicher Räume in Gebäuden, die nicht zum Betriebs- Geschäftsausvermögen gehören"
+			type="expense" code="6338" />
+		<account description="Abgaben für betrieblich genutzen Grundbesitz"
+			type="expense" code="6340" />
+		<account
+			description="Abgaben für Grundbesitz, der nicht zum Betriebsvermögen gehört"
+			type="expense" code="6343" />
+		<account description="Sonstige Raumkosten" type="expense"
+			code="6345" />
+		<account
+			description="Sonstige Raumkosten für Gebäude, die nicht zum Betriebsvermögen gehören"
+			type="expense" code="6346" />
+		<account
+			description="Aufwendungen für ein häusliches Arbeitszimmer (abziehbarer Anteil)"
+			type="expense" code="6348" />
+		<account
+			description="Aufwendungen für ein häusliches Arbeitszimmer (nicht abziehbarer Anteil)"
+			type="expense" code="6349" />
+		<account description="Sonstige Grundstücksaufwendungen" type="expense"
+			code="6350" />
+		<account
+			description="Grundstücksaufwendungen für Gebäude, die nicht zum Betriebsvermögen gehören"
+			type="expense" code="6358" />
+		<account description="3) Versicherungen, Beiträge und Abgaben"
+			type="placeholder" />
+		<account description="Versicherungen" type="expense" code="6400" />
+		<account
+			description="Versicherungen für Gebäude, die zum Betriebsvermögen gehören"
+			type="expense" code="6405" />
+		<account
+			description="Versicherungen für Gebäude, die nicht zum Betriebsvermögen gehören"
+			type="expense" code="6408" />
+		<account description="Nettoprämie für Rückdeckung künftiger Versorgungsleistungen"
+			type="expense" code="6410" />
+		<account description="Beiträge" type="expense" code="6420" />
+		<account description="Sonstige Abgaben" type="expense" code="6430" />
+		<account
+			description="Steuerlich abzugsfähige Verspätungszuschläge und Zwangsgelder"
+			type="expense" code="6436" />
+		<account
+			description="Steuerlich nicht abzugsfähige Verspätungszuschläge und Zwangsgelder"
+			type="expense" code="6437" />
+		<account description="Ausgleichsabgabe i. S. d. Schwerbehindertengesetzes"
+			type="expense" code="6440" />
+		<account description="4) Reparaturen und Instandhaltungen"
+			type="placeholder" />
+		<account description="Reparaturen und Instandhaltung von Bauten"
+			type="expense" code="6450" />
+		<account
+			description="Reparaturen und Instandhaltung von Bauten, die nicht zum Betriebsvermögen gehören"
+			type="expense" code="6458" />
+		<account
+			description="Reparaturen und Instandhaltung von technischen Anlagen und Maschinen"
+			type="expense" code="6460" />
+		<account
+			description="Reparaturen und Instandhaltung von Betriebs- und Geschäftsausstattung"
+			type="expense" code="6470" />
+		<account description="Reparaturen und Instandhaltung von anderen Anlagen"
+			type="expense" code="6485" />
+		<account description="Sonstige Reparaturen und Instandhaltung"
+			type="expense" code="6490" />
+		<account description="Wartungskosten für Hard- und Software"
+			type="expense" code="6495" />
+		<account description="Mietleasing" type="expense" code="6498" />
+		<account
+			description="Gewerbesteuerlich zu berücksichtigendes Mietleasing § 8 GewStG"
+			type="expense" code="6499" />
+		<account description="6) Werbe- und Reisekosten" type="placeholder" />
+		<account description="Werbekosten" type="expense" code="6600" />
+		<account description="Geschenke bis 40 €" type="expense" code="6610" />
+		<account description="Geschenke über 40 €" type="expense"
+			code="6620" />
+		<account description="Geschenke ausschlielich betrieblich genutzt"
+			type="expense" code="6625" />
+		<account description="Repräsentationskosten" type="expense"
+			code="6630" />
+		<account description="Bewirtungskosten" type="expense" code="6640" />
+		<account
+			description="Sonstige eingeschränkt abziehbare Betriebsausgaben (abziehbarer Anteil)"
+			type="expense" code="6641" />
+		<account
+			description="Sonstige eingeschränkt abziehbare Betriebsausgaben (nicht abziehbarer Anteil)"
+			type="expense" code="6642" />
+		<account description="Aufmerksamkeiten" type="expense" code="6643" />
+		<account description="Nicht abzugsfähige Bewirtungskosten"
+			type="expense" code="6644" />
+		<account
+			description="Nicht abzugsfähige Betriebsausgaben aus Werbe-, Repräsentations- und Reisekosten (nicht abziehbarer Anteil)"
+			type="expense" code="6645" />
+		<account description="Reisekosten Arbeitnehmer" type="expense"
+			code="6650" />
+		<account description="Reisekosten AN Übernachtungsaufwand"
+			type="expense" code="6660" />
+		<account description="Reisekosten Arbeitnehmer, Fahrtkosten"
+			type="expense" code="6663" />
+		<account description="Reisekosten Arbeitnehmer Verpflegungsmehraufwand"
+			type="expense" code="6664" />
+		<account description="Kilometergelderstattung Arbeitnehmer"
+			type="expense" code="6668" />
+		<account description="Reisekosten Unternehmer" type="expense"
+			code="6670" />
+		<account description="Reisekosten Unternehmer, Fahrtkosten"
+			type="expense" code="6673" />
+		<account description="Reisekosten Unternehmer Verpflegungsmehraufwand"
+			type="expense" code="6674" />
+		<account description="Reisekosten Unternehmer Übernachtungsaufwand"
+			type="expense" code="6680" />
+		<account
+			description="Fahrten zwischen Wohnung und Arbeitsstätte (abziehbarer Anteil)"
+			type="expense" code="6688" />
+		<account
+			description="Fahrten zwischen Wohnung und Arbeitsstätte (nicht abziehbarer Anteil)"
+			type="expense" code="6689" />
+		<account description="Fahrten Wohnung zwischen Wohnung und Arbeitsstätte (Haben)"
+			type="expense" code="6690" />
+		<account description="8) verschiedene betriebliche Kosten"
+			type="placeholder" />
+		<account description="Porto" type="expense" code="6800" />
+		<account description="Telefon" type="expense" code="6805" />
+		<account description="Telefax und Internetkosten" type="expense"
+			code="6810" />
+		<account description="Bürobedarf" type="expense" code="6815" />
+		<account description="Zeitschriften, Bücher" type="expense"
+			code="6820" />
+		<account description="Fortbildungskosten" type="expense" code="6821" />
+		<account description="Freiwillige Sozialleistungen" type="expense"
+			code="6822" />
+		<account description="Vergütungen an Mitunternehmer §15 EStG"
+			type="expense" code="6823" />
+		<account description="Haftungsvergütung an Mitunternehmer § 15 EStG"
+			type="expense" code="6824" />
+		<account description="Rechts- und Beratungskosten" type="expense"
+			code="6825" />
+		<account description="Abschluß- und Prüfungskosten" type="expense"
+			code="6827" />
+		<account description="Buchführungskosten" type="expense" code="6830" />
+		<account description="Mieten für Einrichtungen" type="expense"
+			code="6835" />
+		<account
+			description="Gewerbesteuerlich zu berücksichtigende Miete für Einrichtungen § 8 GewStG"
+			type="expense" code="6839" />
+		<account description="Mietleasing" type="expense" code="6840" />
+		<account
+			description="Gewerbesteuerlich zu berücksichtigendes Mietleasing § 8 GewStG"
+			type="expense" code="6844" />
+		<account description="Werkzeuge und Kleingeräte" type="expense"
+			code="6845" />
+		<account description="Sonstiger Betriebsbedarf" type="expense"
+			code="6850" />
+		<account description="Nebenkosten des Geldverkehrs" type="expense"
+			code="6855" />
+		<account
+			description="Aufwendungen aus Anteilen an Kapitalgesellschaften 100 %/ 50 % nicht abzugsfähig (inländische Kap.Ges.)"
+			type="expense" code="6856" />
+		<account
+			description="Aufwendungen aus der Veräußerung von Anteilen an Kapitalgesellschaften 100 %/50 % nicht abzugsfähig"
+			type="expense" code="6857" />
+		<account description="Aufwendungen für Abraum- und Abfallbeseitigung"
+			type="expense" code="6859" />
+		<account description="Nicht abziehbare Vorsteuer" type="expense"
+			code="6860" />
+		<account description="Nicht abziehbare Vorsteuer 7%" type="expense"
+			code="6865" />
+		<account description="Nicht abziehbare Vorsteuer 16%" type="expense"
+			code="6870" />
+		<account description="Nicht abziehbare Hälfte der Aufsichtsratsvergütungen"
+			type="expense" code="6875" />
+		<account description="Abziehbare Aufsichtsratsvergütungen"
+			type="expense" code="6876" />
+		<account description="sonstige betriebliche Aufwendungen"
+			type="expense" code="6300" />
+		<account description="Fremdleistungen und Fremdarbeiten" type="expense"
+			code="6303" />
+		<account description="Sonstige betriebl.u.regelm.Aufwendungen"
+			type="expense" code="6304" />
+		<account description="5) Fahrzeugkosten" type="expense" code="6500" />
+		<account description="Kfz-Versicherungen" type="expense" code="6520" />
+		<account description="Laufende Kfz-Betriebskosten" type="expense"
+			code="6530" />
+		<account description="Kfz-Reparaturen" type="expense" code="6540" />
+		<account description="Garagenmiete" type="expense" code="6550" />
+		<account description="Leasingfahrzeugkosten" type="expense"
+			code="6560" />
+		<account description="Sonstige Kfz-Kosten" type="expense"
+			code="6570" />
+		<account description="Mautgebühren" type="expense" code="6580" />
+		<account
+			description="Kfz-Kosten für betrieblich genutzte, zum Privatvermögen gehörende Kraftfahrzeuge"
+			type="expense" code="6590" />
+		<account description="Fremdfahrzeugkosten" type="expense"
+			code="6595" />
+		<account description="7) Kosten der Warenabgabe" type="expense"
+			code="6700" />
+		<account description="Verpackungsmaterial" type="expense"
+			code="6710" />
+		<account description="Ausgangsfrachten" type="expense" code="6740" />
+		<account description="Transportversicherungen" type="expense"
+			code="6760" />
+		<account description="Verkaufsprovisionen" type="expense"
+			code="6770" />
+		<account description="Fremdarbeiten (Vertrieb)" type="expense"
+			code="6780" />
+		<account description="Aufwand für Gewährleistung" type="expense"
+			code="6790" />
+		<account description="Aufwendungen aus Kursdifferenzen" type="expense"
+			code="6880" />
+		<account
+			description="Aufwendungen aus der Währungsumstellung auf den Euro (Art. 43 Abs. 1 EGHGB)"
+			type="expense" code="6882" />
+		<account description="Aufwendungen aus Bewertung Finanzmittelfonds"
+			type="expense" code="6883" />
+		<account
+			description="b) Verluste aus dem Abgang von Gegenständen des Anlagevermögens"
+			type="placeholder" />
+		<account
+			description="Erlöse aus Verkäufen Sachanlagevermögen steuerfrei § 4 Nr. 1a UStG"
+			type="expense" code="6884" />
+		<account description="Erlöse aus Verkäufen Sachanlagevermögen 16% USt"
+			type="expense" code="6885" />
+		<account
+			description="Erlöse aus Verkäufen Sachanlagevermögen steuerfrei § 4 Nr. 1b UStG"
+			type="expense" code="6888" />
+		<account description="Erlöse aus Verkäufen Sachanlagevermögen"
+			type="expense" code="6889" />
+		<account description="Erlöse aus Verkäufen immaterieller Vermögensgegenstände"
+			type="expense" code="6890" />
+		<account description="Erlöse aus Verkäufen Finanzanlagen"
+			type="expense" code="6891" />
+		<account
+			description="Erlöse aus Verkäufen Finanzanlagen 100 %/50 % nicht abzugsfähig (inländische Kap.Ges.)"
+			type="expense" code="6892" />
+		<account description="Anlagenabgänge Sachanlagen" type="expense"
+			code="6895" />
+		<account description="Anlagenabgänge immaterielle Vermögensgegenstände"
+			type="expense" code="6896" />
+		<account description="Anlagenabgänge Finanzanlagen" type="expense"
+			code="6897" />
+		<account
+			description="Anlagenabgänge Finanzanlagen 100 %/50 % nicht abzugsfähig (inländische Kap.Ges.)"
+			type="expense" code="6898" />
+		<account
+			description="Verluste aus dem Abgang von Gegenständen des Anlagevermögens"
+			type="expense" code="6900" />
+		<account
+			description="Verluste aus der Veräußerung von Anteilen an Kapitalgesellschaften 100 %/50 % nicht abzugsfähig"
+			type="expense" code="6903" />
+		<account
+			description="c) Verluste aus Wertminderungen oder aus dem Abgang von Gegenständen des Umlaufvermögens und Einstellung in die Pauschalwertberichtigung zu Forderungen"
+			type="placeholder" />
+		<account
+			description="Verluste aus dem Abgang von Gegenständen des Umlaufvermögens außer Vorräten"
+			type="expense" code="6905" />
+		<account
+			description="Verluste aus dem Abgang von Gegenständen des Umlaufvermögens (außer Vorräten) 100%/50% nicht abzugsfähig"
+			type="expense" code="6906" />
+		<account
+			description="Abschreibungen auf Umlaufvermögen außer Vorräten und Wertpapieren des UV"
+			type="expense" code="6910" />
+		<account
+			description="Abschreibungen auf Umlaufvermögen außer Vorräten und Wertpapieren des UV, steuerrechtlich bedingt"
+			type="expense" code="6912" />
+		<account
+			description="Vorwegnahme künftiger Wertschwankungen im Umlaufvermögen außer Vorräten und Wertpapieren"
+			type="expense" code="6915" />
+		<account
+			description="Aufwendungen aus der Zuschreibung von steuerlich niedriger bewerteten Verbindlichkeiten"
+			type="expense" code="6916" />
+		<account
+			description="Aufwendugnen aus der Zuschreibung von steuerlich niedriger bewerteten Rückstellungen"
+			type="expense" code="6917" />
+		<account description="Einstellung in die Pauschalwertberichtigung zu Forderungen"
+			type="expense" code="6920" />
+		<account
+			description="d) sonstige Aufwendungen im Rahmen der gewöhnlichen Geschäftstätigkeit"
+			type="placeholder" />
+		<account description="Zuwendungen, Spenden, steuerlich nicht abziehbar"
+			type="expense" code="6390" />
+		<account
+			description="Zuwendungen, Spenden für wissenschaftliche und kulturelle Zwecke"
+			type="expense" code="6391" />
+		<account description="Zuwendungen, Spenden für mildtätige Zwecke"
+			type="expense" code="6392" />
+		<account
+			description="Zuwendungen, Spenden für kirchliche, religiöse und gemeinntüzige Zwecke"
+			type="expense" code="6393" />
+		<account description="Zuwendungen, Spenden an politische Parteien"
+			type="expense" code="6394" />
+		<account
+			description="Zuwendungen, Spenden an Stiftungen für gemeinnützige Zwecke i.S.d. § 52 Abs. 2 Nr. 1-3 AO"
+			type="expense" code="6395" />
+		<account
+			description="Zuwendungen, Spenden an Stiftungen für gemeinnützige Zwecke i.S.d. § 52 Abs. 2 Nr. 4 AO"
+			type="expense" code="6396" />
+		<account
+			description="Zuwendungen, Spenden an Stiftungen für kirchliche, religiöse und gemeinnützige Zwecke"
+			type="expense" code="6397" />
+		<account
+			description="Zuwendungen, Spenden an Stiftungen für wissenschaftliche, mildtätige, kulturelle Zwecke"
+			type="expense" code="6398" />
+		<account description="e) Kalkulatorische Kosten" type="placeholder" />
+		<account description="Kalkulatorischer Unternehmerlohn" type="expense"
+			code="6970" />
+		<account description="Kalkulatorische Miete und Pacht" type="expense"
+			code="6972" />
+		<account description="Kalkulatorische Zinsen" type="expense"
+			code="6974" />
+		<account description="Kalkulatorische Abschreibungen" type="expense"
+			code="6976" />
+		<account description="Kalkulatorische Wagnisse" type="expense"
+			code="6978" />
+		<account description="Kalkulatorischer Lohn für unentgeltliche Mitarbeiter"
+			type="expense" code="6979" />
+		<account description="Verrechneter kalkulatorischer Unternehmerlohn"
+			type="expense" code="6980" />
+		<account description="Verrechnete kalkulatorische Miete und Pacht"
+			type="expense" code="6982" />
+		<account description="Verrechnete kalkulatorische Zinsen"
+			type="expense" code="6984" />
+		<account description="Verrechnete kalkulatorische Abschreibungen"
+			type="expense" code="6986" />
+		<account description="Verrechnete kalkulatorische Wagnisse"
+			type="expense" code="6988" />
+		<account
+			description="Verrechneter kalkulatorischer Lohn für unentgeltliche Mitarbeiter"
+			type="expense" code="6989" />
+		<account description="f) Kosten bei Anwendung des Umsatzkostenverfahrens"
+			type="placeholder" />
+		<account description="Herstellungskosten" type="expense" code="6990" />
+		<account description="Verwaltungskosten" type="expense" code="6992" />
+		<account description="Vertriebskosten" type="expense" code="6994" />
+		<account description="Gegenkonto zu 6990 bis 6998" type="expense"
+			code="6999" />
+		<account description="Einstellung in die Einzelwertberichtigung zu Forderungen"
+			type="expense" code="6923" />
+		<account
+			description="Einstellungen in Sonderposten mit Rücklageanteil (steuerfreie Rücklagen)"
+			type="expense" code="6925" />
+		<account
+			description="Einstellungen in Sonderposten mit Rücklageanteil (Ansparabschreibungen)"
+			type="expense" code="6926" />
+		<account
+			description="Einstellungen in Sonderposten mit Rücklageanteil (Sonderabschreibungen)"
+			type="expense" code="6927" />
+		<account
+			description="Einstellungen in Sonderposten mit Rücklageanteil (Existenzgründerrücklage)"
+			type="expense" code="6928" />
+		<account
+			description="Einstellungen in Sonderposten mit Rücklageanteil (§ 52 Abs. 16 EStG)"
+			type="expense" code="6929" />
+		<account description="Forderungsverluste" type="expense" code="6930" />
+		<account description="Forderungsverluste 7% USt" type="expense"
+			code="6931" />
+		<account description="Forderungsverluste aus steuerfreien EG-Lieferunge"
+			type="expense" code="6932" />
+		<account
+			description="Forderungsverluste aus im Inland steuerpflichtigen EG-Lieferungen 7% USt"
+			type="expense" code="6933" />
+		<account
+			description="Forderungsverluste aus im Inland steuerpflichtigen EGLieferungen 16% USt"
+			type="expense" code="6934" />
+		<account description="Forderungsverluste 16% USt" type="expense"
+			code="6935" />
+		<account description="Forderungsverluste 15% USt" type="expense"
+			code="6937" />
+		<account
+			description="Forderungsverluste aus im Inland steuerpflichtigen EGLieferungen 15% USt"
+			type="expense" code="6939" />
+		<account description="Periodenfremde Aufwendungen" type="expense"
+			code="6960" />
+		<account description="Sonstige Aufwendungen betriebsfremd und regelmäßig"
+			type="expense" code="6967" />
+		<account description="Sonstige Aufwendungen unregelmäßig"
+			type="expense" code="6969" />
+		<account
+			description="12. Abschreibungen auf Finanzanlagen und auf Wertpapiere des Umlaufvermögens"
+			type="placeholder" />
+		<account description="Abschreibungen auf Finanzanlagen" type="expense"
+			code="7200" />
+		<account
+			description="Abschreibungen auf Finanzanlagen 100% / 50% nicht abzugsfähig"
+			type="expense" code="7204" />
+		<account
+			description="Abschreibungen aufgrund von Verlustanteilen an Mitunternehmerschaften § 8 GewStG"
+			type="expense" code="7208" />
+		<account description="Abschreibungen auf Wertpapiere des Umlaufvermögens"
+			type="expense" code="7210" />
+		<account
+			description="Abschreibungen auf Wertpapiere des Umlaufvermögens 100% / 50% nicht abzugsfähig"
+			type="expense" code="7214" />
+		<account
+			description="Abschreibungen auf Finanzanlagen aufgrund steuerlicher Sondervorschriften"
+			type="expense" code="7250" />
+		<account
+			description="Abschreibungen auf Finanzanlagen auf Grund steuerlicher Sondervorschriften 100% / 50% nicht abzugsfähig"
+			type="expense" code="7255" />
+		<account
+			description="Vorwegnahme künfiger Wertschwankungen bei Wertpapieren des Umlaufvermögens"
+			type="expense" code="7260" />
+		<account description="13. Zinsen und ähnliche Aufwendungen"
+			type="placeholder" />
+		<account description="- davon an verbundene Unternehmen" type="placeholder" />
+		<account
+			description="Zinsen und ähnliche Aufwendungen an verbundene Unterbundenen nehmen"
+			type="expense" code="7309" />
+		<account
+			description="Zinsaufwendungen für kurzfristige Verbindlichkeiten an verbundene Unternehmen"
+			type="expense" code="7319" />
+		<account
+			description="Zinsaufwendungen für langfristige Verbindlichkeiten an verbundene Unternehmen"
+			type="expense" code="7329" />
+		<account description="Zinsähnliche Aufwendungen an verbundene Unternehmen"
+			type="expense" code="7339" />
+		<account description="Diskontaufwendungen an verbundene Unternehmen"
+			type="expense" code="7349" />
+		<account
+			description="Zinsen und ähnliche Aufwendungen an verbundene Unternehmen 100 %/50 % nicht abzugsfähig"
+			type="expense" code="7351" />
+		<account
+			description="Aufwendungen aus Verlustübernahme und aufgrund einer Gewinngemeinschaft, eines Gewinn- oder Teilgewinnabführungsvertrags abgeführte Gewinne"
+			type="placeholder" />
+		<account description="Aufwendungen aus Verlustübernahme" type="expense"
+			code="7390" />
+		<account description="Abgeführte Gewinne aufgrund einer Gewinngemeinschaft"
+			type="expense" code="7392" />
+		<account
+			description="Abgeführte Gewinne aufgrund eines Gewinn- oder Teilgewinnabführungsvertrags"
+			type="expense" code="7394" />
+		<account
+			description="Abgeführte Gewinnanteile an stille Gesellschafter § 8 GewStG"
+			type="expense" code="7399" />
+		<account description="Zinsen und ähnliche Aufwendungen" type="expense"
+			code="7300" />
+		<account description="Steuerlich abzugsfähige, andere Nebenleistungen zu Steuern"
+			type="expense" code="7303" />
+		<account
+			description="Steuerlich nicht abzugsfähige, andere Nebenleistungen zu Steuern"
+			type="expense" code="7304" />
+		<account description="Zinsaufwendungen § 233a AO betriebliche Steuern"
+			type="expense" code="7305" />
+		<account description="Zinsaufwendungen §§ 233a bis 237 AO"
+			type="expense" code="7306" />
+		<account description="Zinsaufwendungen für kurzfristige Verbindlichkeiten"
+			type="expense" code="7310" />
+		<account
+			description="Nicht abzugsfähige Schuldzinsen (langfristig) gemäß § 4 Abs. 4a EStG"
+			type="expense" code="7313" />
+		<account
+			description="Nicht abzugsfähige Schuldzinsen (kurzfristig) gemäß § 4 Abs. 4a EStG"
+			type="expense" code="7314" />
+		<account
+			description="In Dauerschuldzinsen umqualifizierte Zinsen auf kurzfristige Verbindlichkeiten"
+			type="expense" code="7318" />
+		<account description="Zinsaufwendungen für langfristige Verbindlichkeiten"
+			type="expense" code="7320" />
+		<account
+			description="Zinsaufwendungen für Gebäude, die zum Betriebsvermögen gehören"
+			type="expense" code="7325" />
+		<account description="Zinsen zur Finanzierung des Anlagevermögen"
+			type="expense" code="7326" />
+		<account description="Renten und dauernde Lasten aus Gründung/Erwerb § 8 GewStG"
+			type="expense" code="7327" />
+		<account
+			description="Zinsaufwendungen an Mitunternehmer für die Hingabe von Kapital § 15 EStG"
+			type="expense" code="7328" />
+		<account description="Zinsähnliche Aufwendungen" type="expense"
+			code="7330" />
+		<account description="Diskontaufwendungen" type="expense"
+			code="7340" />
+		<account
+			description="Zinsen und ähnliche Aufwendungen 100 %/50 % nicht abzugsfähig"
+			type="expense" code="7350" />
+		<account description="16. außerordentliche Aufwendungen" type="placeholder" />
+		<account description="Außerordentliche Aufwendungen" type="expense"
+			code="7500" />
+		<account description="Außerordentliche Aufwendungen finanzwirksam"
+			type="expense" code="7501" />
+		<account description="Außerordentliche Aufwendungen nicht finanzwirksam"
+			type="expense" code="7550" />
+		<account description="18. Steuern vom Einkommen und vom Ertrag"
+			type="placeholder" />
+		<account description="Körperschaftsteuer" type="expense" code="7600" />
+		<account description="Körperschaftsteuer für Vorjahre" type="expense"
+			code="7603" />
+		<account description="Körperschaftsteuererstattung Vorjahre"
+			type="income" code="7604" />
+		<account description="Solidaritätszuschlagerstattungen für Vorjahre"
+			type="income" code="7607" />
+		<account description="Solidaritätszuschlag" type="expense"
+			code="7608" />
+		<account description="Solidaritätszuschlag für Vorjahre" type="expense"
+			code="7609" />
+		<account description="Gewerbesteuer" type="expense" code="7610" />
+		<account description="Gewerbeertragsteuer" type="expense"
+			code="7620" />
+		<account description="Kapitalertragsteuer 25%" type="expense"
+			code="7630" />
+		<account description="Kapitalertragsteuer 20%" type="expense"
+			code="7632" />
+		<account
+			description="Anrechenbarer Solidaritätszuschlag auf Kapitelertragsteuer 20%"
+			type="expense" code="7634" />
+		<account description="Zinsabschlagsteuer" type="expense" code="7635" />
+		<account description="Anrechenbarer Solidaritätszuschlag auf Zinsabschlagsteuer"
+			type="expense" code="7638" />
+		<account
+			description="Steuernachzahlungen Vorjahre für Steuern vom Einkommen und Ertrag"
+			type="expense" code="7640" />
+		<account
+			description="Steuererstattungen Vorjahre für Steuern vom Einkommen und Ertrag"
+			type="income" code="7642" />
+		<account
+			description="Erträge aus der Auflösung von Rückstellungen für Steuern vom Einkommen und Ertrag"
+			type="income" code="7644" />
+		<account description="19. sonstige Steuern" type="placeholder" />
+		<account description="Sonstige Steuern" type="expense" code="7650" />
+		<account description="Verbrauchsteuer" type="expense" code="7675" />
+		<account description="Ökosteuer" type="expense" code="7678" />
+		<account description="Grundsteuer" type="expense" code="7680" />
+		<account
+			description="Grundsteuer für Gebäude, die nicht zum Betriebsvermögen gehören"
+			type="expense" code="7684" />
+		<account description="Kfz-Steuer" type="expense" code="7685" />
+		<account description="Steuernachzahlungen Vorjahre für sonstige Steuern"
+			type="expense" code="7690" />
+		<account description="Steuererstattungen Vorjahre für sonstige Steuern"
+			type="income" code="7692" />
+		<account
+			description="Erträge aus der Auflösung von Rückstellungen für sonstige Steuern"
+			type="expense" code="7694" />
+		<account description="20. Jahresüberschuß/Jahresfehlbetrag"
+			type="placeholder" />
+		<account description="21. Veränderungen Vorträge und Rücklagen"
+			type="placeholder" />
+		<account description="01. Gewinn-/Verlustvortrag nach Verwendung"
+			type="placeholder" />
+		<account description="Gewinnvortrag nach Verwendung" type="equity"
+			code="7700" />
+		<account description="Gewinnvortrag 40% Vorbelastung" type="equity"
+			code="7705" />
+		<account description="Gewinnvortrag 0% Vorbelastung (steuerliches Einlagekonto)"
+			type="equity" code="7710" />
+		<account description="Gewinnvortrag 0% Vorbelastung (EK02)"
+			type="equity" code="7715" />
+		<account description="Verlustvortrag nach Verwendung" type="equity"
+			code="7720" />
+		<account description="Entnahmen aus der Kapitalrücklage" type="equity"
+			code="7730" />
+		<account description="02. Entnahmen aus Gewinnrücklagen" type="placeholder" />
+		<account description="Entnahmen aus der gesetzlichen Rücklage"
+			type="equity" code="7735" />
+		<account description="Entnahmen aus der Rücklage für eigene Anteile"
+			type="equity" code="7740" />
+		<account description="Entnahmen aus satzungsmäßigen Rücklagen"
+			type="equity" code="7745" />
+		<account description="Entnahmen aus anderen Gewinnrücklagen"
+			type="equity" code="7750" />
+		<account description="Erträge aus Kapitalherabsetzung" type="equity"
+			code="7755" />
+		<account
+			description="Einstellungen in die Kapitalrücklage nach den Vorschriften über die vereinfachte Kapitalherabsetzung"
+			type="equity" code="7760" />
+		<account description="03. Einstellungen in Gewinnrücklagen"
+			type="placeholder" />
+		<account description="Einstellungen in die gesetzliche Rücklage"
+			type="equity" code="7765" />
+		<account description="Einstellungen in die Rücklage für eigene Anteile"
+			type="equity" code="7770" />
+		<account description="Einstellungen in satzungsmäßige Rücklagen"
+			type="equity" code="7775" />
+		<account description="Einstellungen in andere Gewinnrücklagen"
+			type="equity" code="7780" />
+		<account description="Vorabausschüttung" type="equity" code="7790" />
+		<account description="Vortrag auf neue Rechnung (GuV)" type="equity"
+			code="7795" />
+		<account description="Aufwendungen/Erträge aus Umrechnungsdifferenzen"
+			type="equity" code="7990" />
+		<account description="Anfangsbestand" type="placeholder" />
+		<account description="Saldenvorträge Sachkonten" type="equity"
+			code="9000" />
+		<account description="Saldenvorträge Debitoren" type="equity"
+			code="9008" />
+		<account description="Saldenvorträge Kreditoren" type="equity"
+			code="9009" />
+	</chart>
+	<chart id="2" name="GnucashBusiness"
+		description="Gnucash Business with added account codes and added VAT accounts 3.23.9-3.23.11"
+		vatin="3.23.9" vatout="3.23.10" vatonhold="3.23.11">
+
+		<account description="Assets" type="asset" code="1" />
+		<account description="Accounts receivable" type="asset" code="1.1" />
+		<account description="Current Assets" type="asset" code="1.2" />
+		<account description="Checking Account" type="asset" code="1.2.1" />
+		<account description="Savings Account" type="asset" code="1.2.2" />
+		<account description="Petty Cash" type="asset" code="1.2.3" />
+		<account description="Equity" type="equity" code="2" />
+		<account description="Opening Balances" type="equity" code="2.1" />
+		<account description="Retained Earnings" type="equity" code="2.2" />
+		<account description="Owners Drawings" refersTo="partners"
+			type="equity" code="2.3" />
+		<account description="Expenses" type="expense" code="3" />
+		<account description="Adjustment" type="expense" code="3.1" />
+		<account description="Auto" type="expense" code="3.2" />
+		<account description="Fees" type="expense" code="3.2.1" />
+		<account description="Gas" type="expense" code="3.2.2" />
+		<account description="Parking" type="expense" code="3.2.3" />
+		<account description="Repair and Maintenance" type="expense"
+			code="3.2.4" />
+		<account description="Bank Service Charge" type="expense"
+			code="3.3" />
+		<account description="Books" type="expense" code="3.4" />
+		<account description="Cash Discounts" type="expense" code="3.5" />
+		<account description="Charity" type="expense" code="3.6" />
+		<account description="Depreciation" type="expense" code="3.7" />
+		<account description="Dining" type="expense" code="3.8" />
+		<account description="Dues and Subscriptions" type="expense"
+			code="3.9" />
+		<account description="Education" type="expense" code="3.10" />
+		<account description="Equipment Rental" type="expense" code="3.11" />
+		<account description="Insurance" type="expense" code="3.12" />
+		<account description="Disability Insurance" type="expense"
+			code="3.12.1" />
+		<account description="Liability Insurance" type="expense"
+			code="3.12.2" />
+		<account description="Workers Comp" type="expense" code="3.12.3" />
+		<account description="Licenses and Permits" type="expense"
+			code="3.13" />
+		<account description="Miscellaneous" type="expense" code="3.14" />
+		<account description="Office Supplies" type="expense" code="3.15" />
+		<account description="Outside Services" type="expense" code="3.16" />
+		<account description="Payroll Expenses" type="expense" code="3.17" />
+		<account description="Postage and Delivery" type="expense"
+			code="3.18" />
+		<account description="Printing and Reproduction" type="expense"
+			code="3.19" />
+		<account description="Professional Fees" type="expense" code="3.20" />
+		<account description="Accounting" type="expense" code="3.20.1" />
+		<account description="Legal Fees" type="expense" code="3.20.2" />
+		<account description="Rent" type="expense" code="3.21" />
+		<account description="Repairs" type="expense" code="3.22" />
+		<account description="Building Repairs" type="expense" code="3.22.1" />
+		<account description="Computer Repairs" type="expense" code="3.22.2" />
+		<account description="Equipment Repairs" type="expense" code="3.22.3" />
+		<account description="Janitorial Expenses" type="expense"
+			code="3.22.4" />
+		<account description="Taxes" type="expense" code="3.23" />
+		<account description="Emp-FICA" type="expense" code="3.23.1" />
+		<account description="Federal" type="expense" code="3.23.2" />
+		<account description="FICA" type="expense" code="3.23.3" />
+		<account description="FUTA" type="expense" code="3.23.4" />
+		<account description="Local" type="expense" code="3.23.5" />
+		<account description="Other Tax" type="expense" code="3.23.6" />
+		<account description="Property" type="expense" code="3.23.7" />
+		<account description="State/Province" type="expense" code="3.23.8" />
+		<account description="VAT, receivable" type="expense" code="3.23.9" /><!--  added by gnuaccounting -->
+		<account description="VAT, payable" type="expense" code="3.23.10" /><!--  added by gnuaccounting -->
+		<account description="VAT, on hold" type="expense" code="3.23.11" /><!--  added by gnuaccounting -->
+
+		<account description="Travel and Entertainment" type="expense"
+			code="3.24" />
+		<account description="Entertainment" type="expense" code="3.24.1" />
+		<account description="Meals" type="expense" code="3.24.2" />
+		<account description="Travel" type="expense" code="3.24.3" />
+		<account description="Utilities" type="expense" code="3.25" />
+		<account description="Cable" type="expense" code="3.25.1" />
+		<account description="Cell Phone" type="expense" code="3.25.2" />
+		<account description="Electric" type="expense" code="3.25.3" />
+		<account description="Garbage Collection" type="expense" code="3.25.4" />
+		<account description="Gas" type="expense" code="3.25.5" />
+		<account description="Internet" type="expense" code="3.25.6" />
+		<account description="Phone" type="expense" code="3.25.7" />
+		<account description="Water" type="expense" code="3.25.8" />
+
+		<account description="Income" type="income" code="4" />
+		<account description="Interest Income" type="income" code="4.1" />
+		<account description="Other Income" type="income" code="4.2" />
+		<account description="Reimbursed Expenses" type="income" code="4.3" />
+		<account description="Sales" type="income" code="4.4" />
+		<account description="Liabilities" type="equity" code="5" />
+		<account description="Accounts Payable" type="equity" code="5.1" />
+		<account description="Credit Card" type="equity" code="5.2" />
+
+	</chart>
+	<chart id="3" name="Jes" description="Jes/OOo EÜR with added account 496" vatin="499"
+		vatout="498" vatonhold="496">
+		<account type="expense" code="100"
+			description="Allgemeines Ausgabenkonto (kein passenderes Konto?)" />
+
+		<account type="expense" code="110"
+			description="Waren, Rohstoffe und Hilfsstoffe" />
+
+		<account type="expense" code="111" description="Bürobedarf" />
+
+		<account type="expense" code="112" description="Fortbildung, Fachliteratur" />
+		<account type="expense" code="113"
+			description="Verbrauchsmaterial (bitte auf Konto 110 buchen)" />
+		<account type="expense" code="114"
+			description="Rechts- und Steuerberatung, Buchführung" />
+		<account type="expense" code="120"
+			description="Bezogene Leistungen für unmittelbaren Betriebszweck" />
+		<account type="expense" code="121" description="Porto (USt 0% setzen!)" />
+		<account type="expense" code="122" description="Telekommunikation" />
+		<account type="expense" code="123" description="Energie" />
+		<account type="expense" code="130"
+			description="Gehälter, Löhne, Versicherungsbeiträge für Arbeitnehmer" />
+		<account type="expense" code="140"
+			description="Aufwendungen für geringwertige Wirtschaftsgüter (GWG)" />
+		<account type="expense" code="150"
+			description="Miete / Pacht für Geschäftsräume" />
+		<account type="expense" code="160" description="Aufwendungen für Grundstücke" />
+		<account type="expense" code="170"
+			description="Aufwendungen für ein häusl. Arbeitszimmer" />
+		<account type="expense" code="180" description="Verpflegungsmehraufwendungen" />
+		<account type="expense" code="181"
+			description="Fahrtkosten öffentlich (Bahn, ÖPNV, Taxi)" />
+		<account type="expense" code="182" description="Hotelkosten" />
+		<account type="expense" code="183"
+			description="Privat-PKW für betriebliche Fahrten" />
+		<account type="expense" code="185"
+			description="Miete / Aufwendungen für doppelte Haushaltsführung" />
+		<account type="expense" code="190" description="Geschenke – abziehbar" />
+		<account type="expense" code="195" description="Geschenke – nicht abziehbar" />
+		<account type="expense" code="200" description="Bewirtung – abziehbar" />
+		<account type="expense" code="205" description="Bewirtung – nicht abziehbar" />
+		<account type="expense" code="210"
+			description="Sonstige abziehbare Betriebsausgaben" />
+		<account type="expense" code="215"
+			description="Sonstige nicht abziehbare Betriebsausgaben" />
+		<account type="expense" code="220" description="Instandhaltung und Reparaturen" />
+		<account type="expense" code="230"
+			description="Betriebsausgabenpauschale für bestimmte Berufsgruppen" />
+		<account type="expense" code="235"
+			description="Freibetrag nach §3 Nr.26 und 26a EStG" />
+		<account type="expense" code="240"
+			description="Schuldzinsen (Finanzierung von Anschaffungs-/Herstellungskosten von Wirtschaftsgütern)" />
+		<account type="expense" code="245"
+			description="Übrige Schuldzinsen (nicht abziehbar)" />
+		<account type="expense" code="246" description="Übrige Schuldzinsen (abziehbar)" />
+		<account type="expense" code="300"
+			description="AfA auf unbewegliche Wirtschaftsgüter" />
+		<account type="expense" code="310"
+			description="AfA auf immaterielle Wirtschaftsgüter" />
+		<account type="expense" code="320"
+			description="AfA auf bewegliche Wirtschaftsgüter" />
+		<account type="expense" code="330"
+			description="Sonderabschreibungen nach §7g EStG" />
+		<account type="expense" code="340"
+			description="Herabsetzungsbeträge nach §7g Abs. 2 EStG" />
+		<account type="expense" code="350"
+			description="Auflösung Sammelposten nach §6 Abs. 2a EStG" />
+		<account type="expense" code="360"
+			description="Restbuchwert der im Kalenderjahr/Wirtschaftsjahr ausgeschiedenen Anlagegüter" />
+		<account type="expense" code="497" description="Gewerbesteuer" />
+		<account type="expense" code="498" description="Vorsteuerbeträge" />
+		<account type="expense" code="499" description="An das FA gezahlte Umsatzsteuer" />
+		<account type="income" code="500" description="Allgemeines Einnahmenkonto" />
+		<account type="income" code="510" description="Einnahmen Kunde 1" />
+		<account type="income" code="511" description="Einnahmen Kunde 2" />
+		<account type="income" code="512" description="Einnahmen Kunde 3" />
+		<account type="income" code="513" description="Einnahmen Kunde 4" />
+		<account type="income" code="514" description="Einnahmen Kunde 5" />
+		<account type="income" code="600" description="Sachentnahmen" />
+		<account type="income" code="610" description="Nutzungs- und Leistungsentnahmen" />
+		<account type="income" code="620" description="Private KFZ-Nutzung" />
+		<account type="income" code="630" description="Private Telefonnutzung" />
+		<account type="cash" code="700" description="Kasse" /><!--  added by gnuaccounting -->
+		<account type="bank" code="710" description="Bank" /><!--  added by gnuaccounting -->
+		<account type="asset" code="720" description="Forderungen" /><!--  added by gnuaccounting -->
+		<account type="asset" code="730" description="Verbindlichkeiten" /><!--  added by gnuaccounting -->
+		<account type="asset" code="900" description="Jahresabschluss" /><!--  added by gnuaccounting -->
+		
+		<account type="income" code="997" description="Umsatzsteuer nicht fällig" /><!--  added by gnuaccounting -->
+		<account type="income" code="998" description="Vereinnahmte Umsatzsteuer" />
+		<account type="income" code="999" description="Vom FA erstattete Umsatzsteuer" />
+
+	</chart>
+
+</accounts>

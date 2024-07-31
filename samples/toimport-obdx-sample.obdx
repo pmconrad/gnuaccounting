@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<openbusinessdataexchange version='0.63' xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="toimport-obdx.xsd">
+<transactions>
+<transaction type='invoice' code='RE-20081222/397' issuedate='2008-12-22' duedate='2009-01-05' remark=''>
+<recipients>
+<contact id='0' name='Gulp Consulting Services GmbH' number='0' co='' country='' street='Ridlerstraße 39' location='München' phone='' fax='(089)500316-499' />
+</recipients>
+<sender name='Stärk/Hanser GdbR' taxid='SA/MPL/EVAL/U'>
+<accounts><account code='1234567' bankcode='55555555' bankname='Test' holdername='Max Mustermann'/></accounts></sender> 
+<item quantity='129.57' name='Projektstunden' currency='EUR' price='30.0' description='Sample description' total='3887.1' totalgross='4625.65' vatfactor='1.19' />
+<item quantity='10' name='Test reduced VAT' currency='EUR' price='30.0' description='Sample description 2' total='300.00' totalgross='321' vatfactor='1.07' />
+</transaction>
+</transactions>
+</openbusinessdataexchange>

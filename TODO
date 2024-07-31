@@ -1,0 +1,136 @@
+/**
+ * later 
+ * (items in no particular order)
+ *   * Rechnung abbrechen geht nicht
+ *   * >4 posten gehen nicht mit rappen-rundung
+ *   * schriftart möglicherweise enorm zu groß auf Win10
+ *   * zurück und vor in vorschau geht nicht
+ *   * Bei Storno: Beträge und USt-Beträge müssten negativ sein
+ *   * Bei Storno: Datum originalrechnung und -fälligkeit müssten formatiert werden
+ *   * print-with-stamp button for incoming assistant
+ *   * steuerhinweis für nicht-EU-kunden
+ *   * bidirectional OpenOffice Calc listfile parsing/augmenting for incoming invoices
+ *   * unprocessed items in more stack are discarded
+ *   * abbrechen einer Transaktionsnummer nach runtersetzen des indexes ArrayIndexOutOfBoundsException
+ *   * improve appTransaction 	public static CashFlow estimateCashFlow(account debit, account credit)
+ *   * StB fragen: RE OK? EU auslandsrechnung? Ersetzendes Scannen? RE, Storno OK? SEPA: Tage oder Banktage?
+ *   * official entertainment in JES, Gnucash business accounting frame
+ *   * remove need for embedded internet browser in orders from online shops (issues with 64 bit linux, bug 164)
+ *   * support industry minutes
+ *   * clevererer suggestions for contra accounts of incoming transactions?
+ *   * estimate cashflow defective 
+ *   * GUI Soll und Haben in Zahlungseingang sind noch select boxes
+ *   * GUI Webshop import dürfte in 64 linux immer noch nicht gehen
+ *   * GUI Steuern: Standard klebt falsch
+ *   * GUI Nummern und Formate, Benutzerverwaltung, Anlagegüterverwaltung, Konten, Kontaktverwaltung: skaliert nicht
+ *   * correct cashflowindicator for "1000 Kasse" (should be displayed in black, not red)
+ *   * taxcaclulator should also take "1000 Kasse" into account for profit and loss statement 
+ *   * PIN/TAN HBCI
+ *   * support 7% VAT SKR accounts like 1771 and 1571
+ *   * missing translation of wizard buttons: also refer to http://nsawadsky.blogspot.de/2011/07/jface-wizard-tips-and-tricks.html 
+ *   * after a cancellation, there is no type selected when a new transaction is started 
+ *   * new asset: preselect text when selecting new entry so that it can be replaced by typing?
+ *   * review transactions: setTransactionListIndex clones the tranction, setByID and setForID and setByTypeID confusing
+ *   * clarify: appTransaction.getType() getTypeClass() getTypeID()
+ *   * check new invoice, cancellation, cancel cancellation, new transaction
+ *   * scan document: respect code 39 mod 43 barcodes
+ *   * correct keyword for translation mainwindow.action.text
+ *   * document difference between transaction details and entry details
+ *   * sending email fails for lack of hostname, reported by Christian via email on 01.09.
+ *   * have better exception handling: in windows nowadays one does not see any exception
+ *   * have HBCI more transparent, i.e. confirm after a payment has been conducted successfully 
+ *   * interface: import VCF is not very nice for export
+ *   * consider to remove entry.number in favour of ID
+ *   * refactor vat announcement year from combo to comboViewer
+ *   * remove tax fields (requires creation of additional, reduced VAT standard w/field 86 instead of 81)
+ *   * un-hardcode dymo label writer from barcode generation
+ *   * when going back in new transaction wizard parts of the page (header) re-copied
+ *   * inventory screen
+ *   * confirm aborted transaction numbers are not lost
+ *   * VCF, UI:stdVAT, list, webshop
+ *   * contacts should support PO box, first name and region (and tax ID and comment) in particular for vcard export
+ *   * save changed import entries? enhance or remove
+ *   * cashflow indicator: 9000 in credit is positive
+ *   * cashflow indicator: 1000 cash should be black in debit like 1200 
+ *   * get rid of derby log in project path: http://stackoverflow.com/questions/1004327/getting-rid-of-derby-log
+ *   * company settings: add 0% std VAT, select bank/cash accounts?
+ *   * collapseall/expandall in transaction list
+ *   * transaction list be able to sort by date
+ *   * have a starter like launch4j or jestart
+ *   * check tax on payment and tax on payment in conjunction with transactions created as balanced 
+ *   * although 'durchführen' not checked, software asked for PIN after more window from the bank account import
+ *   * second spreadsheet export with date from and date to=single date where transactions have been conducted fails with "no entries"    
+ *   * improve EÜR			
+ *   * purpose field with transfer may not contain non ascii127-characters or more than 2x27 characters
+ *   * remove/hardcode tax ids
+ *   * non-empty import queue should be a todo item
+ *   * refactor: no need for parentWizard as there is a getWizard()
+ *   * "more" stack when importing from bank account: create selected VAT amount
+ *   * handle transaction detail changes of VAT when importing from bank account, more stack
+ *   * PS: nice to have: top and flop products/customers
+ *   * transaction list: new transaction button
+ *   * to refactor: remove vatin vatout and vatonhold from account charts
+ *   * product types: goods, products, services
+ *   + remove trans from todo when cancelled, reminded
+ *   * button-stack functionality for webshop create invoice (currently only drag&drop)
+ *   * show workflow step accounts in transactiondetailwindow instead of manual selection? 
+ *   * persist in persistUtils or similar, not in save()
+ *   * check webshop functionality: e.g. list orders period
+ *   * don't open webshop window when no credentials found
+ *   * invoice dual print: label and invoice  
+ *   * warn when payment amount in bank account import does not match expected amount
+ *   * remove transaction.precedingTransactionID
+ *   * check Profit/Loss and/or balance sheet?
+ *   * default connector
+ *   * brandings, 
+ *   * refactor: tax.getDebitAccount/getCreditAccount should be replaced with accounts.getInputTaxAccount/getUndueVatAccount/getTurnoverTaxAccount
+ *   * LG: HBCI PIN/TAN
+ *   * allow scheduled bank transfer (TermUeb) in incoming assistant
+ *   * support multiple VATs in incoming assistant
+ *   * be able to save changes in import queue
+ *   * LG: enhance EÜR
+ *   * entriesFromBankAccountImport importentries/convertedEntries redundancy
+ *   * allow to delete standard tax-->set the next tax as standard
+ *   * states and IRSOffices should be merged to e.g. IRSsettings
+ *   * remove tax List ID, i.e. public taxList::getVATAtListIndex(int listIndex)
+ *   * taxList should be persistent -- so that there are no hacks necessary to safe the default VAT  
+ *   * should save ID, not selection index of state and IRSOffice
+ *   * upate manual tax on issue/tax on payment
+ *   * import of bank account with own transaction number and wrong cashflow should not be possible (e.g. a conducted payment should not allow to finish an invoice)
+ *   * import of bank account with own transaction number and wrong amount should not be possible 
+ *   * record which user created/deleted transaction, entry
+ *   * when aborting the creation of a new invoice, reopen the wizard and select the cancel link, then aborting THIS wizard and open "New transaction" again a nullpointerexception is raised  
+ *   * record which user created/deleted product, document
+ *   * record which user created/deleted contact, vat
+ *   * record which user created/deleted format, template
+ *   * Umfrage: Rechtsform, Angestellte, OS, reine supportfunktion für dritte?, papierlos? wie viele girokonten/kassen? wer macht buchhaltung/zufrieden, wer macht bilanzierung/zufrieden, welche software/zufrieden 
+ *   * refactor setinput can run with null argument 
+ *   * cancellation should remove entry from todo list
+ *   * gnuaccounting.sh to be executable
+ *   * need automated tests
+ *   * plain text designer (receipts and emails)
+ *   * stock keeping
+ *   * Inventory window, product group management, stock tracking, receipt designer, allow partial payments, support receipt printers, support cash register drawers, openofficeless start
+ *   * cash register: display, receipt printer, drawer, display change, underpayments, EC card payments 
+ *   * mark which accounts belong to the accounting frame
+ *   * quality feedback agent: exceptions to be mailed to developer.
+ *   * when selecting existing transaction number in add or import, disallow quick vat selection 
+ *   * use System.getProperty("java.version") to ensure it runs on the target systems
+ *   * shell file to work from file managers, 
+ *   * linux/gnome2 to allow keyboard focus+caret in template designer, 
+ *   * add product variants, 
+ *   * add currencies, 
+ *   * multi-client support, 
+ *   * add discounts, 
+ *   * multi-country-support e.g. with IAS/IFRS instead of SKR03, 
+ *   * Java Webstart and/or Eclipse Rich Client version, 
+ *   * auto-outgoing invoices (e.g. monthly interval), 
+ *   * auto-incoming invoices (e.g. monthly interval), 
+ *   * year-end balance sheet, 
+ *   * multi-dimensional invoices (e.g. height/width), 
+ *   * POS module, 
+ *   * have a kind of dashboard w. e.g. current account balance
+ *   * better locate settings e.g. currency decimal format
+ *   * support for XBRL??
+ *   * switch from NSIS to http://izpack.org/ ?
+ */

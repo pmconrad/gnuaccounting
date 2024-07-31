@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="openbusinessdataexchange">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="transactions"/>
+      </xs:sequence>
+      <xs:attribute name="version" use="required" type="xs:decimal"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transactions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="transaction"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transaction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="recipients"/>
+        <xs:element ref="sender"/>
+        <xs:element maxOccurs="unbounded" ref="item"/>
+      </xs:sequence>
+      <xs:attribute name="code" use="required"/>
+      <xs:attribute name="duedate" use="required" type="xs:NMTOKEN"/>
+      <xs:attribute name="issuedate" use="required" type="xs:NMTOKEN"/>
+      <xs:attribute name="remark" use="required"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="recipients">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="contact"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="contact">
+    <xs:complexType>
+      <xs:attribute name="co" use="required"/>
+      <xs:attribute name="country" use="required"/>
+      <xs:attribute name="fax" use="required"/>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <xs:attribute name="location" use="required" type="xs:NCName"/>
+      <xs:attribute name="name" use="required"/>
+      <xs:attribute name="number" use="required" type="xs:integer"/>
+      <xs:attribute name="phone" use="required"/>
+      <xs:attribute name="street" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sender">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="accounts"/>
+      </xs:sequence>
+      <xs:attribute name="name" use="required"/>
+      <xs:attribute name="taxid" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="accounts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="account"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="account">
+    <xs:complexType>
+      <xs:attribute name="bankcode" use="required" type="xs:integer"/>
+      <xs:attribute name="bankname" use="required" type="xs:NCName"/>
+      <xs:attribute name="code" use="required" type="xs:integer"/>
+      <xs:attribute name="holdername" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="item">
+    <xs:complexType>
+      <xs:attribute name="currency" use="required" type="xs:NCName"/>
+      <xs:attribute name="description" use="required"/>
+      <xs:attribute name="name" use="required"/>
+      <xs:attribute name="price" use="required" type="xs:decimal"/>
+      <xs:attribute name="quantity" use="required" type="xs:decimal"/>
+      <xs:attribute name="total" use="required" type="xs:decimal"/>
+      <xs:attribute name="totalgross" use="required" type="xs:decimal"/>
+      <xs:attribute name="vatfactor" use="required" type="xs:decimal"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

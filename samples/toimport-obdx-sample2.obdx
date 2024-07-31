@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<openbusinessdataexchange version='0.74' xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="toimport-obdx.xsd">
+<webshop shop='oscommerce' version='2.2rc2a'></webshop>
+ <transactions>
+  <transaction type='order' order_id='3' issuedate='2010-04-05 21:41:25' order_status='pending' paymentmethod='cod' total='$994.98'>
+    <contact id='' name='John Doe' company='' street='Sample Street' zip='12345' city='Sampleville' country='United States' location='12345 Sampleville United States' phone='' email='' delivery_name='John Doe' delivery_company='' delivery_street='Sample Street' delivery_zip='12345' delivery_city='Sampleville' delivery_country='United States' delivery_phone='' delivery_email=''></contact>
+    <item quantity='1' currency='USD' name='MG400-32MB' description='Matrox G400 32 MB' total='489.99' totalgross='489.99' vatfactor='1.00' ></item>
+    <item quantity='1' currency='USD' name='HPLJ1100XI' description='Hewlett-Packard LaserJet 1100Xi' total='499.99' totalgross='499.99' vatfactor='1.00' ></item>
+    <item quantity='1' currency='USD' name='shipping' description='Pauschale Versandkosten ()' total='5.00' totalgross='5.00' vatfactor='1.00' ></item>
+  </transaction>
+
+  <transaction type='order' order_id='2' issuedate='2010-03-18 17:55:26' order_status='pending' paymentmethod='cod' total='$54.99'>
+    <contact id='' name='Mickey Mouse' company='' street='Mausstraße 12' zip='65123' city='Entenhausen' country='Germany' location='65123 Entenhausen Germany' phone='' email='' delivery_name='Mickey Mouse' delivery_company='' delivery_street='Mausstraße 12' delivery_zip='65123' delivery_city='Entenhausen' delivery_country='Germany' delivery_phone='' delivery_email=''></contact>
+    <item quantity='1' currency='USD' name='DVD-TSAB' description='Verrückt nach Mary' total='49.99' totalgross='49.99' vatfactor='1.00' ></item>
+    <item quantity='1' currency='USD' name='shipping' description='Pauschale Versandkosten ()' total='5.00' totalgross='5.00' vatfactor='1.00' ></item>
+  </transaction>
+  <transaction type='order' order_id='1' issuedate='2010-03-18 16:12:13' order_status='pending' paymentmethod='cod' total='$65.00'>
+    <contact id='' name='Mickey Mouse' company='' street='Mausstraße 12' zip='65123' city='Entenhausen' country='Germany' location='65123 Entenhausen Germany' phone='' email='' delivery_name='Mickey Mouse' delivery_company='' delivery_street='Mausstraße 12' delivery_zip='65123' delivery_city='Entenhausen' delivery_country='Germany' delivery_phone='' delivery_email=''></contact>
+    <item quantity='2' currency='USD' name='DVD-MATR' description='Matrix' total='60.00' totalgross='60.00' vatfactor='1.00' ></item>
+    <item quantity='1' currency='USD' name='shipping' description='Pauschale Versandkosten ()' total='5.00' totalgross='5.00' vatfactor='1.00' ></item>
+
+  </transaction>
+ </transactions>
+</openbusinessdataexchange>
