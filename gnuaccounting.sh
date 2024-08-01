@@ -12,29 +12,80 @@ if [ $RELATIVEDIR ];
 then
     cd $RELATIVEDIR
 fi
-ARGUMENTS="-Djava.library.path=./libs -cp ./libs/swt/swt.jar:./libs/swt/org.eclipse.equinox.common-3.19.100.jar:./libs/swt/org.eclipse.jface-3.34.0.jar:./libs/swt/org.eclipse.osgi-3.20.0.jar:./libs/swt/org.eclipse.swt_3.104.2.v20160212-1350.jar:./libs/noa/noa-libre.jar:./libs/noa/junit-3.8.1.jar:./libs/noa/ridl.jar:./libs/noa/bootstrapconnector.jar:./libs/noa/jurt.jar:./libs/noa/sandbox.jar:./libs/noa/java_uno_accessbridge.jar:./libs/noa/jut.jar:./libs/noa/unoil.jar:./libs/noa/officebean.jar:./libs/noa/unoloader.jar:./libs/noa/juh.jar:./libs/noa/registry-3.1.3.jar:./libs/mail.jar:./libs/hbci/hbci4java.jar:./libs/barcode-google-zxing-2_2_core.jar:./libs/barcode-google-zxing-2_2_javase.jar:./libs/uk.co.mmscomputing.device.sane.jar:./libs/uk.co.mmscomputing.device.twain.jar:./libs/PDFRenderer.jar:"
-ARGUMENTS="${ARGUMENTS}./libs/persistence/derby.jar:./libs/persistence/hsqldb.jar:./libs/persistence/eclipselink.jar:./libs/persistence/ejb3-persistence.jar:./libs/persistence/javax.persistence_2.0.3.v201010191057.jar:./libs/persistence/mysql-connector-java-5.1.6-bin.jar:./libs/persistence/postgresql-8.4-701.jdbc4.jar:./libs/jargs.jar:./libs/ical/commons-codec-1.3.jar:./libs/ical/commons-logging-1.1.1.jar:./libs/ical/ical4j-vcard-0.9.5.jar:./libs/ical/backport-util-concurrent-3.1.jar:./libs/ical/commons-lang-2.4.jar:./libs/ical/gmaven-common-1.0-rc-5.jar:./libs/ical/gmaven-feature-api-1.0-rc-5.jar:./libs/ical/gmaven-feature-support-1.0-rc-5.jar:./libs/ical/gmaven-runtime-1.6-1.0-rc-5.jar:./libs/ical/gmaven-runtime-api-1.0-rc-5.jar:./libs/ical/gmaven-runtime-support-1.0-rc-5.jar:./libs/ical/ical4j-1.0.3.jar:./libs/pdfbox-1.8.2.jar:./libs/preflight-app-1.8.2.jar:"
-ARGUMENTS="${ARGUMENTS}./libs/xmpbox-1.8.2.jar:./libs/json-simple-1.1.1.jar:./libs/tesseract-ocr/tess4j.jar:./libs/tesseract-ocr/ghost4j-0.3.1.jar:./libs/tesseract-ocr/jai_imageio.jar:./libs/tesseract-ocr/jna.jar:./libs/tesseract-ocr/junit-4.10.jar:./libs/mustang-1.3.1.jar:.:libs/jaxb-api-2.3.1.jar:"
+ARGUMENTS="-Djava.library.path=./libs"
 
-# Add correct SWT
-#Darwin = Mac OS
-if [ `uname -a | grep Darwin | wc -l` -gt 0 ]; then 
-	ARGUMENTS="-XstartOnFirstThread ${ARGUMENTS}./libs/swt/org.eclipse.swt.cocoa.macosx.x86_64_3.5.1.v3555.jar"
-else
-	if [ `uname -a | grep x86_64 | wc -l` -gt 0 ]; then
-		ARGUMENTS="${ARGUMENTS}./libs/swt/org.eclipse.swt.gtk.linux.x86_64_3.102.0.v20130605-1544.jar"
-	else
-		ARGUMENTS="${ARGUMENTS}./libs/swt/org.eclipse.swt.gtk.linux.x86_3.102.0.v20130605-1544.jar"
-	fi
+CP=.
+for i in swt/swt \
+		swt/org.eclipse.core.commands \
+		swt/org.eclipse.equinox.common \
+		swt/org.eclipse.jface \
+		swt/org.eclipse.osgi \
+		noa/noa-libre \
+		noa/ridl \
+		noa/bootstrapconnector \
+		noa/jurt \
+		noa/sandbox \
+		noa/java_uno_accessbridge \
+		noa/jut \
+		noa/unoil \
+		noa/officebean \
+		noa/unoloader \
+		noa/juh \
+		noa/registry \
+		mail \
+		hbci/hbci4java \
+		barcode-google-zxing-2_2_core \
+		barcode-google-zxing-2_2_javase \
+		uk.co.mmscomputing.device.sane \
+		uk.co.mmscomputing.device.twain \
+		PDFRenderer \
+		persistence/derby \
+		persistence/hsqldb \
+		persistence/eclipselink \
+		persistence/ejb3-persistence \
+		persistence/javax.persistence \
+		persistence/mysql-connector-java \
+		persistence/postgresql \
+		jargs \
+		ical/commons-codec \
+		ical/commons-logging \
+		ical/ical4j-vcard \
+		ical/backport-util-concurrent \
+		ical/commons-lang \
+		ical/gmaven-common \
+		ical/gmaven-feature-api \
+		ical/gmaven-feature-support \
+		ical/gmaven-runtime \
+		ical/gmaven-runtime-api \
+		ical/gmaven-runtime-support \
+		ical/ical4j \
+		pdfbox \
+		preflight-app \
+		xmpbox \
+		json-simple \
+		tesseract-ocr/tess4j \
+		tesseract-ocr/ghost4j \
+		tesseract-ocr/jai_imageio \
+		tesseract-ocr/jna \
+		mustang \
+		xb-api \
+		jaxb-api
+		do
+	case "$i" in
+		*/*) CP="$CP:$(find "libs/${i%/*}" -name "${i##*/}"\*.jar | head -1)"; ;;
+		*) CP="$CP:$(find libs -name "$i"\*.jar | head -1)"; ;;
+	esac
+done
+
+if uname -a | grep -q Darwin; then
+	ARGUMENTS="-XstartOnFirstThread ${ARGUMENTS}"
 fi
 
-ARGUMENTS="${ARGUMENTS} GUILayer/MainWindow $@"
-
-if [ -f $FILE ];
+if [ -f "$FILE" ];
 then
 # java_home is set
-$FILE $ARGUMENTS
+"$FILE" $ARGUMENTS -cp $CP GUILayer/MainWindow "$@"
 else
 # lets hope java is at least in the classpath
-java $ARGUMENTS
+java $ARGUMENTS -cp $CP GUILayer/MainWindow "$@"
 fi
