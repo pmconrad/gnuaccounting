@@ -39,11 +39,11 @@ for i in swt/swt \
 		uk.co.mmscomputing.device.sane \
 		uk.co.mmscomputing.device.twain \
 		PDFRenderer \
-		persistence/derby \
+		persistence/derby- \
 		persistence/hsqldb \
 		persistence/eclipselink \
 		persistence/javax.persistence \
-		persistence/mysql-connector-java \
+		persistence/mysql-connector-j \
 		persistence/postgresql \
 		jargs \
 		ical/commons-codec \
