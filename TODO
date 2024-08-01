@@ -52,7 +52,6 @@
  *   * save changed import entries? enhance or remove
  *   * cashflow indicator: 9000 in credit is positive
  *   * cashflow indicator: 1000 cash should be black in debit like 1200 
- *   * get rid of derby log in project path: http://stackoverflow.com/questions/1004327/getting-rid-of-derby-log
  *   * company settings: add 0% std VAT, select bank/cash accounts?
  *   * collapseall/expandall in transaction list
  *   * transaction list be able to sort by date
