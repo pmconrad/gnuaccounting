@@ -14,6 +14,7 @@ import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Properties;
 
+import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
@@ -732,10 +733,12 @@ public class persistUtil {
 
 	public static void shutdown() {
 		// close JPA
-		DB.getEntityManager().close();
+		EntityManager mgr = DB.getEntityManager();
+		if (mgr != null) { mgr.close(); }
 		// now close JDBC
 		try {
-			DB.getConnection().close();
+			Connection conn = DB.getConnection();
+			if (conn == null) { conn.close(); }
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
