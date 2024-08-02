@@ -4,11 +4,14 @@
     <property name="build" value="bin"/>
     <property name="rsyncDir" value="c:\Program Files\cwRsync\bin"/>
 
-    <target name="init">  
-    	<delete dir="${build}"/>
+	<target name="clean">
+		<delete dir="${build}"/>
+	</target>
+
+	<target name="init" depends="clean">
         <mkdir dir="${build}"/>
     </target>
-	
+
     <target name="compile" depends="init"> 
          <!-- Compile the java code -->
     	    		
@@ -21,7 +24,7 @@
 
 		</copy>
 
-         <javac srcdir="${src}" destdir="${build}" includeAntRuntime="false">
+         <javac srcdir="${src}" destdir="${build}" includeAntRuntime="false" debug="true">
        	 <classpath>
        	 	<fileset dir="./libs">
        	 		<include name="**/*.jar"/>
