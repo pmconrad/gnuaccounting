@@ -42,7 +42,6 @@ for i in swt/swt \
 		persistence/derby \
 		persistence/hsqldb \
 		persistence/eclipselink \
-		persistence/ejb3-persistence \
 		persistence/javax.persistence \
 		persistence/mysql-connector-java \
 		persistence/postgresql \
@@ -84,8 +83,8 @@ fi
 if [ -f "$FILE" ];
 then
 # java_home is set
-"$FILE" $ARGUMENTS -cp $CP GUILayer/MainWindow "$@"
+"$FILE" $JAVA_OPTS $ARGUMENTS -cp $CP GUILayer/MainWindow "$@"
 else
 # lets hope java is at least in the classpath
-java $ARGUMENTS -cp $CP GUILayer/MainWindow "$@"
+java $JAVA_OPTS $ARGUMENTS -cp $CP GUILayer/MainWindow "$@"
 fi

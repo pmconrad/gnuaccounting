@@ -3,6 +3,7 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
 	version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
 	<persistence-unit name="jpa" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<class>appLayer.contact</class>
 		<class>appLayer.taxRelated.tax</class>
 		<class>appLayer.document</class>
@@ -25,12 +26,10 @@
 		<class>appLayer.transactionRelated.receiptIncoming</class>
 		<class>appLayer.transactionRelated.salarySlip</class>
 		<class>appLayer.item</class>
-		 <class>appLayer.items</class>
 		<class>appLayer.appUser</class>
 		<class>appLayer.inventoryItem</class>
 		<class>appLayer.inventory</class>
 		<class>appLayer.accountChart</class>
 		<class>appLayer.orderStatus</class>
-		
 	</persistence-unit>
 </persistence>
