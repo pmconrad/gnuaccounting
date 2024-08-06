@@ -1316,9 +1316,9 @@ public class configs {
 			HashMap configuration = new HashMap();
 			configuration.put(IOfficeApplication.APPLICATION_HOME_KEY,
 					officeApplicationPath);
-			String[] oooArgs = new String[] { "-nofirststartwizard", //$NON-NLS-1$
-					"-norestore", "-nolockcheck", "-nocrashreport", //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
-					"-nodefault", "-nologo" }; //$NON-NLS-1$ //$NON-NLS-2$
+			String[] oooArgs = new String[] { "--nofirststartwizard", //$NON-NLS-1$
+					"--norestore", "--nolockcheck", "-nocrashreport", //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+					"--nodefault", "--nologo" }; //$NON-NLS-1$ //$NON-NLS-2$
 			configuration.put(IOfficeApplication.APPLICATION_ARGUMENTS_KEY,
 					oooArgs);
 			configuration.put(IOfficeApplication.APPLICATION_TYPE_KEY,
