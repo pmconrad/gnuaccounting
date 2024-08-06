@@ -19,9 +19,9 @@
 			<fileset dir="${src}">
 				<exclude name="${build}"/>
 				<exclude name="**/*.java"/>
-				
+				<exclude name=".*"/>
+				<exclude name=".*/**"/>
 			</fileset>
-
 		</copy>
 
          <javac srcdir="${src}" destdir="${build}" includeAntRuntime="false" debug="true">
@@ -33,39 +33,17 @@
 	     </javac>
     	<chmod dir="${build}/" perm="ugo+rx" 
     	       includes="**/*.sh"/>
-
-		<copy todir="${build}">
-			<fileset dir="${src}">
-				<exclude name="${build}"/>
-				<include name="**/*.java"/>
-			</fileset>
-
-		</copy>
-    	
     </target>
 
 	<target name="zip" depends="compile">
 		<echo>Zipping...</echo>
 		<zip destfile="${build}/gnuaccounting.zip">
 			 <zipfileset filemode="644" dir="${build}" excludes="*.sh" prefix="gnuaccounting"/>
+			 <zipfileset filemode="644" dir="${src}" includes="**/*.java" prefix="gnuaccounting"/>
 			 <zipfileset filemode="755" dir="${build}" includes="*.sh" prefix="gnuaccounting"/>
 		</zip>
 		<tar longfile="gnu" destfile="${build}/gnuaccounting.tar.gz" compression="gzip">
 			<zipfileset src="${build}/gnuaccounting.zip"/>
 		</tar>
 	</target>
-
-	<!--
-	doe not yet work, could also try ftp task 
-	<target name="releaseCandidate" depends="zip">
-		
-		<echo>Uploading to ...</echo>
-		<exec executable="${rsyncDir}\rsync.exe">
-			<arg value="-avzPL"/>
-			<arg value="bin"/>
-			<arg value="root@www.gnuaccounting.org:/"/>
-		</exec>
-
-	</target>-->
-
 </project>
